@@ -1,0 +1,47 @@
+ECNO/PN version (with Iterator): 10.11.2011 
+insert insert coffee cup_in cup_out
+
+coffee (false): 0.008346509 seconds.
+tea (false): 6.64917E-4 seconds.
+cancel (true): 0.003651572 seconds.
+cup_in (false): 3.39955E-4 seconds.
+cup_out (false): 2.5932000000000002E-5 seconds.
+insert (true): 6.341220000000001E-4 seconds.
+insert (true): 0.001231373 seconds.
+insert (true): 0.001266624 seconds.
+
+coffee (true): 0.005849728 seconds.
+tea (true): 0.005686841000000001 seconds.
+cancel (true): 0.018396841 seconds.
+insert (true): 9.97983E-4 seconds.
+insert (true): 9.86638E-4 seconds.
+cup_in (false): 5.32419E-4 seconds.
+cup_out (false): 5.1459E-5 seconds.
+
+coffee (true): 0.006717645 seconds.
+tea (true): 0.005562043 seconds.
+cancel (true): 0.005712369 seconds.
+insert (false): 7.593260000000001E-4 seconds.
+cup_in (false): 3.7844800000000003E-4 seconds.
+cup_out (false): 3.4036000000000004E-5 seconds.
+
+coffee (true): 0.002790138 seconds.
+tea (true): 0.002267443 seconds.
+cancel (false): 0.001360628 seconds.
+insert (true): 7.47576E-4 seconds.
+cup_in (true): 5.8469E-4 seconds.
+cup_out (false): 1.96922E-4 seconds.
+
+coffee (true): 0.0022022070000000003 seconds.
+tea (true): 0.002022303 seconds.
+cancel (true): 0.0028715810000000002 seconds.
+insert (true): 5.49842E-4 seconds.
+cup_in (false): 2.5932000000000002E-5 seconds.
+cup_out (true): 2.5689E-4 seconds.
+
+coffee (true): 0.00207822 seconds.
+tea (true): 0.0020004230000000003 seconds.
+cancel (true): 0.0024915130000000003 seconds.
+insert (true): 6.495190000000001E-4 seconds.
+cup_in (false): 1.74637E-4 seconds.
+cup_out (false): 1.9043E-5 seconds.

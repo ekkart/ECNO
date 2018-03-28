@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ECNO stand-alone example  project (Vending Machine)
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.pn.example_project
+Bundle-Version: 0.3.2.qualifier
+Export-Package: 
+ dk.dtu.imm.se.ecno.pn.example.vendingmachine
+Require-Bundle: dk.dtu.imm.se.ecno.core;bundle-version="0.2.0",
+ dk.dtu.imm.se.ecno.pn;bundle-version="0.1.0",
+ dk.dtu.imm.se.ecno.pn.generator;bundle-version="0.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Ekkart Kindler, Software Engineering Section, DTU Compute, Denmark
