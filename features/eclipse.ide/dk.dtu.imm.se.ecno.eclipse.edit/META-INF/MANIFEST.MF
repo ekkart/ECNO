@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.eclipse.edit;singleton:=true
+Bundle-Version: 0.3.3.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.provider.BehaviourstatesEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.provider
+Require-Bundle: org.eclipse.core.runtime,
+ dk.dtu.imm.se.ecno.eclipse;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

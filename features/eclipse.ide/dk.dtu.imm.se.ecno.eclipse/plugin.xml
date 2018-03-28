@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://ecno.se.imm.dtu.dk/ecno/save/bahaviourstates"
+            class="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.BehaviourstatesPackage"
+            genModel="model/behaviourstates.genmodel"/>
+   </extension>
+   
+   <extension-point id="package_adapter_factory" name="ECNO Package Adapter Factory" schema="schema/package_adapter_factory.exsd"/>
+   <extension-point id="engine_controller_configurator" name="Engine controller configurator" schema="schema/engine_controller_configurator.exsd"/>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="ECNO"
+            id="dk.dtu.imm.se.ecno.views.category">
+      </category>
+      <view
+            allowMultiple="false"
+            category="dk.dtu.imm.se.ecno.views.category"
+            class="dk.dtu.imm.se.ecno.eclipse.enginesview.EnginesView"
+            id="dk.dtu.imm.se.ecno.views.engineregistry"
+            name="ECNO: Engine registry">
+      </view>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.eclipse.actions.start_engine"
+            objectClass="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.BehaviourStates">
+         <menu
+               id="dk.dtu.imm.se.ecno.eclipse.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.imm.se.ecno.eclipse.actions.StartEngineFromBehaviours"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.eclipse.actions.StartECNOEngineAction"
+               label="Start Engine"
+               menubarPath="dk.dtu.imm.se.ecno.eclipse.actions.standardmenu/group1">
+         </action>
+      </objectContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.eclipse.actions.start_engine"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="dk.dtu.imm.se.ecno.eclipse.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.imm.se.ecno.eclipse.actions.StartEngineFromBehavioursResource"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.eclipse.actions.StartECNOEngineAction"
+               label="Start ECNO Engine"
+               menubarPath="dk.dtu.imm.se.ecno.eclipse.actions.standardmenu/group1">
+         </action>
+         <visibility>
+            <objectState
+                  name="name"
+                  value="*.behaviourstates">
+            </objectState>
+         </visibility>
+      </objectContribution>
+   </extension>
+
+</plugin>

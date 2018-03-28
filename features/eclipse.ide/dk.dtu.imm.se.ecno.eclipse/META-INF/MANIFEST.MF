@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: dk.dtu.imm.se.ecno.eclipse
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.eclipse;singleton:=true
+Bundle-Version: 0.4.0.qualifier
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.eclipse.ui.workbench;bundle-version="3.7.0",
+ org.eclipse.swt;bundle-version="3.7.0",
+ org.eclipse.jface;bundle-version="3.7.0",
+ org.eclipse.emf.ecore,
+ dk.dtu.imm.se.ecno.core;bundle-version="0.3.1",
+ org.eclipse.ui,
+ org.eclipse.emf.transaction;bundle-version="1.4.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: dk.dtu.imm.se.ecno.eclipse.adapterfactory,
+ dk.dtu.imm.se.ecno.eclipse.configurators,
+ dk.dtu.imm.se.ecno.eclipse.enginesregistry,
+ dk.dtu.imm.se.ecno.eclipse.save.behaviour,
+ dk.dtu.imm.se.ecno.eclipse.save.behaviourstates,
+ dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.impl,
+ dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.util
+Bundle-Vendor: Ekkart Kindler, Software Engineering Section, DTU Compute, Denmark

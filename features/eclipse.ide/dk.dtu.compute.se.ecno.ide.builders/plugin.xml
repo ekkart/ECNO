@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<!-- Extensions regarding actions in the ePNK editor -->
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+         
+      <objectContribution
+            adaptable="true"
+            objectClass="org.eclipse.core.resources.IProject"
+            nameFilter="*"
+            id="dk.dtu.compute.se.ecno.ide.builders.natureToggle">
+         <action
+               label="Toggle ECNO Nature"
+               class="dk.dtu.compute.se.ecno.ide.builders.builder.ToggleNatureAction"
+               menubarPath="org.eclipse.ui.projectConfigure/additions"
+               enablesFor="+"
+               id="dk.dtu.compute.se.ecno.ide.builders.addRemoveNatureAction">
+         </action>
+      </objectContribution>
+         
+      <!-- Diagram Edit Parts -->   
+      <objectContribution
+            objectClass="org.eclipse.gmf.runtime.diagram.ui.editparts.IEditableEditPart"
+            id="dk.dtu.compute.se.ecno.ide.builders.ecnoEditorMenu">
+         <menu
+               label="ECNO"
+               path="additions"
+               id="dk.dtu.compute.se.ecno.ide.builders.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         
+         <action
+               label="Show Transition Java Action"
+               class="dk.dtu.compute.se.ecno.ide.builders.popup.actions.ActionPN2Java"
+               menubarPath="dk.dtu.compute.se.ecno.ide.builders.menu1/group1"
+               enablesFor="1"
+               id="dk.dtu.compute.se.ecno.ide.builders.newAction">
+         </action>
+         
+         <action
+               label="Show Transition Java Condition"
+               class="dk.dtu.compute.se.ecno.ide.builders.popup.actions.ConditionPN2Java"
+               menubarPath="dk.dtu.compute.se.ecno.ide.builders.menu1/group1"
+               enablesFor="1"
+               id="dk.dtu.compute.se.ecno.ide.builders.javaAction">
+         </action>
+       
+       <!-- EMF Objects in treeview-->  
+      </objectContribution>
+      
+            <objectContribution
+            objectClass="dk.dtu.imm.se.ecno.pn.ecnonets.Transition"
+            id="dk.dtu.compute.se.ecno.ide.builders.ecnoEditorMenu">
+         <menu
+               label="ECNO"
+               path="additions"
+               id="dk.dtu.compute.se.ecno.ide.builders.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         
+         <action
+               label="Show Transition Java Action"
+               class="dk.dtu.compute.se.ecno.ide.builders.popup.actions.TreeViewActionPN2Java"
+               menubarPath="dk.dtu.compute.se.ecno.ide.builders.menu1/group1"
+               enablesFor="1"
+               id="dk.dtu.compute.se.ecno.ide.builders.newAction">
+         </action>
+         
+         <action
+               label="Show Transition Java Condition"
+               class="dk.dtu.compute.se.ecno.ide.builders.popup.actions.TreeViewConditionPN2Java"
+               menubarPath="dk.dtu.compute.se.ecno.ide.builders.menu1/group1"
+               enablesFor="1"
+               id="dk.dtu.compute.se.ecno.ide.builders.javaAction">
+         </action>
+         
+      </objectContribution>
+      
+		<!-- Extension regarding from Java to ECNO snippet -->
+	  <objectContribution
+            objectClass="org.eclipse.ui.IEditorInput"
+            nameFilter="*.*"
+            id="dk.dtu.compute.se.ecno.ide.builders.javaEditorMenu">
+
+         <action
+               label="Show Source of ECNO Code"
+               class="dk.dtu.compute.se.ecno.ide.builders.popup.actions.JavaToEcnoEditorAction"
+               menubarPath="SimplePopupMenu"
+               enablesFor="1"
+               id="dk.dtu.compute.se.ecno.ide.builders.ecnoSnippetAction">
+         </action>
+      </objectContribution>
+   </extension>
+   
+   <!-- Extensions regarding the ECNO Project Builder and ECNO Project Marker Builder below-->
+   
+   <extension
+         id="ecnoProjectBuilder"
+         name="ECNO Project Builder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            hasNature="true">
+         <run
+               class="dk.dtu.compute.se.ecno.ide.builders.builder.ECNOProjectBuilder">
+         </run>
+      </builder>
+   </extension>
+   
+   <extension
+         id="ecnoProjectMarkerBuilder"
+         name="ECNO Project Marker Builder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            hasNature="true">
+         <run
+               class="dk.dtu.compute.se.ecno.ide.builders.builder.ECNOProjectMarkerBuilder">
+         </run>
+      </builder>
+   </extension>
+   
+   <extension
+         id="ecnoProjectNature"
+         name="ECNO Project Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="dk.dtu.compute.se.ecno.ide.builders.builder.ECNOProjectNature">
+         </run>
+      </runtime>
+      <builder
+            id="dk.dtu.compute.se.ecno.ide.builders.ecnoProjectBuilder">
+      </builder>
+      <builder
+            id="dk.dtu.compute.se.ecno.ide.builders.ecnoProjectMarkerBuilder">
+      </builder>
+   </extension>
+   
+</plugin>

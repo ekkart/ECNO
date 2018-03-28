@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.presentation.BehaviourstatesModelWizardID"
+            name="%_UI_BehaviourstatesModelWizard_label"
+            class="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.presentation.BehaviourstatesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BehaviourstatesModelFile.gif">
+         <description>%_UI_BehaviourstatesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.presentation.BehaviourstatesEditorID"
+            name="%_UI_BehaviourstatesEditor_label"
+            icon="icons/full/obj16/BehaviourstatesModelFile.gif"
+            extensions="behaviourstates"
+            class="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.presentation.BehaviourstatesEditor"
+            contributorClass="dk.dtu.imm.se.ecno.eclipse.save.behaviourstates.presentation.BehaviourstatesActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
