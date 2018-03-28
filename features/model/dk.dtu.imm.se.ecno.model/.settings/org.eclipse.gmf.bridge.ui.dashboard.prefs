@@ -1,0 +1,7 @@
+#Wed Aug 10 18:25:46 CEST 2011
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/dk.dtu.imm.se.ecno.model/model/ecno.genmodel
+gmf_dashboard/domainModel=platform\:/resource/dk.dtu.imm.se.ecno.model/model/ecno.ecore
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/dk.dtu.imm.se.ecno.model/model/ecno.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/dk.dtu.imm.se.ecno.model/model/ecno.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/dk.dtu.imm.se.ecno.model/model/ecno.gmftool

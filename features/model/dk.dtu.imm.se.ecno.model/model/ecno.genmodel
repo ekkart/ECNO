@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.imm.se.ecno.model/src"
+    modelPluginID="dk.dtu.imm.se.ecno.model" modelName="Ecno" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>ecno.ecore</foreignModel>
+  <genPackages prefix="Ecno" basePackage="dk.dtu.imm.se.ecno.model" disposableProviderFactory="true"
+      ecorePackage="ecno.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ecno.ecore#//SynchronisationType">
+      <genEnumLiterals ecoreEnumLiteral="ecno.ecore#//SynchronisationType/ONE"/>
+      <genEnumLiterals ecoreEnumLiteral="ecno.ecore#//SynchronisationType/ALL"/>
+    </genEnums>
+    <genClasses ecoreClass="ecno.ecore#//ElementType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//ElementType/eClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//ElementType/coordinationSets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//ElementType/references"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//ElementType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//ElementType/gui"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//ElementType/super"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//ElementType/parallelTriggerEvents"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//EventType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//EventType/parameters"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//EventType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//EventType/gui"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//EventType/super"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//Package">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//Package/elementTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Package/ePackage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//Package/eventTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Package/uses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//Package/uri"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//Package/eventTypeExtensions"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//CoordinationSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//CoordinationSet/synchronisations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//CoordinationSet/triggerEvent"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//CoordinationSet/trigger"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//CoordinationSet/priority"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//Synchronisation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Synchronisation/eventType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//Synchronisation/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Synchronisation/reference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Synchronisation/coordinationSet"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//Synchronisation/eventName"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//Reference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Reference/eReference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//Reference/target"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ecno.ecore#//Reference/source"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//Reference/synchronisations"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//Reference/name"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//Reference/upperBound"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//FormalParameter">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//FormalParameter/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//FormalParameter/collective"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ecno.ecore#//IElementType"/>
+    <genClasses image="false" ecoreClass="ecno.ecore#//IEventType"/>
+    <genClasses image="false" ecoreClass="ecno.ecore#//ISynchronisation"/>
+    <genClasses image="false" ecoreClass="ecno.ecore#//IFormalParameter"/>
+    <genClasses image="false" ecoreClass="ecno.ecore#//IReference"/>
+    <genClasses image="false" ecoreClass="ecno.ecore#//ICoordinationSet"/>
+    <genClasses ecoreClass="ecno.ecore#//INamespace"/>
+    <genClasses image="false" ecoreClass="ecno.ecore#//ImportedType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//ImportedType/packageURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//ImportedType/typeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//ImportedType/imported"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//ImportedType/import"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//EventTypeExtension">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//EventTypeExtension/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//EventTypeExtension/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//EventTypeExtension/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecno.ecore#//EventTypeExtension/super"/>
+    </genClasses>
+    <genClasses ecoreClass="ecno.ecore#//String2EventTypeExtensionMap">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecno.ecore#//String2EventTypeExtensionMap/key"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecno.ecore#//String2EventTypeExtensionMap/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ecno.ecore#//IEventTypeExtension"/>
+  </genPackages>
+</genmodel:GenModel>

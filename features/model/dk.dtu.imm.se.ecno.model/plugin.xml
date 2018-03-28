@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://ecno.se.imm.dtu.dk/ecno/gen"
+            class="dk.dtu.imm.se.ecno.genmodel.ecnogen.EcnogenPackage"
+            genModel="model/ecno-gen.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://ecno.se.imm.dtu.dk/ecno"
+            class="dk.dtu.imm.se.ecno.model.ecno.EcnoPackage"
+            genModel="model/ecno.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://ecno.se.imm.dtu.dk/ecno/instancegen"
+            class="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.EcnoinstancegenPackage"
+            genModel="model/ecno-instance-gen.genmodel"/>
+   </extension>
+
+</plugin>

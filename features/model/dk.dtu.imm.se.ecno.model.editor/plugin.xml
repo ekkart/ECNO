@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dk.dtu.imm.se.ecno.model.ecno.presentation.EcnoModelWizardID"
+            name="%_UI_EcnoModelWizard_label"
+            class="dk.dtu.imm.se.ecno.model.ecno.presentation.EcnoModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EcnoModelFile.gif">
+         <description>%_UI_EcnoModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="dk.dtu.imm.se.ecno.model.ecno.presentation.EcnoEditorID"
+            name="%_UI_EcnoEditor_label"
+            icon="icons/full/obj16/EcnoModelFile.gif"
+            extensions="ecno"
+            class="dk.dtu.imm.se.ecno.model.ecno.presentation.EcnoEditor"
+            contributorClass="dk.dtu.imm.se.ecno.model.ecno.presentation.EcnoActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dk.dtu.imm.se.ecno.genmodel.ecnogen.presentation.EcnogenModelWizardID"
+            name="%_UI_EcnogenModelWizard_label"
+            class="dk.dtu.imm.se.ecno.genmodel.ecnogen.presentation.EcnogenModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EcnogenModelFile.gif">
+         <description>%_UI_EcnogenModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="dk.dtu.imm.se.ecno.genmodel.ecnogen.presentation.EcnogenEditorID"
+            name="%_UI_EcnogenEditor_label"
+            icon="icons/full/obj16/EcnogenModelFile.gif"
+            extensions="ecnogen"
+            class="dk.dtu.imm.se.ecno.genmodel.ecnogen.presentation.EcnogenEditor"
+            contributorClass="dk.dtu.imm.se.ecno.genmodel.ecnogen.presentation.EcnogenActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.presentation.EcnoinstancegenModelWizardID"
+            name="%_UI_EcnoinstancegenModelWizard_label"
+            class="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.presentation.EcnoinstancegenModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EcnoinstancegenModelFile.gif">
+         <description>%_UI_EcnoinstancegenModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.presentation.EcnoinstancegenEditorID"
+            name="%_UI_EcnoinstancegenEditor_label"
+            icon="icons/full/obj16/EcnoinstancegenModelFile.gif"
+            extensions="ecnoinstancegen"
+            class="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.presentation.EcnoinstancegenEditor"
+            contributorClass="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.presentation.EcnoinstancegenActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

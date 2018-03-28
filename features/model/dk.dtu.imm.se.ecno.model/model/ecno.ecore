@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ecno"
+    nsURI="http://ecno.se.imm.dtu.dk/ecno" nsPrefix="ecno">
+  <eClassifiers xsi:type="ecore:EClass" name="ElementType" eSuperTypes="#//IElementType #//ImportedType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eClass" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coordinationSets" upperBound="-1"
+        eType="#//CoordinationSet" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="references" upperBound="-1"
+        eType="#//Reference" unsettable="true" containment="true" eOpposite="#//Reference/source"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gui" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="super" eType="#//ElementType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parallelTriggerEvents"
+        upperBound="-1" eType="#//EventType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventType" eSuperTypes="#//IEventType #//ImportedType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//FormalParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gui" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="super" eType="#//EventType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Package" eSuperTypes="#//INamespace">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementTypes" upperBound="-1"
+        eType="#//ElementType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ePackage" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventTypes" upperBound="-1"
+        eType="#//EventType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" upperBound="-1" eType="#//Package"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventTypeExtensions" upperBound="-1"
+        eType="#//EventTypeExtension" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CoordinationSet" eSuperTypes="#//ICoordinationSet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="synchronisations" upperBound="-1"
+        eType="#//Synchronisation" eOpposite="#//Synchronisation/coordinationSet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggerEvent" eType="#//EventType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trigger" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
+        volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Synchronisation" eSuperTypes="#//ISynchronisation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eventType" lowerBound="1"
+        eType="#//EventType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//SynchronisationType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reference" lowerBound="1"
+        eType="#//Reference" eOpposite="#//Reference/synchronisations"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coordinationSet" lowerBound="1"
+        eType="#//CoordinationSet" eOpposite="#//CoordinationSet/synchronisations"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eventName" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SynchronisationType">
+    <eLiterals name="ONE" literal="ONE"/>
+    <eLiterals name="ALL" value="1" literal="ALL"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="#//IReference">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eReference" eType="ecore:EClass platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//ElementType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//ElementType" eOpposite="#//ElementType/references"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="synchronisations" upperBound="-1"
+        eType="#//Synchronisation" containment="true" eOpposite="#//Synchronisation/reference"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="upperBound" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FormalParameter" eSuperTypes="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EParameter #//IFormalParameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="collective" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IElementType" instanceClassName="dk.dtu.imm.se.ecno.core.IElementType"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IEventType" instanceClassName="dk.dtu.imm.se.ecno.core.IEventType"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ISynchronisation" instanceClassName="dk.dtu.imm.se.ecno.core.ISynchronisation"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IFormalParameter" instanceClassName="dk.dtu.imm.se.ecno.core.IFormalParameter"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IReference" instanceClassName="dk.dtu.imm.se.ecno.core.IReference"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ICoordinationSet" instanceClassName="dk.dtu.imm.se.ecno.core.ICoordinationSet"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="INamespace" instanceClassName="dk.dtu.imm.se.ecno.core.INamespace"
+      abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ImportedType" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="packageURI" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeName" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imported" lowerBound="1"
+        eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EBoolean"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="import" eType="#//ImportedType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventTypeExtension" eSuperTypes="#//IEventTypeExtension #//ImportedType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="base" lowerBound="1" eType="#//EventType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//FormalParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="super" upperBound="-1"
+        eType="#//String2EventTypeExtensionMap" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="String2EventTypeExtensionMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" lowerBound="1" eType="#//EventTypeExtension"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IEventTypeExtension" instanceClassName="dk.dtu.imm.se.ecno.core.IEventTypeExtension"
+      abstract="true" interface="true"/>
+</ecore:EPackage>

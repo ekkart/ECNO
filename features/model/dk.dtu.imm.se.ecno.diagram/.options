@@ -1,0 +1,7 @@
+# Tracing options for the dk.dtu.imm.se.ecno.diagram plug-in
+
+# Common issues
+dk.dtu.imm.se.ecno.diagram/debug=false
+
+# Visual IDs
+dk.dtu.imm.se.ecno.diagram/debug/visualID=false

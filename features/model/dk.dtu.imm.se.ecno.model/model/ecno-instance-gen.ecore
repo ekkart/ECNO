@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ecnoinstancegen"
+    nsURI="http://ecno.se.imm.dtu.dk/ecno/instancegen" nsPrefix="ecnoinstancegen">
+  <eClassifiers xsi:type="ecore:EClass" name="ECNOInstanceGenModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instance" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ecnoGenModel" upperBound="-1"
+        eType="ecore:EClass ecno-gen.ecore#//ECNOGenModel"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePathECNOInstance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="instanceClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

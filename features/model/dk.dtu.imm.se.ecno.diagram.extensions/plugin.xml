@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension
+      point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+    <decoratorProvider
+        class="dk.dtu.imm.se.ecno.diagram.decorators.DecoratorProvider">
+      <Priority name="Medium"/>
+      <object
+          class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)"
+          id="TypeDefinition">
+          <!-- note that the reference to the plugin in the above reference to the class is necessary
+               in order for this decorator provider to properly be plugged in. It should not be
+               deleted, even though it gives a warning here! -->
+      </object> 
+      <context decoratorTargets="TypeDefinition"></context>
+    </decoratorProvider>
+  </extension>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.diagram.extensions.actions.resolve_imports"
+            objectClass="dk.dtu.imm.se.ecno.model.ecno.diagram.edit.parts.PackageEditPart">
+         <menu
+               id="dk.dtu.imm.se.ecno.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.imm.se.ecno.diagram.actions.ResolveImportsAction"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.diagram.extensions.actions.ResolveImportsAction"
+               label="Resolve imported elements and types"
+               menubarPath="dk.dtu.imm.se.ecno.actions.standardmenu/group1">
+         </action>
+      </objectContribution>
+
+   </extension>
+</plugin>
