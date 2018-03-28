@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://se.compute.dtu.dk/ecno/statespace/1.0"
+            class="dk.dtu.compute.se.ecno.statespace.StatespacePackage"
+            genModel="model/statespace.genmodel"/>
+   </extension>
+
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+         <configurator
+            class="dk.dtu.compute.se.ecno.statespace.controller.configurator.StatespaceRecorderConfiguration"
+            uri="http://se.compute.dtu.dk/statespace/recording/configurator">
+         </configurator>
+  	</extension>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.compute.se.ecno.statespace.contributions"
+            objectClass="dk.dtu.compute.se.ecno.statespace.StateSpace">
+         <menu
+               id="dk.dtu.compute.se.ecno.statespace.actions.standardmenu"
+               label="ECNO statespace"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.compute.se.ecno.statespace.actions.CopyStateAction"
+               enablesFor="1"
+               id="dk.dtu.compute.se.ecno.statespace.actions.copystate"
+               label="CopyCurrentState"
+               menubarPath="dk.dtu.compute.se.ecno.statespace.actions.standardmenu/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

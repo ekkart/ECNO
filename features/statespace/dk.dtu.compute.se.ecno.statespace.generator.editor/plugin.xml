@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dk.dtu.compute.se.ecno.statespace.generator.presentation.GeneratorModelWizardID"
+            name="%_UI_GeneratorModelWizard_label"
+            class="dk.dtu.compute.se.ecno.statespace.generator.presentation.GeneratorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GeneratorModelFile.gif">
+         <description>%_UI_GeneratorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="dk.dtu.compute.se.ecno.statespace.generator.presentation.GeneratorEditorID"
+            name="%_UI_GeneratorEditor_label"
+            icon="icons/full/obj16/GeneratorModelFile.gif"
+            extensions="generator"
+            class="dk.dtu.compute.se.ecno.statespace.generator.presentation.GeneratorEditor"
+            contributorClass="dk.dtu.compute.se.ecno.statespace.generator.presentation.GeneratorActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

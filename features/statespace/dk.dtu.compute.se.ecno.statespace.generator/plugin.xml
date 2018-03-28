@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://se.compute.dtu.dk/ecno/statespace/generator/1.0"
+            class="dk.dtu.compute.se.ecno.statespace.generator.GeneratorPackage"
+            genModel="model/generator.genmodel"/>
+   </extension>
+   
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+         <configurator
+            class="dk.dtu.compute.se.ecno.statespace.generator.cofigurator.StateSpaceGeneratorConfigurator"
+            uri="http://se.compute.dtu.dk/statespace/generator/configuration">
+         </configurator>
+  	</extension>
+  	
+  	   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.eclipse.actions.start_engine_outside_registry"
+            objectClass="org.eclipse.core.resources.IFile">
+         <!-- 
+         <menu
+               id="dk.dtu.imm.se.ecno.eclipse.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         -->
+         <action
+               class="dk.dtu.compute.se.ecno.statespace.generator.simulator.StartEngineFromBehavioursResource"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.eclipse.actions.StartECNOEngineActionOutsideRegistry"
+               label="Start ECNO Engine (outside registry)"
+               menubarPath="dk.dtu.imm.se.ecno.eclipse.actions.standardmenu/group1">
+         </action>
+         <visibility>
+            <objectState
+                  name="name"
+                  value="*.behaviourstates">
+            </objectState>
+         </visibility>
+      </objectContribution>
+   </extension>
+
+</plugin>

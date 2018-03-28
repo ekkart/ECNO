@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <factory
+            uri="http://se.compute.dtu.dk/ecno/statespace/generator/1.0"
+            class="dk.dtu.compute.se.ecno.statespace.generator.provider.GeneratorItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="http://ecno.se.imm.dtu.dk/ecno/save/bahaviourstates"
+            class="dk.dtu.compute.se.ecno.statespace.generator.provider.GeneratorItemProviderAdapterFactory$BehaviourstatesChildCreationExtender"/>
+   </extension>
+
+</plugin>
