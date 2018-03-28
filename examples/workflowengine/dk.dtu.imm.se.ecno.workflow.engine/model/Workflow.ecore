@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="workflow" nsURI="http://workflow/1.0" nsPrefix="workflow">
+  <eClassifiers xsi:type="ecore:EClass" name="TaskO" eSuperTypes="#//TaskAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredRoles" lowerBound="1"
+        upperBound="-1" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="followsUpOn" lowerBound="1"
+        eType="#//TaskO"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivityO" eSuperTypes="#//ActivityAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignedTo" eType="#//Agent"
+        eOpposite="#//Agent/active"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Case">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="client" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="started" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="finished" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
+        eType="#//CaseAspect" containment="true" eOpposite="#//CaseAspect/core"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activities" upperBound="-1"
+        eType="#//Activity" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" lowerBound="1"
+        eType="#//Process"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="runtimeCoreModel" lowerBound="1"
+        eType="#//RuntimeCoreModel" eOpposite="#//RuntimeCoreModel/cases"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Activity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="started" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="finished" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
+        eType="#//ActivityAspect" containment="true" eOpposite="#//ActivityAspect/core"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="task" lowerBound="1" eType="#//Task"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//ActivityAspect"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Agent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="takenRoles" lowerBound="1"
+        upperBound="-1" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="username" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="password" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="active" upperBound="-1"
+        eType="#//ActivityO" eOpposite="#//ActivityO/assignedTo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mayTakeRoles" lowerBound="1"
+        upperBound="-1" eType="#//Role"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RuntimeInformation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="caseIdCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="MyString" instanceClassName="java.lang.String"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="MyList" instanceClassName="java.util.List"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TaskC" abstract="true" eSuperTypes="#//TaskAspect">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivityC" eSuperTypes="#//ActivityAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="case" lowerBound="1" eType="#//CaseC"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Control" abstract="true" eSuperTypes="#//ProcessAspect"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CaseC" eSuperTypes="#//CaseAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="state" lowerBound="1" eType="#//State"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="State" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PetriNet" eSuperTypes="#//Control">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="arcs" upperBound="-1" eType="#//Arc"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="places" upperBound="-1"
+        eType="#//Place" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="start" lowerBound="1" eType="#//Place"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finish" lowerBound="1"
+        eType="#//Place"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition" eSuperTypes="#//TaskC">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//Arc"
+        eOpposite="#//Arc/sourceTransition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//Arc"
+        eOpposite="#//Arc/targetTransition"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Arc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePlace" lowerBound="1"
+        eType="#//Place" eOpposite="#//Place/out"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPlace" lowerBound="1"
+        eType="#//Place" eOpposite="#//Place/in"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceTransition" lowerBound="1"
+        eType="#//Transition" eOpposite="#//Transition/out"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetTransition" lowerBound="1"
+        eType="#//Transition" eOpposite="#//Transition/in"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Place">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//Arc"
+        eOpposite="#//Arc/targetPlace"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//Arc"
+        eOpposite="#//Arc/sourcePlace"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Marking" eSuperTypes="#//State">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tokens" upperBound="-1"
+        eType="#//Token" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="petrinet" lowerBound="1"
+        eType="#//PetriNet"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Token">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="place" lowerBound="1" eType="#//Place"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelRegistry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="engine" lowerBound="1"
+        eType="#//WorkflowEngine" eOpposite="#//WorkflowEngine/modelRegistry"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coreModels" upperBound="-1"
+        eType="#//CoreModel" eOpposite="#//CoreModel/modelRegistry"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="globalAspects" upperBound="-1"
+        eType="#//GlobalAspect" eOpposite="#//GlobalAspect/modelRegistry"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Information" eSuperTypes="#//ProcessAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processDocuments" upperBound="-1"
+        eType="#//ProcessDocument" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TaskI" eSuperTypes="#//TaskAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//DocumentDescriptor"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//DocumentDescriptor"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="start" upperBound="-1"
+        eType="#//DocumentCondition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finish" upperBound="-1"
+        eType="#//DocumentCondition" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentDescriptor" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentType" lowerBound="1"
+        eType="#//DocumentType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processDocument" lowerBound="1"
+        eType="#//ProcessDocument"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentType" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivityI" eSuperTypes="#//ActivityAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="#//Document"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="#//Document"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Document" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="DocumentType" lowerBound="1"
+        eType="#//DocumentType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CaseI" eSuperTypes="#//CaseAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="caseDocuments" upperBound="-1"
+        eType="#//String2DocumentMap" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelAspect" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" eType="#//ProcessAspect"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessAspect" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tasks" upperBound="-1"
+        eType="#//TaskAspect" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="core" lowerBound="1" eType="#//Process"
+        eOpposite="#//Process/aspects"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TaskAspect" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="core" lowerBound="1" eType="#//Task"
+        eOpposite="#//Task/aspects"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RuntimeModelAspect" abstract="true"
+      interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CaseAspect" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" eType="#//ProcessAspect"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="core" lowerBound="1" eType="#//Case"
+        eOpposite="#//Case/aspects"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivityAspect" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="task" lowerBound="1" eType="#//TaskAspect"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="core" lowerBound="1" eType="#//Activity"
+        eOpposite="#//Activity/aspects"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CoreModel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
+        eType="#//ModelAspect" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" eType="#//Process"
+        containment="true" eOpposite="#//Process/coreModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelRegistry" lowerBound="1"
+        eType="#//ModelRegistry" eOpposite="#//ModelRegistry/coreModels"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Process">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tasks" upperBound="-1"
+        eType="#//Task" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coreModel" lowerBound="1"
+        eType="#//CoreModel" eOpposite="#//CoreModel/process"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
+        eType="#//ProcessAspect" eOpposite="#//ProcessAspect/core"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
+        eType="#//TaskAspect" eOpposite="#//TaskAspect/core"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RuntimeCoreModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aspects" upperBound="-1"
+        eType="#//RuntimeModelAspect" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cases" upperBound="-1"
+        eType="#//Case" containment="true" eOpposite="#//Case/runtimeCoreModel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coreModel" lowerBound="1"
+        eType="#//CoreModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OrganisationAspect" eSuperTypes="#//ModelAspect"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ControlAspect" eSuperTypes="#//ModelAspect"/>
+  <eClassifiers xsi:type="ecore:EClass" name="WorkflowEngine">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelRegistry" lowerBound="1"
+        eType="#//ModelRegistry" eOpposite="#//ModelRegistry/engine"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="runtimeCoreModels" upperBound="-1"
+        eType="#//RuntimeCoreModel" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="runtimeGlobalAspects" upperBound="-1"
+        eType="#//RuntimeGlobalAspect" eOpposite="#//RuntimeGlobalAspect/engine"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessO" eSuperTypes="#//ProcessAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="involved" upperBound="-1"
+        eType="#//Role"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentCondition" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Expression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultDocumentType" eSuperTypes="#//DocumentType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fields" upperBound="-1"
+        eType="#//Field" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumFields" upperBound="-1"
+        eType="#//EnumField" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultDocument" eSuperTypes="#//Document">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fieldValues" upperBound="-1"
+        eType="#//FieldValue" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumFieldValues" upperBound="-1"
+        eType="#//EnumFieldValue" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="placeholder" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Field">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FieldValue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="field" lowerBound="1" eType="#//Field"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InformationAspect" eSuperTypes="#//ModelAspect"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CaseO" eSuperTypes="#//CaseAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="involved" upperBound="-1"
+        eType="#//Agent"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InformationRuntimeAspect" eSuperTypes="#//RuntimeModelAspect"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultDocumentDescriptor" eSuperTypes="#//DocumentDescriptor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessDocument">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentType" lowerBound="1"
+        eType="#//DocumentType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="String2DocumentMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" lowerBound="1" eType="#//Document"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Atom" eSuperTypes="#//Expression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Operator" eSuperTypes="#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operands" lowerBound="2"
+        upperBound="2" eType="#//Expression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentDescrAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="descriptor" lowerBound="1"
+        eType="#//DocumentDescriptor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FieldAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="field" lowerBound="1" eType="#//Field"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConstantAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DotOperator" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EqualToOperator" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DefaultDocumentCondition" eSuperTypes="#//DocumentCondition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" lowerBound="1"
+        eType="#//Expression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumField">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumLiterals" lowerBound="1"
+        upperBound="-1" eType="#//EnumLiteral" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" lowerBound="1"
+        eType="#//EnumLiteral"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumLiteral">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumFieldValue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumField" lowerBound="1"
+        eType="#//EnumField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumValue" lowerBound="1"
+        eType="#//EnumLiteral"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LessThanOperator" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GreaterThanOperator" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumFieldAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumField" lowerBound="1"
+        eType="#//EnumField"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnumLiteralAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="enumLiteral" lowerBound="1"
+        eType="#//EnumLiteral"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnequalToOperator" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AgentContainer" eSuperTypes="#//RuntimeGlobalAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="agents" upperBound="-1"
+        eType="#//Agent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Organisation" eSuperTypes="#//GlobalAspect">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roles" upperBound="-1"
+        eType="#//Role" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GlobalAspect" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modelRegistry" lowerBound="1"
+        eType="#//ModelRegistry" eOpposite="#//ModelRegistry/globalAspects"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RuntimeGlobalAspect" abstract="true"
+      interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="engine" lowerBound="1"
+        eType="#//WorkflowEngine" eOpposite="#//WorkflowEngine/runtimeGlobalAspects"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentTypeContainer" eSuperTypes="#//GlobalAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentTypes" upperBound="-1"
+        eType="#//DocumentType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentContainer" eSuperTypes="#//RuntimeGlobalAspect">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documents" upperBound="-1"
+        eType="#//Document" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

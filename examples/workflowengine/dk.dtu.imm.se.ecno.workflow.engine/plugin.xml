@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://workflow/1.0"
+            class="workflow.WorkflowPackage"
+            genModel="model/Workflow.genmodel"/>
+   </extension>
+   
+   
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.package_adapter_factory">
+      <adapter_factory
+            class="coded.util.WorkflowModelFactory"
+            uri="dk.dtu.imm.se.ecno.workflow.engine">
+      </adapter_factory>
+   </extension>
+   
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+      <configurator
+            class="coded.gui.WorkflowGUIConfigurator"
+            uri="dk.dtu.imm.se.ecno.workflow.configurator">
+      </configurator>
+   </extension> 
+
+</plugin>

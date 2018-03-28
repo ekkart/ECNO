@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.imm.se.ecno.workflow.engine/src" modelPluginID="dk.dtu.imm.se.ecno.workflow.engine"
+    modelName="Workflow" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false">
+  <foreignModel>Workflow.ecore</foreignModel>
+  <genPackages prefix="Workflow" disposableProviderFactory="true" ecorePackage="Workflow.ecore#/">
+    <genDataTypes ecoreDataType="Workflow.ecore#//MyString"/>
+    <genDataTypes ecoreDataType="Workflow.ecore#//MyList"/>
+    <genClasses ecoreClass="Workflow.ecore#//TaskO">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskO/requiredRoles"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskO/followsUpOn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//TaskO/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//ActivityO">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ActivityO/assignedTo"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Role">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Role/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Case">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Case/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Case/client"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Case/started"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Case/finished"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Case/aspects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Case/activities"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Case/process"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Workflow.ecore#//Case/runtimeCoreModel"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Activity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Activity/started"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Activity/finished"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Activity/aspects"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Activity/task"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Activity/EReference0"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Agent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Agent/takenRoles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Agent/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Agent/username"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Agent/password"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Agent/active"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Agent/mayTakeRoles"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//RuntimeInformation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//RuntimeInformation/caseIdCount"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//TaskC">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//TaskC/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//ActivityC">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ActivityC/case"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//Control"/>
+    <genClasses ecoreClass="Workflow.ecore#//CaseC">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//CaseC/state"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//State"/>
+    <genClasses ecoreClass="Workflow.ecore#//PetriNet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//PetriNet/arcs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//PetriNet/places"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//PetriNet/start"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//PetriNet/finish"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Transition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Transition/out"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Transition/in"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Arc">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Arc/sourcePlace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Arc/targetPlace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Arc/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Arc/sourceTransition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Arc/targetTransition"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Place">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Place/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Place/in"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Place/out"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Marking">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Marking/tokens"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Marking/petrinet"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Token">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Token/place"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//ModelRegistry">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ModelRegistry/engine"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ModelRegistry/coreModels"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ModelRegistry/globalAspects"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Information">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Information/processDocuments"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//TaskI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskI/in"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskI/out"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskI/start"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskI/finish"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//DocumentDescriptor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//DocumentDescriptor/documentType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//DocumentDescriptor/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//DocumentDescriptor/processDocument"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//DocumentType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//DocumentType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//ActivityI">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ActivityI/in"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ActivityI/out"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//Document">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Document/DocumentType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Document/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Document/id"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//CaseI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//CaseI/caseDocuments"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//ModelAspect">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//ModelAspect/process"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//ProcessAspect">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//ProcessAspect/tasks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ProcessAspect/core"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//TaskAspect">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//TaskAspect/core"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//RuntimeModelAspect"/>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//CaseAspect">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//CaseAspect/process"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Workflow.ecore#//CaseAspect/core"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//ActivityAspect">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ActivityAspect/task"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Workflow.ecore#//ActivityAspect/core"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//CoreModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//CoreModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//CoreModel/aspects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//CoreModel/process"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//CoreModel/modelRegistry"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Process">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Process/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Process/tasks"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Workflow.ecore#//Process/coreModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Process/aspects"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Task">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Task/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//Task/aspects"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//RuntimeCoreModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//RuntimeCoreModel/aspects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//RuntimeCoreModel/cases"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//RuntimeCoreModel/coreModel"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//OrganisationAspect"/>
+    <genClasses ecoreClass="Workflow.ecore#//ControlAspect"/>
+    <genClasses ecoreClass="Workflow.ecore#//WorkflowEngine">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//WorkflowEngine/modelRegistry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//WorkflowEngine/runtimeCoreModels"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//WorkflowEngine/runtimeGlobalAspects"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//ProcessO">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ProcessO/involved"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//DocumentCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//DocumentCondition/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Expression"/>
+    <genClasses ecoreClass="Workflow.ecore#//DefaultDocumentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DefaultDocumentType/fields"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DefaultDocumentType/enumFields"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//DefaultDocument">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DefaultDocument/fieldValues"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DefaultDocument/enumFieldValues"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//DefaultDocument/placeholder"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Field">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Field/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//FieldValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//FieldValue/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//FieldValue/field"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//InformationAspect"/>
+    <genClasses ecoreClass="Workflow.ecore#//CaseO">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//CaseO/involved"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//InformationRuntimeAspect"/>
+    <genClasses ecoreClass="Workflow.ecore#//DefaultDocumentDescriptor"/>
+    <genClasses ecoreClass="Workflow.ecore#//ProcessDocument">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//ProcessDocument/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//ProcessDocument/documentType"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//String2DocumentMap">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//String2DocumentMap/key"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//String2DocumentMap/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Atom"/>
+    <genClasses ecoreClass="Workflow.ecore#//Operator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Operator/operands"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//DocumentDescrAtom">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//DocumentDescrAtom/descriptor"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//FieldAtom">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//FieldAtom/field"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//ConstantAtom">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//ConstantAtom/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//DotOperator"/>
+    <genClasses ecoreClass="Workflow.ecore#//EqualToOperator"/>
+    <genClasses ecoreClass="Workflow.ecore#//DefaultDocumentCondition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DefaultDocumentCondition/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//EnumField">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//EnumField/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//EnumField/enumLiterals"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//EnumField/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//EnumLiteral">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//EnumLiteral/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//EnumFieldValue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//EnumFieldValue/enumField"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//EnumFieldValue/enumValue"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//LessThanOperator"/>
+    <genClasses ecoreClass="Workflow.ecore#//GreaterThanOperator"/>
+    <genClasses ecoreClass="Workflow.ecore#//EnumFieldAtom">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//EnumFieldAtom/enumField"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//EnumLiteralAtom">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//EnumLiteralAtom/enumLiteral"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//UnequalToOperator"/>
+    <genClasses ecoreClass="Workflow.ecore#//AgentContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//AgentContainer/agents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//AgentContainer/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//Organisation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//Organisation/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//Organisation/roles"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//GlobalAspect">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//GlobalAspect/modelRegistry"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Workflow.ecore#//RuntimeGlobalAspect">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Workflow.ecore#//RuntimeGlobalAspect/engine"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//DocumentTypeContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DocumentTypeContainer/documentTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//DocumentTypeContainer/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Workflow.ecore#//DocumentContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Workflow.ecore#//DocumentContainer/documents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Workflow.ecore#//DocumentContainer/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

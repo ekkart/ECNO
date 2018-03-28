@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behaviourstates:BehaviourStates xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviourstates="http://ecno.se.imm.dtu.dk/ecno/save/bahaviourstates">
+  <added href="engine.workflow#/"/>
+  <added href="model_registry.workflow#/"/>
+  <added href="error_management_process.workflow#//@process"/>
+  <added href="online_book_purchase_process.workflow#//@process"/>
+  <added href="agents.workflow#//@agents.4"/>
+  <added href="agents.workflow#//@agents.8"/>
+  <added href="agents.workflow#//@agents.6"/>
+  <added href="agents.workflow#//@agents.0"/>
+  <added href="agents.workflow#//@agents.5"/>
+  <added href="agents.workflow#//@agents.7"/>
+  <added href="agents.workflow#//@agents.1"/>
+  <added href="agents.workflow#//@agents.3"/>
+  <added href="agents.workflow#//@agents.2"/>
+  <controllerConfig uri="dk.dtu.imm.se.ecno.workflow.configurator">
+    <state xsi:type="behaviourstates:ObjectReference">
+      <object href="model_registry.workflow#/"/>
+    </state>
+  </controllerConfig>
+  <packages>dk.dtu.imm.se.ecno.workflow.engine</packages>
+</behaviourstates:BehaviourStates>

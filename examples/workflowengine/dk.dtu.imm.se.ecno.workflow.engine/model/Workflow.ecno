@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Process"/>
+    <coordinationSets triggerEvent="//@eventTypes.0"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.7"/>
+    <references target="//@elementTypes.9">
+      <eReference href="Workflow.ecore#//Process/tasks"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.0/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes references="">
+    <eClass href="Workflow.ecore#//Agent"/>
+    <coordinationSets triggerEvent="//@eventTypes.1"/>
+    <coordinationSets triggerEvent="//@eventTypes.2"/>
+    <coordinationSets triggerEvent="//@eventTypes.4"/>
+    <coordinationSets triggerEvent="//@eventTypes.7"/>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//ActivityO"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <references target="//@elementTypes.1">
+      <eReference href="Workflow.ecore#//ActivityO/assignedTo"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Transition"/>
+    <coordinationSets triggerEvent="//@eventTypes.8"/>
+    <coordinationSets triggerEvent="//@eventTypes.9"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.6"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.5"/>
+    <references target="//@elementTypes.5">
+      <eReference href="Workflow.ecore#//Transition/out"/>
+      <synchronisations eventType="//@eventTypes.5" type="ALL" coordinationSet="//@elementTypes.3/@coordinationSets.3"/>
+    </references>
+    <references target="//@elementTypes.5">
+      <eReference href="Workflow.ecore#//Transition/in"/>
+      <synchronisations eventType="//@eventTypes.6" type="ALL" coordinationSet="//@elementTypes.3/@coordinationSets.2"/>
+    </references>
+  </elementTypes>
+  <elementTypes references="">
+    <eClass href="Workflow.ecore#//Place"/>
+    <coordinationSets triggerEvent="//@eventTypes.6"/>
+    <coordinationSets triggerEvent="//@eventTypes.5"/>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Arc"/>
+    <coordinationSets synchronisations="//@elementTypes.5/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.6"/>
+    <coordinationSets synchronisations="//@elementTypes.5/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.5"/>
+    <references target="//@elementTypes.4">
+      <eReference href="Workflow.ecore#//Arc/targetPlace"/>
+      <synchronisations eventType="//@eventTypes.5" coordinationSet="//@elementTypes.5/@coordinationSets.1"/>
+    </references>
+    <references target="//@elementTypes.4">
+      <eReference href="Workflow.ecore#//Arc/sourcePlace"/>
+      <synchronisations eventType="//@eventTypes.6" coordinationSet="//@elementTypes.5/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Activity"/>
+    <coordinationSets synchronisations="//@elementTypes.6/@references.0/@synchronisations.0 //@elementTypes.6/@references.2/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <references target="//@elementTypes.7">
+      <eReference href="Workflow.ecore#//Activity/aspects"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.6/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.2">
+      <eReference href="Workflow.ecore#//Activity/aspects"/>
+    </references>
+    <references target="//@elementTypes.18">
+      <eReference href="Workflow.ecore#//Activity/aspects"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.6/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//ActivityC"/>
+    <coordinationSets triggerEvent="//@eventTypes.4"/>
+    <coordinationSets synchronisations="//@elementTypes.7/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.9"/>
+    <references target="//@elementTypes.3">
+      <eReference href="Workflow.ecore#//ActivityAspect/task"/>
+      <synchronisations eventType="//@eventTypes.9" coordinationSet="//@elementTypes.7/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Case"/>
+    <coordinationSets synchronisations="//@elementTypes.8/@references.0/@synchronisations.0 //@elementTypes.8/@references.2/@synchronisations.0 //@elementTypes.8/@references.3/@synchronisations.0 //@elementTypes.8/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.7"/>
+    <coordinationSets synchronisations="//@elementTypes.8/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.0"/>
+    <references target="//@elementTypes.0">
+      <eReference href="Workflow.ecore#//Case/process"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.8/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.8/@coordinationSets.1"/>
+    </references>
+    <references target="//@elementTypes.10">
+      <eReference href="Workflow.ecore#//Case/aspects"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.8/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.11">
+      <eReference href="Workflow.ecore#//Case/aspects"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.8/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.14">
+      <eReference href="Workflow.ecore#//Case/aspects"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.8/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Task"/>
+    <coordinationSets triggerEvent="//@eventTypes.7"/>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//CaseC"/>
+    <coordinationSets synchronisations="//@elementTypes.10/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.7"/>
+    <references target="//@elementTypes.12">
+      <eReference href="Workflow.ecore#//CaseC/state"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.10/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//CaseO"/>
+    <coordinationSets synchronisations="//@elementTypes.11/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.7"/>
+    <references target="//@elementTypes.1">
+      <eReference href="Workflow.ecore#//CaseO/involved"/>
+      <synchronisations eventType="//@eventTypes.7" coordinationSet="//@elementTypes.11/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Marking"/>
+    <coordinationSets triggerEvent="//@eventTypes.7"/>
+    <coordinationSets synchronisations="//@elementTypes.12/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.8"/>
+    <references target="//@elementTypes.13">
+      <eReference href="Workflow.ecore#//Marking/petrinet"/>
+      <synchronisations eventType="//@eventTypes.8" coordinationSet="//@elementTypes.12/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//PetriNet"/>
+    <coordinationSets synchronisations="//@elementTypes.13/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.8"/>
+    <references target="//@elementTypes.3">
+      <eReference href="Workflow.ecore#//ProcessAspect/tasks"/>
+      <synchronisations eventType="//@eventTypes.8" coordinationSet="//@elementTypes.13/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//CaseI"/>
+    <coordinationSets triggerEvent="//@eventTypes.7"/>
+    <coordinationSets synchronisations="//@elementTypes.14/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.10"/>
+    <references target="//@elementTypes.15">
+      <eReference href="Workflow.ecore#//CaseAspect/process"/>
+      <synchronisations eventType="//@eventTypes.10" coordinationSet="//@elementTypes.14/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//Information"/>
+    <coordinationSets synchronisations="//@elementTypes.15/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.10"/>
+    <references target="//@elementTypes.16">
+      <eReference href="Workflow.ecore#//ProcessAspect/tasks"/>
+      <synchronisations eventType="//@eventTypes.10" coordinationSet="//@elementTypes.15/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//TaskI"/>
+    <coordinationSets synchronisations="//@elementTypes.16/@references.0/@synchronisations.0 //@elementTypes.16/@references.2/@synchronisations.0" triggerEvent="//@eventTypes.10"/>
+    <coordinationSets synchronisations="//@elementTypes.16/@references.1/@synchronisations.0 //@elementTypes.16/@references.3/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <references target="//@elementTypes.17">
+      <eReference href="Workflow.ecore#//TaskI/in"/>
+      <synchronisations eventType="//@eventTypes.10" type="ALL" coordinationSet="//@elementTypes.16/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.17">
+      <eReference href="Workflow.ecore#//TaskI/out"/>
+      <synchronisations eventType="//@eventTypes.4" type="ALL" coordinationSet="//@elementTypes.16/@coordinationSets.1"/>
+    </references>
+    <references target="//@elementTypes.19">
+      <eReference href="Workflow.ecore#//TaskI/start"/>
+      <synchronisations eventType="//@eventTypes.10" type="ALL" coordinationSet="//@elementTypes.16/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.19">
+      <eReference href="Workflow.ecore#//TaskI/finish"/>
+      <synchronisations eventType="//@eventTypes.4" type="ALL" coordinationSet="//@elementTypes.16/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes references="">
+    <eClass href="Workflow.ecore#//DefaultDocumentDescriptor"/>
+    <coordinationSets triggerEvent="//@eventTypes.10"/>
+    <coordinationSets triggerEvent="//@eventTypes.4"/>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//ActivityI"/>
+    <coordinationSets synchronisations="//@elementTypes.18/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <references target="//@elementTypes.16">
+      <eReference href="Workflow.ecore#//ActivityAspect/task"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.18/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="Workflow.ecore#//DefaultDocumentCondition"/>
+    <coordinationSets triggerEvent="//@eventTypes.10"/>
+    <coordinationSets triggerEvent="//@eventTypes.4"/>
+  </elementTypes>
+  <eventTypes name="CreateCase">
+    <parameters name="process">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Process"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="Login">
+    <parameters name="username">
+      <eType xsi:type="ecore:EDataType" href="Workflow.ecore#//MyString"/>
+    </parameters>
+    <parameters name="password">
+      <eType xsi:type="ecore:EDataType" href="Workflow.ecore#//MyString"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="Logout">
+    <parameters name="agent">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Agent"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="Pull">
+    <parameters name="activity">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Activity"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="FinishActivity">
+    <parameters name="activity">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Activity"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="Add">
+    <parameters name="marking_">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Marking"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="Remove">
+    <parameters name="marking_">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Marking"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="StartActivity">
+    <parameters name="task">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Task"/>
+    </parameters>
+    <parameters name="agent">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Agent"/>
+    </parameters>
+    <parameters name="case_">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Case"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="StartActivityC">
+    <parameters name="state">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//State"/>
+    </parameters>
+    <parameters name="task">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Task"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="FinishActivityC">
+    <parameters name="state">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//State"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="StartActivityI">
+    <parameters name="caseI">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//CaseI"/>
+    </parameters>
+    <parameters name="task">
+      <eType xsi:type="ecore:EClass" href="Workflow.ecore#//Task"/>
+    </parameters>
+  </eventTypes>
+</ecno:Package>

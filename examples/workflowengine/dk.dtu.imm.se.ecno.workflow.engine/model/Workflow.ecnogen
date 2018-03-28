@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="workflow.events" basePathECNOAutomata="workflow.automata" AutomataFactoryClassName="WorkflowBehavior" basePathModelClass="workflow.coordination" ModelClassName="WorkflowEcnoModel">
+  <emfGenModel href="Workflow.genmodel#/"/>
+  <ecnoModel href="Workflow.ecno#/"/>
+  <BehaviourModel href="Workflow.pnml#/"/>
+</ecnogen:ECNOGenModel>

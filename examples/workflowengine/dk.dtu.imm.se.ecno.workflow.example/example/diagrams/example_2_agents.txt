@@ -1,0 +1,11 @@
+Agent  | Role           | Password
+-------+----------------+----------
+ Jack  | Customer       | pw
+-------+----------------+----------
+ Ellen | Librarian      | pw
+-------+----------------+----------
+ Tom   | Buyer          | pw
+-------+----------------+----------
+ Max   | Shipping Agent | pw
+-------+----------------+----------
+ Anton | Accountant     | pw

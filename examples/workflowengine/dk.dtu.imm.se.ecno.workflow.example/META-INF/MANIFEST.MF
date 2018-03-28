@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.workflow.example
+Bundle-Version: 1.0.0.qualifier
