@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.model.generator.genmodel"
+            objectClass="dk.dtu.imm.se.ecno.genmodel.ecnogen.ECNOGenModel">
+         <menu
+               id="dk.dtu.imm.se.ecno.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.imm.se.ecno.model.generator.actions.ECNO_M2JGeneratorAction"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.model.generator.actions.ECNO_M2JGeneratorAction"
+               label="Generate ECNO Package Code"
+               menubarPath="dk.dtu.imm.se.ecno.actions.standardmenu/group1">
+         </action>
+      </objectContribution>
+      
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.model.generator.instancegenmodel"
+            objectClass="dk.dtu.imm.se.ecno.instancegenmodel.ecnoinstancegen.ECNOInstanceGenModel">
+         <menu
+               id="dk.dtu.imm.se.ecno.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.imm.se.ecno.model.generator.actions.ECNO_I2JGeneratorAction"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.model.generator.actions.ECNO_I2JGeneratorAction"
+               label="Generate ECNO Instance Code"
+               menubarPath="dk.dtu.imm.se.ecno.actions.standardmenu/group1">
+         </action>
+      </objectContribution>
+   </extension>
+   
+</plugin>
