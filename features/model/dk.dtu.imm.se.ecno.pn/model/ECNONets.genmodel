@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.imm.se.ecno.pn/src"
+    modelPluginID="dk.dtu.imm.se.ecno.pn" modelName="ECNONets" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="../../org.pnml.tools.epnk/model/PNMLCoreModel.genmodel#//pnmlcoremodel ../../org.pnml.tools.epnk/model/PNMLDataTypes.genmodel#//pnmldatatypes ../../org.pnml.tools.epnk/model/PNMLStructuredPNTypeModel.genmodel#//structuredpntypemodel ../../org.pnml.tools.epnk.pntypes/model/PTnet.genmodel#//ptnet">
+  <foreignModel>ECNONets.ecore</foreignModel>
+  <genPackages prefix="Ecnonets" basePackage="dk.dtu.imm.se.ecno.pn" resource="XML"
+      disposableProviderFactory="true" ecorePackage="ECNONets.ecore#/">
+    <genClasses ecoreClass="ECNONets.ecore#//ECNONet"/>
+    <genClasses ecoreClass="ECNONets.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Transition/eventbinding"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Transition/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Transition/action"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Page/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Page/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//Condition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Condition/structure"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//EventBinding">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//EventBinding/structure"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//Action/structure"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//EventUses">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//EventUses/eventuse"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//EventUses/dropParent"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//EventUse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//EventUse/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//EventUse/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//EventUse/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//EventUse/parameter"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//JavaExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//JavaExpression/code"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//JavaStatement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//JavaStatement/code"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//Imports">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//Imports/text"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//AttributeDeclarations">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//AttributeDeclarations/text"/>
+    </genClasses>
+    <genClasses ecoreClass="ECNONets.ecore#//NamedParameter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ECNONets.ecore#//NamedParameter/expression"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//NamedParameter/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ECNONets.ecore#//NamedParameter/optional"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

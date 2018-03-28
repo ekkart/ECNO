@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://se.imm.dtu.dk/ecno/ecnonets"
+            class="dk.dtu.imm.se.ecno.pn.ecnonets.EcnonetsPackage"
+            genModel="model/ECLANets.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="ecnonets"
+            class="dk.dtu.imm.se.ecno.pn.ecnonets.util.EcnonetsResourceFactoryImpl"/>
+   </extension>
+   
+   <!-- adjusted to the new pntd package mechanism of version 1.2.0 of the ePNK for
+        pluggin in this PNTD
+   <extension
+         id="dk.dtu.imm.se.ecno.pn.ecnonets"
+         name="ECLA Nets"
+         point="org.pnml.tools.epnk.pntd">
+      <type
+            class="dk.dtu.imm.se.ecno.pn.ecnonets.impl.ECNONetImpl"
+            description="Petrinet version to be used in ECNO projects for defining the behaviour of elements">
+      </type>
+   </extension>
+   -->
+   
+   <extension
+      id="ecnonets"
+      name="ECNO Nets"
+      point="org.pnml.tools.epnk.pntd_package">
+      <type
+            description="Petrinet version to be used in ECNO projects for defining the local behaviour of elements"
+            package_uri="http://se.imm.dtu.dk/ecno/ecnonets"
+            type_uri="http://se.imm.dtu.dk/ecnonet"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <constraintProvider
+            cache="true">
+         <package
+               namespaceUri="http://se.imm.dtu.dk/ecno/ecnonets">
+         </package>    
+       
+         <constraints categories="org.pnml.tools.epnk.validation">
+            <constraint
+                  id="dk.dtu.imm.se.ecno.pn.unnamed_parameter_assignment"
+                  lang="OCL"
+                  mode="Batch"
+                  name="Unnamed parameter assignment"
+                  severity="WARNING"
+                  statusCode="401">
+               <message>
+                  Unnamed parameter assignments: {0}. These are outdated and should better not be used.
+               </message>
+               <description>
+                 Unnamed parameters assignments in event bindings of ECNO nets are deprecated from
+                 ECNO version 0.3.4 (if unnamed parameters occur an older code generator is used
+                 that does not support all features of ECNO nets of version 0.3.4 (which might give
+                 some surprises).
+               </description>
+               <target
+                     class="EventBinding">
+               </target>
+               <![CDATA[
+                 self.structure->forAll(es|es.eventuse->forAll(e| e.expression->isEmpty()))
+               ]]>
+            </constraint>      
+         </constraints>
+      </constraintProvider>
+   </extension>   
+
+
+</plugin>
