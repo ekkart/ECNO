@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ECNO Core
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.core
+Bundle-Version: 0.3.3.qualifier
+Bundle-Vendor: Ekkart Kindler, Software Engineering Section, DTU Compute, Denmark
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: dk.dtu.imm.se.ecno.core,
+ dk.dtu.imm.se.ecno.engine,
+ dk.dtu.imm.se.ecno.gui,
+ dk.dtu.imm.se.ecno.runtime,
+ dk.dtu.imm.se.ecno.runtime.internal;x-friends:="dk.dtu.imm.se.ecno.eclipse",
+ dk.dtu.imm.se.ecno.runtime.transactions,
+ dk.dtu.imm.se.ecno.utils
