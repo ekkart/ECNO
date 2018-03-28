@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behaviourstates:BehaviourStates xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviourstates="http://ecno.se.imm.dtu.dk/ecno/save/bahaviourstates">
+  <states>
+    <state xsi:type="behaviourstates:DefaultContainer"/>
+    <element href="semaphor.petrinets#/"/>
+  </states>
+  <controllerConfig uri="APetriNetEditorIn15Minutes.Simulator.GUI">
+    <state xsi:type="behaviourstates:ObjectReference">
+      <object href="semaphor.petrinets_diagram#_qrKAsO_PEeKiQoYg24ROew"/>
+    </state>
+  </controllerConfig>
+  <packages>PetriNets.ECNO</packages>
+</behaviourstates:BehaviourStates>

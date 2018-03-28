@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behaviourstates:BehaviourStates xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviourstates="http://ecno.se.imm.dtu.dk/ecno/save/bahaviourstates" xmlns:generator="http://se.compute.dtu.dk/ecno/statespace/generator/1.0">
+  <states>
+    <state xsi:type="behaviourstates:DefaultContainer"/>
+    <element href="Setting.xmi#/"/>
+  </states>
+  <controllerConfig uri="http://se.compute.dtu.dk/statespace/generator/configuration">
+    <state xsi:type="generator:GeneratorControllerState" filename="config1.generator" containmentFeature="objects">
+      <object href="Setting.xmi#/"/>
+      <elements>1</elements>
+      <elements>2</elements>
+      <elements>3</elements>
+      <elements>4</elements>
+      <elements>5</elements>
+      <elements>22</elements>
+      <elements>29</elements>
+      <events>insertCard</events>
+      <events>takeCard</events>
+      <events>enterPIN</events>
+      <events>withdraw</events>
+      <events>takeMoney</events>
+      <events>balance</events>
+      <events>exit</events>
+    </state>
+  </controllerConfig>
+  <packages>http://bankingsystem</packages>
+</behaviourstates:BehaviourStates>

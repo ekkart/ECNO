@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_JuJtYAO3EeWmfqRx-0sMGw" type="Ecno" name="bankingsystem.ecno_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_NDDzsAO3EeWmfqRx-0sMGw" type="2002" fontColor="8421504" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDEawAO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_vWhlcAPOEeWmfqRx-0sMGw" type="3001" fontColor="4014846" fontName="Segoe UI" lineColor="4014846">
+      <children xmi:type="notation:DecorationNode" xmi:id="_vWhlcgPOEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.0/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vWhlcQPOEeWmfqRx-0sMGw" x="12" y="84" width="85" height="22"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Ayg7MAPPEeWmfqRx-0sMGw" type="3001" fontColor="217" fontName="Segoe UI" lineColor="217">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Ayg7MgPPEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.0/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ayg7MQPPEeWmfqRx-0sMGw" x="12" y="48" width="85" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_TAev8ARdEeWExplhUxQO_g" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TAev8gRdEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.0/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TAev8QRdEeWExplhUxQO_g" x="12" y="156" width="85" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_xsWAUARdEeWExplhUxQO_g" type="3001" fontColor="151" fontName="Segoe UI" lineColor="151">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xsWAUgRdEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.0/@coordinationSets.3"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xsWAUQRdEeWExplhUxQO_g" x="12" y="192" width="73" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_jI3b8QiTEeWikrIu3V4MxQ" type="3001" fontColor="8421504" fontName="Segoe UI" lineColor="8421504">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jJBM8AiTEeWikrIu3V4MxQ" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.0/@coordinationSets.4"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jI3b8giTEeWikrIu3V4MxQ" x="64" y="312" width="69" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_zeh6MAlAEeWjn-hTfNUjUA" type="3001" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_zeh6MglAEeWjn-hTfNUjUA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.0/@coordinationSets.5"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zeh6MQlAEeWjn-hTfNUjUA" x="52" y="256" width="57" height="21"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDDzsQO3EeWmfqRx-0sMGw" x="48" y="-24" width="145" height="361"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDEawQO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDEawwO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_r22PAAPNEeWmfqRx-0sMGw" type="3001" fontColor="217" fontName="Segoe UI" lineColor="217">
+      <children xmi:type="notation:DecorationNode" xmi:id="_r22PAgPNEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.1/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r22PAQPNEeWmfqRx-0sMGw" x="72" y="36" width="63" height="22"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDEawgO3EeWmfqRx-0sMGw" x="48" y="396" width="145" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDFB0AO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDFB0gO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_QFSZIAO4EeWmfqRx-0sMGw" type="3001" fontColor="217" fontName="Segoe UI" lineColor="217">
+      <children xmi:type="notation:DecorationNode" xmi:id="_QFSZIgO4EeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.2/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QFSZIQO4EeWmfqRx-0sMGw" x="12" y="36" width="97" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_PPmcYAO6EeWmfqRx-0sMGw" type="3001" fontColor="4014846" fontName="Segoe UI" lineColor="4014846">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PPmcYgO6EeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.2/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PPmcYQO6EeWmfqRx-0sMGw" x="36" y="72" width="97" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_KlgCwAPQEeWmfqRx-0sMGw" type="3001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+      <children xmi:type="notation:DecorationNode" xmi:id="_KlgCwgPQEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.2/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KlgCwQPQEeWmfqRx-0sMGw" x="300" y="12" width="73" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_iL8IkAPQEeWmfqRx-0sMGw" type="3001" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iL8IkgPQEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.2/@coordinationSets.3"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iL8IkQPQEeWmfqRx-0sMGw" x="216" y="252" width="46" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_AoiEEARkEeWExplhUxQO_g" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_AoiEEgRkEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.2/@coordinationSets.4"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AoiEEQRkEeWExplhUxQO_g" x="84" y="108" width="97" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_DYYVgARkEeWExplhUxQO_g" type="3001" fontColor="151" fontName="Segoe UI" lineColor="151">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DYYVggRkEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.2/@coordinationSets.5"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DYYVgQRkEeWExplhUxQO_g" x="156" y="180" width="61" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDFB0QO3EeWmfqRx-0sMGw" x="468" y="-24" width="409" height="289"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDFB0wO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDFB1QO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_uaVYEAPQEeWmfqRx-0sMGw" type="3001" fontColor="217" fontName="Segoe UI" lineColor="217">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uaVYEgPQEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uaVYEQPQEeWmfqRx-0sMGw" x="12" y="36" width="97" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_2ZN6MAPQEeWmfqRx-0sMGw" type="3001" fontColor="4014846" fontName="Segoe UI" lineColor="4014846">
+      <children xmi:type="notation:DecorationNode" xmi:id="_2ZN6MgPQEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ZN6MQPQEeWmfqRx-0sMGw" x="12" y="72" width="97" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_6rHNMAPQEeWmfqRx-0sMGw" type="3001" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_6rHNMgPQEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6rHNMQPQEeWmfqRx-0sMGw" x="144" y="108" width="49" height="27"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_lamAcAPREeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lamAcgPREeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.3"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lamAcQPREeWmfqRx-0sMGw" x="96" y="240" width="77" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_bJnasAPjEeWExplhUxQO_g" type="3001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bJnasgPjEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.4"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bJnasQPjEeWExplhUxQO_g" x="144" y="51" width="75" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_MiIhwASEEeWjSIaRVHjD3A" type="3001" fontColor="151" fontName="Segoe UI" lineColor="151">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MiIhwgSEEeWjSIaRVHjD3A" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.5"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MiIhwQSEEeWjSIaRVHjD3A" x="12" y="108" width="73" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_mUbjsASbEeWim55aLEVgUA" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mUbjsgSbEeWim55aLEVgUA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.3/@coordinationSets.6"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mUbjsQSbEeWim55aLEVgUA" x="96" y="204" width="97" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDFB1AO3EeWmfqRx-0sMGw" x="468" y="396" width="253" height="301"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDFB1gO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDFo4AO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_LPc3UAPTEeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LPc3UgPTEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.4/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LPc3UQPTEeWmfqRx-0sMGw" x="36" y="36" width="80" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_K5gAwARoEeWExplhUxQO_g" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_K5gAwgRoEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.4/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K5gAwQRoEeWExplhUxQO_g" x="80" y="144" width="89" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDFB1wO3EeWmfqRx-0sMGw" x="1020" y="408" width="229" height="277"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDFo4QO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDFo4wO3EeWmfqRx-0sMGw" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDFo4gO3EeWmfqRx-0sMGw" x="1104" y="264"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDFo5AO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDFo5gO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_hd850APTEeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hd850gPTEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.6/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hd850QPTEeWmfqRx-0sMGw" x="48" y="72" width="84" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_kmILsAPTEeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_kmILsgPTEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.6/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kmILsQPTEeWmfqRx-0sMGw" x="24" y="144" width="85" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_NPbEYARqEeWExplhUxQO_g" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_NPbEYgRqEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.6/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NPbEYQRqEeWExplhUxQO_g" x="36" y="192" width="97" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDFo5QO3EeWmfqRx-0sMGw" x="1452" y="408" width="157" height="289"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDFo5wO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDGP8AO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_XZyQwAPUEeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XZyQwgPUEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.7/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XZyQwQPUEeWmfqRx-0sMGw" x="48" y="24" width="85" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_jdNDQARsEeWExplhUxQO_g" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jdNDQgRsEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.7/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jdNDQQRsEeWExplhUxQO_g" x="24" y="84" width="97" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_mweK0ARsEeWExplhUxQO_g" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mwnUwARsEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.7/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mweK0QRsEeWExplhUxQO_g" x="24" y="120" width="97" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDFo6AO3EeWmfqRx-0sMGw" x="1452" y="144" width="157" height="181"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDGP8QO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDGP8wO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_e7GtIAPUEeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_e7GtIgPUEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.8/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e7GtIQPUEeWmfqRx-0sMGw" x="24" y="36" width="79" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDGP8gO3EeWmfqRx-0sMGw" x="1464" y="-24" width="121" height="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NDG3AAO3EeWmfqRx-0sMGw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDG3AgO3EeWmfqRx-0sMGw" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_o4XAcAPUEeWmfqRx-0sMGw" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_o4XAcgPUEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.9/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o4XAcQPUEeWmfqRx-0sMGw" x="24" y="24" width="61" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_aWRdwAPZEeWmfqRx-0sMGw" type="3001" fontName="Segoe UI" lineColor="0">
+      <children xmi:type="notation:DecorationNode" xmi:id="_aWRdwgPZEeWmfqRx-0sMGw" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.9/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aWRdwQPZEeWmfqRx-0sMGw" x="24" y="192" width="61" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_JrFlgARrEeWExplhUxQO_g" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JrFlggRrEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.9/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JrFlgQRrEeWExplhUxQO_g" x="60" y="71" width="95" height="24"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_N6ch4ARrEeWExplhUxQO_g" type="3001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+      <children xmi:type="notation:DecorationNode" xmi:id="_N6ch4gRrEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.9/@coordinationSets.3"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N6ch4QRrEeWExplhUxQO_g" x="108" y="108" width="97" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NDG3AQO3EeWmfqRx-0sMGw" x="1788" y="408" width="217" height="229"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7PAGwAO3EeWmfqRx-0sMGw" type="2001" fontColor="217" fontName="Segoe UI" lineColor="217">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7PAGwgO3EeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7PAGwwO3EeWmfqRx-0sMGw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7PAGxAO3EeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7PAGxQO3EeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7PAGwQO3EeWmfqRx-0sMGw" x="84" y="1176" width="147"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_b1LHsAO4EeWmfqRx-0sMGw" type="2001" fontColor="4014846" fontName="Segoe UI" lineColor="4014846">
+    <children xmi:type="notation:DecorationNode" xmi:id="_b1LHsgO4EeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_b1LHswO4EeWmfqRx-0sMGw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_c4-uEAO4EeWmfqRx-0sMGw" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.1/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_c4-uEQO4EeWmfqRx-0sMGw"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_b1LHtAO4EeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_b1LHtQO4EeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b1LHsQO4EeWmfqRx-0sMGw" x="96" y="996" width="121" height="49"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Czcy0AO8EeWmfqRx-0sMGw" type="2001" fontColor="217" fontName="Segoe UI" lineColor="217">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Czcy0gO8EeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Czcy0wO8EeWmfqRx-0sMGw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Czcy1AO8EeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Czcy1QO8EeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Czcy0QO8EeWmfqRx-0sMGw" x="276" y="1176"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_p7qLIAPBEeWmfqRx-0sMGw" type="2001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+    <children xmi:type="notation:DecorationNode" xmi:id="_p7qLIgPBEeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_p7qLIwPBEeWmfqRx-0sMGw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_p7qLJAPBEeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_p7qLJQPBEeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p7qLIQPBEeWmfqRx-0sMGw" x="468" y="816" width="98"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_IUlRYAPCEeWmfqRx-0sMGw" type="2001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IUlRYgPCEeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_IUlRYwPCEeWmfqRx-0sMGw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_4X2pwAPTEeWmfqRx-0sMGw" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.4/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4X2pwQPTEeWmfqRx-0sMGw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_aIOSIAPCEeWmfqRx-0sMGw" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.4/@parameters.1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aIOSIQPCEeWmfqRx-0sMGw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_xzYiEAPREeWmfqRx-0sMGw" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.4/@parameters.2"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xzYiEQPREeWmfqRx-0sMGw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_qni0MAPWEeWmfqRx-0sMGw" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.4/@parameters.3"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_qni0MQPWEeWmfqRx-0sMGw"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_IUlRZAPCEeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_IUlRZQPCEeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IUlRYQPCEeWmfqRx-0sMGw" x="468" y="984" width="145" height="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_EcXXwAPEEeWmfqRx-0sMGw" type="2001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+    <children xmi:type="notation:DecorationNode" xmi:id="_EcXXwgPEEeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_EcXXwwPEEeWmfqRx-0sMGw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_EcXXxAPEEeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_EcXXxQPEEeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EcXXwQPEEeWmfqRx-0sMGw" x="888" y="816" width="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Z7RMgAPIEeWmfqRx-0sMGw" type="2001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Z7RMggPIEeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Z7RMgwPIEeWmfqRx-0sMGw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_3t1TwQSAEeWjSIaRVHjD3A" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.6/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3t1TwgSAEeWjSIaRVHjD3A"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Z7RMhAPIEeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Z7RMhQPIEeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z7RMgQPIEeWmfqRx-0sMGw" x="636" y="984"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_hs78kAPJEeWmfqRx-0sMGw" type="2001" fontColor="4014846" fontName="Segoe UI" lineColor="4014846">
+    <children xmi:type="notation:DecorationNode" xmi:id="_htCDMAPJEeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_htCDMQPJEeWmfqRx-0sMGw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_htCDMgPJEeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_htCDMwPJEeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hs78kQPJEeWmfqRx-0sMGw" x="276" y="996" width="46"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_V3GvUAPPEeWmfqRx-0sMGw" type="2001" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_V3GvUgPPEeWmfqRx-0sMGw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_V3GvUwPPEeWmfqRx-0sMGw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_V3GvVAPPEeWmfqRx-0sMGw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_V3GvVQPPEeWmfqRx-0sMGw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V3GvUQPPEeWmfqRx-0sMGw" x="659" y="1110" width="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_su3roARbEeWExplhUxQO_g" type="2001" fontColor="151" fontName="Segoe UI" lineColor="151">
+    <children xmi:type="notation:DecorationNode" xmi:id="_su3rogRbEeWExplhUxQO_g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_su3rowRbEeWExplhUxQO_g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_ZchNAARiEeWExplhUxQO_g" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.9/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZchNAQRiEeWExplhUxQO_g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_su3rpARbEeWExplhUxQO_g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_su3rpQRbEeWExplhUxQO_g"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_su3roQRbEeWExplhUxQO_g" x="96" y="1260" width="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_fzKNsARcEeWExplhUxQO_g" type="2001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzKNsgRcEeWExplhUxQO_g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fzKNswRcEeWExplhUxQO_g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_lAkGsARcEeWExplhUxQO_g" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.10/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lAkGsQRcEeWExplhUxQO_g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fzKNtARcEeWExplhUxQO_g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fzKNtQRcEeWExplhUxQO_g"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.10"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fzKNsQRcEeWExplhUxQO_g" x="576" y="816" width="145"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_xTuhcARcEeWExplhUxQO_g" type="2001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+    <children xmi:type="notation:DecorationNode" xmi:id="_xTuhcgRcEeWExplhUxQO_g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_xTuhcwRcEeWExplhUxQO_g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_2_7PQARcEeWExplhUxQO_g" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.11/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2_7PQQRcEeWExplhUxQO_g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xTuhdARcEeWExplhUxQO_g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xTuhdQRcEeWExplhUxQO_g"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.11"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xTuhcQRcEeWExplhUxQO_g" x="732" y="816" width="145"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_kAdfIARdEeWExplhUxQO_g" type="2001" fontColor="255" fontName="Segoe UI" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_kAdfIgRdEeWExplhUxQO_g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_kAdfIwRdEeWExplhUxQO_g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_pKpFAARdEeWExplhUxQO_g" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.12/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_pKpFAQRdEeWExplhUxQO_g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_kAdfJARdEeWExplhUxQO_g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_kAdfJQRdEeWExplhUxQO_g"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.12"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kAdfIQRdEeWExplhUxQO_g" x="72" y="816" width="145"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_E8PxcARjEeWExplhUxQO_g" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_E8PxcgRjEeWExplhUxQO_g" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_t80PAARnEeWExplhUxQO_g" type="3001" fontColor="151" fontName="Segoe UI" lineColor="151">
+      <children xmi:type="notation:DecorationNode" xmi:id="_t80PAgRnEeWExplhUxQO_g" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="bankingsystem.ecno#//@elementTypes.10/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t80PAQRnEeWExplhUxQO_g" x="12" y="36" width="73" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="bankingsystem.ecno#//@elementTypes.10"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E8PxcQRjEeWExplhUxQO_g" x="1044" y="-24" width="109" height="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_r1VvsARoEeWExplhUxQO_g" type="2001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_r1VvsgRoEeWExplhUxQO_g" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_r1VvswRoEeWExplhUxQO_g" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_tbspgARoEeWExplhUxQO_g" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.13/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tbspgQRoEeWExplhUxQO_g"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_r1VvtARoEeWExplhUxQO_g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_r1VvtQRoEeWExplhUxQO_g"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.13"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r1VvsQRoEeWExplhUxQO_g" x="780" y="984" width="141"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_YydB4QSaEeWim55aLEVgUA" type="2001" fontColor="255" fontName="Segoe UI" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_YydB4wSaEeWim55aLEVgUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_YydB5ASaEeWim55aLEVgUA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_jflS8ASaEeWim55aLEVgUA" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.14/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jflS8QSaEeWim55aLEVgUA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YydB5QSaEeWim55aLEVgUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YydB5gSaEeWim55aLEVgUA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.14"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YydB4gSaEeWim55aLEVgUA" x="252" y="816" width="145" height="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_llkHgQhJEeWbsb_eR5SJyg" type="2001" fontColor="8421504" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_llkHgwhJEeWbsb_eR5SJyg" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_llkHhAhJEeWbsb_eR5SJyg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_n__ikAhJEeWbsb_eR5SJyg" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.15/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n__ikQhJEeWbsb_eR5SJyg"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_llkHhQhJEeWbsb_eR5SJyg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_llkHhghJEeWbsb_eR5SJyg"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.15"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_llkHgghJEeWbsb_eR5SJyg" x="288" y="1260" width="97"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_-ncU4QkrEeWjn-hTfNUjUA" type="2001" fontColor="217" fontName="Segoe UI" lineColor="217">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-ncU4wkrEeWjn-hTfNUjUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-ncU5AkrEeWjn-hTfNUjUA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_vx_NQA3xEeWS7rbbUHq_TQ" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.16/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_vx_NQQ3xEeWS7rbbUHq_TQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-ncU5QkrEeWjn-hTfNUjUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-ncU5gkrEeWjn-hTfNUjUA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.16"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-ncU4gkrEeWjn-hTfNUjUA" x="168" y="1092"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_J3gT4AksEeWjn-hTfNUjUA" type="2001" fontColor="255" fontName="Segoe UI" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_J3gT4gksEeWjn-hTfNUjUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_J3gT4wksEeWjn-hTfNUjUA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_q1p2IQ3xEeWS7rbbUHq_TQ" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.17/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_q1p2Ig3xEeWS7rbbUHq_TQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_J3gT5AksEeWjn-hTfNUjUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_J3gT5QksEeWjn-hTfNUjUA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.17"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J3gT4QksEeWjn-hTfNUjUA" x="180" y="732"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_XW1m0AksEeWjn-hTfNUjUA" type="2001" fontColor="4014846" fontName="Segoe UI" lineColor="4014846">
+    <children xmi:type="notation:DecorationNode" xmi:id="_XW1m0gksEeWjn-hTfNUjUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_XW1m0wksEeWjn-hTfNUjUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_XW1m1AksEeWjn-hTfNUjUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_XW1m1QksEeWjn-hTfNUjUA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.18"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XW1m0QksEeWjn-hTfNUjUA" x="180" y="912"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_dDRAUAk7EeWjn-hTfNUjUA" type="Note" fontName="Segoe UI" description="The PhysicalBankCard would actuually not need any behaviour or coorination. This is made only so that the stanard ECNO GUI can be used to play with the system." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_dDRAVAk7EeWjn-hTfNUjUA" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_dDRAVQk7EeWjn-hTfNUjUA" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_dDRAUQk7EeWjn-hTfNUjUA"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_dDRAUgk7EeWjn-hTfNUjUA"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDRAUwk7EeWjn-hTfNUjUA" x="36" y="480" width="169" height="121"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Qw4MMAk8EeWjn-hTfNUjUA" type="2001" fontColor="8404992" fontName="Segoe UI" lineColor="8404992">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Qw4MMgk8EeWjn-hTfNUjUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Qw4MMwk8EeWjn-hTfNUjUA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Qw4MNAk8EeWjn-hTfNUjUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Qw4MNQk8EeWjn-hTfNUjUA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.19"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Qw4MMQk8EeWjn-hTfNUjUA" x="660" y="732"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_6o4k4Ak8EeWjn-hTfNUjUA" type="2001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6o4k4gk8EeWjn-hTfNUjUA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_6o4k4wk8EeWjn-hTfNUjUA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_3CzvgA3xEeWS7rbbUHq_TQ" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="bankingsystem.ecno#//@eventTypes.20/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3CzvgQ3xEeWS7rbbUHq_TQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_6o4k5Ak8EeWjn-hTfNUjUA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_6o4k5Qk8EeWjn-hTfNUjUA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="bankingsystem.ecno#//@eventTypes.20"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6o4k4Qk8EeWjn-hTfNUjUA" x="648" y="900"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_26sF8AlqEeWZ8IWqfJwNDg" type="Note" fontName="Segoe UI" description="The timeout event and the coordination is not needed. It is used for allowing the user with the standard ECNO GUI to simulate timeouts. The same goes for the userMainAction and the userAuxActions." fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_26sF8QlqEeWZ8IWqfJwNDg" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_26sF8glqEeWZ8IWqfJwNDg" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_26sF8wlqEeWZ8IWqfJwNDg"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_26sF9AlqEeWZ8IWqfJwNDg"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_26sF9QlqEeWZ8IWqfJwNDg" x="-240" y="192" width="241" height="97"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_JuJtYQO3EeWmfqRx-0sMGw"/>
+  <element xmi:type="ecno:Package" href="bankingsystem.ecno#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_NDUSYQO3EeWmfqRx-0sMGw" type="4001" source="_NDFB0AO3EeWmfqRx-0sMGw" target="_NDFB0wO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDU5cAO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDU5cQO3EeWmfqRx-0sMGw" x="3" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDU5cgO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDU5cwO3EeWmfqRx-0sMGw" x="-9" y="27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDUSYgO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.2/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDUSYwO3EeWmfqRx-0sMGw" points="[0, 145, 0, -215]$[0, 240, 0, -120]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NdNF4ARjEeWExplhUxQO_g" id="(0.31784841075794623,0.9896193771626297)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDWHkAO3EeWmfqRx-0sMGw" type="4001" source="_NDFB0wO3EeWmfqRx-0sMGw" target="_NDFB1gO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDWHkwO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDWHlAO3EeWmfqRx-0sMGw" x="19" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDWHlQO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDWHlgO3EeWmfqRx-0sMGw" x="36" y="-41"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDWHkQO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.3/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDWHkgO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O15sQARlEeWExplhUxQO_g" id="(0.9841897233201581,0.8006644518272426)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Qn2yEARlEeWExplhUxQO_g" id="(0.026200873362445413,0.8086642599277978)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDXVsAO3EeWmfqRx-0sMGw" type="4001" source="_NDFB1gO3EeWmfqRx-0sMGw" target="_NDFo5AO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDX8wAO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDX8wQO3EeWmfqRx-0sMGw" x="-15" y="-11"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDX8wgO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDX8wwO3EeWmfqRx-0sMGw" x="21" y="-35"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDXVsQO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.4/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDXVsgO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0-Rh8ASbEeWim55aLEVgUA" id="(0.9912663755458515,0.44404332129963897)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mn2hsARpEeWExplhUxQO_g" id="(0.025477707006369428,0.4368231046931408)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDYj0AO3EeWmfqRx-0sMGw" type="4001" source="_NDFB1gO3EeWmfqRx-0sMGw" target="_NDFo4QO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDYj0wO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDYj1AO3EeWmfqRx-0sMGw" x="1" y="-23"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDYj1QO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDYj1gO3EeWmfqRx-0sMGw" x="-23" y="-21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDYj0QO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.4/@references.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDYj0gO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FSPHcAPSEeWmfqRx-0sMGw" id="(0.26666666666666666,0.825)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDZK4AO3EeWmfqRx-0sMGw" type="4001" source="_NDFo4QO3EeWmfqRx-0sMGw" target="_NDFB1gO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDZK4wO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDZK5AO3EeWmfqRx-0sMGw" x="-1" y="-36"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDZK5QO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDZK5gO3EeWmfqRx-0sMGw" x="-13" y="-14"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDZK4QO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.5/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDZK4gO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_E5J5EAPSEeWmfqRx-0sMGw" id="(0.7555555555555555,0.725)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D-gOsAPSEeWmfqRx-0sMGw" id="(0.6331877729257642,0.008298755186721992)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDaZAAO3EeWmfqRx-0sMGw" type="4001" source="_NDFo5AO3EeWmfqRx-0sMGw" target="_NDFo5wO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDaZAwO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDaZBAO3EeWmfqRx-0sMGw" x="-6" y="36"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDaZBQO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDaZBgO3EeWmfqRx-0sMGw" x="-18" y="15"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDaZAQO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.6/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDaZAgO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDbnJAO3EeWmfqRx-0sMGw" type="4001" source="_NDFo5AO3EeWmfqRx-0sMGw" target="_NDG3AAO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDcOMgO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDcOMwO3EeWmfqRx-0sMGw" x="1" y="25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDcONAO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDcONQO3EeWmfqRx-0sMGw" x="18" y="49"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDcOMAO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.6/@references.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDcOMQO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pmIQsARpEeWExplhUxQO_g" id="(0.9808917197452229,0.3862815884476534)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NICUIAPUEeWmfqRx-0sMGw" id="(0.04132231404958678,0.4978165938864629)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NDc1QAO3EeWmfqRx-0sMGw" type="4001" source="_NDFo5wO3EeWmfqRx-0sMGw" target="_NDGP8QO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDc1QwO3EeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDc1RAO3EeWmfqRx-0sMGw" x="8" y="-22"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NDc1RQO3EeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NDc1RgO3EeWmfqRx-0sMGw" x="-4" y="-9"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NDc1QQO3EeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.7/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NDc1QgO3EeWmfqRx-0sMGw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_gtfU8APNEeWmfqRx-0sMGw" type="4001" source="_NDEawQO3EeWmfqRx-0sMGw" target="_NDDzsAO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_gtfU8wPNEeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_gtfU9APNEeWmfqRx-0sMGw" x="-9" y="-21"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_gtfU9QPNEeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_gtfU9gPNEeWmfqRx-0sMGw" x="-21" y="-11"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_gtfU8QPNEeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.1/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gtfU8gPNEeWmfqRx-0sMGw" points="[1, -21, -27, 100]$[-19, -117, -47, 4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gtlbkAPNEeWmfqRx-0sMGw" id="(0.7034482758620689,0.0547945205479452)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gYpQ4APOEeWmfqRx-0sMGw" id="(0.7586206896551724,0.9463414634146341)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_x3XnAAPNEeWmfqRx-0sMGw" type="4002" source="_gtfU8APNEeWmfqRx-0sMGw" target="_r22PAAPNEeWmfqRx-0sMGw" lineColor="217">
+    <children xmi:type="notation:DecorationNode" xmi:id="_x3XnAwPNEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_x3XnBAPNEeWmfqRx-0sMGw" x="33" y="-53"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_x3XnAQPNEeWmfqRx-0sMGw" fontColor="217" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.1/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x3XnAgPNEeWmfqRx-0sMGw" points="[0, -1, -11, -114]$[20, 42, 9, -71]$[20, 98, 9, -15]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x3XnBQPNEeWmfqRx-0sMGw" id="(0.7076923076923077,0.6650485436893204)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_x3XnBgPNEeWmfqRx-0sMGw" id="(0.7777777777777778,0.6818181818181818)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_H-DKQAPOEeWmfqRx-0sMGw" type="4001" source="_NDDzsAO3EeWmfqRx-0sMGw" target="_NDFB0AO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H-DKQwPOEeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H-DKRAPOEeWmfqRx-0sMGw" x="17" y="-18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H-DKRQPOEeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_H-DKRgPOEeWmfqRx-0sMGw" x="20" y="-42"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_H-DKQQPOEeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.0/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H-DKQgPOEeWmfqRx-0sMGw" points="[13, 2, -227, -52]$[207, 63, -33, 9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H-JQ4APOEeWmfqRx-0sMGw" id="(0.9517241379310345,0.32132963988919666)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H-JQ4QPOEeWmfqRx-0sMGw" id="(0.17786561264822134,0.4186851211072664)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5XG5kAPOEeWmfqRx-0sMGw" type="4002" source="_H-DKQAPOEeWmfqRx-0sMGw" target="_vWhlcAPOEeWmfqRx-0sMGw" lineColor="4014846">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5XG5kwPOEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5XG5lAPOEeWmfqRx-0sMGw" x="25" y="5"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5XG5kQPOEeWmfqRx-0sMGw" fontColor="4014846" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.0/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5XG5kgPOEeWmfqRx-0sMGw" points="[0, 0, 145, 24]$[-11, -24, 134, 0]$[-124, -24, 21, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5XG5lQPOEeWmfqRx-0sMGw" id="(0.3443708609271523,0.7468354430379747)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5XG5lgPOEeWmfqRx-0sMGw" id="(0.7540983606557377,0.5909090909090909)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_MH4Q8APPEeWmfqRx-0sMGw" type="4002" source="_H-DKQAPOEeWmfqRx-0sMGw" target="_Ayg7MAPPEeWmfqRx-0sMGw" lineColor="217">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MH4Q8wPPEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_MH4Q9APPEeWmfqRx-0sMGw" x="68" y="-11"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_MH4Q8QPPEeWmfqRx-0sMGw" fontColor="217" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.0/@references.0/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MH4Q8gPPEeWmfqRx-0sMGw" points="[0, 0, 152, 62]$[-13, -62, 139, 0]$[-150, -62, 2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MH4Q9QPPEeWmfqRx-0sMGw" id="(0.609271523178808,0.7974683544303798)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MH4Q9gPPEeWmfqRx-0sMGw" id="(0.9836065573770492,0.44)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-5PIkAPSEeWmfqRx-0sMGw" type="4002" source="_NDWHkAO3EeWmfqRx-0sMGw" target="_lamAcAPREeWmfqRx-0sMGw" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-5PIkwPSEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_-5PIlAPSEeWmfqRx-0sMGw" x="7" y="-37"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-5PIkQPSEeWmfqRx-0sMGw" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.3/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-5PIkgPSEeWmfqRx-0sMGw" points="[2, 0, 202, -15]$[-64, 23, 136, 8]$[-161, 23, 39, 8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-5PIlQPSEeWmfqRx-0sMGw" id="(0.27300613496932513,0.5081967213114754)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_pbHksAPTEeWmfqRx-0sMGw" type="4002" source="_NDXVsAO3EeWmfqRx-0sMGw" target="_LPc3UAPTEeWmfqRx-0sMGw" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pbHkswPTEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pbHktAPTEeWmfqRx-0sMGw" x="43" y="36"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_pbHksQPTEeWmfqRx-0sMGw" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.4/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pbHksgPTEeWmfqRx-0sMGw" points="[0, 0, 232, 66]$[-61, -66, 171, 0]$[-192, -66, 40, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pbNrUAPTEeWmfqRx-0sMGw" id="(0.46956521739130436,0.39473684210526316)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_SIwcAAPUEeWmfqRx-0sMGw" type="4002" source="_NDaZAAO3EeWmfqRx-0sMGw" target="_hd850APTEeWmfqRx-0sMGw" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_SIwcAwPUEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SIwcBAPUEeWmfqRx-0sMGw" x="42" y="-30"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SIwcAQPUEeWmfqRx-0sMGw" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.6/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SIwcAgPUEeWmfqRx-0sMGw" points="[0, 0, -39, -122]$[39, 20, 0, -102]$[39, 114, 0, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SIwcBQPUEeWmfqRx-0sMGw" id="(0.2,0.4909090909090909)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SIwcBgPUEeWmfqRx-0sMGw" id="(0.8214285714285714,0.32)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_k3uckAPUEeWmfqRx-0sMGw" type="4002" source="_NDc1QAO3EeWmfqRx-0sMGw" target="_XZyQwAPUEeWmfqRx-0sMGw" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_k3uckwPUEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_k3uclAPUEeWmfqRx-0sMGw" x="44" y="-23"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_k3uckQPUEeWmfqRx-0sMGw" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.7/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k3uckgPUEeWmfqRx-0sMGw" points="[-1, -49, -42, -81]$[41, -32, 0, -64]$[41, 23, 0, -9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k3uclQPUEeWmfqRx-0sMGw" id="(1.0,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k3uclgPUEeWmfqRx-0sMGw" id="(0.7764705882352941,0.36)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_t9d5EAPUEeWmfqRx-0sMGw" type="4002" source="_NDbnJAO3EeWmfqRx-0sMGw" target="_kmILsAPTEeWmfqRx-0sMGw" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_t9d5EwPUEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_t9d5FAPUEeWmfqRx-0sMGw" x="77" y="20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_t9d5EQPUEeWmfqRx-0sMGw" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.6/@references.1/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_t9d5EgPUEeWmfqRx-0sMGw" points="[1, 0, 161, -42]$[-21, 42, 139, 0]$[-117, 42, 43, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t9d5FQPUEeWmfqRx-0sMGw" id="(0.5728155339805825,0.19767441860465115)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_1mixAAPZEeWmfqRx-0sMGw" type="4001" source="_NDG3AAO3EeWmfqRx-0sMGw" target="_NDFo5AO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_1mo3oAPZEeWmfqRx-0sMGw" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1mo3oQPZEeWmfqRx-0sMGw" x="-1" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_1mo3ogPZEeWmfqRx-0sMGw" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_1mo3owPZEeWmfqRx-0sMGw" x="13" y="27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1mixAQPZEeWmfqRx-0sMGw" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.9/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1mixAgPZEeWmfqRx-0sMGw" points="[-1, 0, 140, 0]$[-120, -15, 21, -15]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1mo3pAPZEeWmfqRx-0sMGw" id="(0.0,0.388646288209607)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1mo3pQPZEeWmfqRx-0sMGw" id="(0.9490445859872612,0.328719723183391)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_9I0PoAPZEeWmfqRx-0sMGw" type="4002" source="_1mixAAPZEeWmfqRx-0sMGw" target="_o4XAcAPUEeWmfqRx-0sMGw" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9I0PowPZEeWmfqRx-0sMGw" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9I0PpAPZEeWmfqRx-0sMGw" x="44" y="-27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9I0PoQPZEeWmfqRx-0sMGw" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.9/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9I0PogPZEeWmfqRx-0sMGw" points="[1, 0, -149, 59]$[64, -50, -86, 9]$[120, -50, -30, 9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9I0PpQPZEeWmfqRx-0sMGw" id="(0.46601941747572817,0.5714285714285714)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_BTpiQQPjEeWExplhUxQO_g" type="4002" source="_NDUSYQO3EeWmfqRx-0sMGw" target="_QFSZIAO4EeWmfqRx-0sMGw" lineColor="217">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BTvo4APjEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BTvo4QPjEeWExplhUxQO_g" x="150" y="-39"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BTpiQgPjEeWExplhUxQO_g" fontColor="217" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.2/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BTpiQwPjEeWExplhUxQO_g" points="[0, 0, 106, 341]$[-106, -84, 0, 257]$[-106, -319, 0, 22]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BTvo4gPjEeWExplhUxQO_g" id="(0.84375,0.7025316455696202)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BTvo4wPjEeWExplhUxQO_g" id="(0.11940298507462686,0.15384615384615385)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_HfbIAAPjEeWExplhUxQO_g" type="4002" source="_NDUSYQO3EeWmfqRx-0sMGw" target="_PPmcYAO6EeWmfqRx-0sMGw" lineColor="4014846">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HfbIAwPjEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HfbIBAPjEeWExplhUxQO_g" x="123" y="-19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HfbIAQPjEeWExplhUxQO_g" fontColor="4014846" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.2/@references.0/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HfbIAgPjEeWExplhUxQO_g" points="[0, -1, 70, 268]$[-70, -62, 0, 207]$[-70, -252, 0, 17]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HfhOoAPjEeWExplhUxQO_g" id="(0.8541666666666666,0.4873417721518987)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HfhOoQPjEeWExplhUxQO_g" id="(0.36363636363636365,0.22727272727272727)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_AKWicAPkEeWExplhUxQO_g" type="4002" source="_NDUSYQO3EeWmfqRx-0sMGw" target="_iL8IkAPQEeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AKWicwPkEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AKWidAPkEeWExplhUxQO_g" x="72" y="11"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AKWicQPkEeWExplhUxQO_g" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.2/@references.0/@synchronisations.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AKWicgPkEeWExplhUxQO_g" points="[0, 1, -113, 111]$[113, -47, 0, 63]$[113, -97, 0, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AKcpEAPkEeWExplhUxQO_g" id="(0.8020833333333334,0.759493670886076)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_HQ1KAAPxEeWExplhUxQO_g" type="4001" source="_NDFB0wO3EeWmfqRx-0sMGw" target="_NDFB0AO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HQ1KAwPxEeWExplhUxQO_g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HQ1KBAPxEeWExplhUxQO_g" x="30" y="18"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HQ1KBQPxEeWExplhUxQO_g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HQ1KBgPxEeWExplhUxQO_g" x="18" y="13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HQ1KAQPxEeWExplhUxQO_g" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.3/@references.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HQ1KAgPxEeWExplhUxQO_g" points="[1, -8, -136, 172]$[144, -8, 7, 172]$[144, -175, 7, 5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HQ7QoAPxEeWExplhUxQO_g" id="(0.9960474308300395,0.11528150134048257)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HQ7QoQPxEeWExplhUxQO_g" id="(0.9511002444987775,0.9826989619377162)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_2dn-AARdEeWExplhUxQO_g" type="4002" source="_H-DKQAPOEeWmfqRx-0sMGw" target="_TAev8ARdEeWExplhUxQO_g" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_2dn-AwRdEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_2dn-BARdEeWExplhUxQO_g" x="64" y="21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2dn-AQRdEeWExplhUxQO_g" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.0/@references.0/@synchronisations.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2dn-AgRdEeWExplhUxQO_g" points="[1, 0, 248, -47]$[-46, 47, 201, 0]$[-204, 47, 43, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2dxvAARdEeWExplhUxQO_g" id="(0.5662251655629139,0.759493670886076)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6KB-UARdEeWExplhUxQO_g" type="4002" source="_H-DKQAPOEeWmfqRx-0sMGw" target="_xsWAUARdEeWExplhUxQO_g" lineColor="151">
+    <children xmi:type="notation:DecorationNode" xmi:id="_6KB-UwRdEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6KB-VARdEeWExplhUxQO_g" x="108" y="24"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_6KB-UQRdEeWExplhUxQO_g" fontColor="151" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.0/@references.0/@synchronisations.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6KB-UgRdEeWExplhUxQO_g" points="[1, 0, 293, -83]$[-82, 83, 210, 0]$[-255, 83, 37, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6KB-VQRdEeWExplhUxQO_g" id="(0.7086092715231788,0.7974683544303798)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_s89YsARgEeWExplhUxQO_g" type="4002" source="_HQ1KAAPxEeWExplhUxQO_g" target="_bJnasAPjEeWExplhUxQO_g" lineColor="8404992">
+    <children xmi:type="notation:DecorationNode" xmi:id="_s89YswRgEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_s89YtARgEeWExplhUxQO_g" x="30" y="3"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_s89YsQRgEeWExplhUxQO_g" fontColor="8404992" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.3/@references.1/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_s89YsgRgEeWExplhUxQO_g" points="[-7, 12, 139, -26]$[-21, 38, 125, 0]$[-129, 38, 17, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s9HJsARgEeWExplhUxQO_g" id="(0.6615384615384615,0.9278350515463918)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s9HJsQRgEeWExplhUxQO_g" id="(0.7833333333333333,0.44)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_JQOIEARjEeWExplhUxQO_g" type="4001" source="_NDFB0AO3EeWmfqRx-0sMGw" target="_E8PxcARjEeWExplhUxQO_g" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_JQOIEwRjEeWExplhUxQO_g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_JQOIFARjEeWExplhUxQO_g" x="-4" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JQOIFQRjEeWExplhUxQO_g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_JQOIFgRjEeWExplhUxQO_g" x="9" y="-29"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_JQOIEQRjEeWExplhUxQO_g" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.2/@references.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JQOIEgRjEeWExplhUxQO_g" points="[33, 4, -197, -4]$[176, 4, -54, -4]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JQX5EARjEeWExplhUxQO_g" id="(0.980440097799511,0.11072664359861592)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_hxclsARkEeWExplhUxQO_g" type="4002" source="_NDUSYQO3EeWmfqRx-0sMGw" target="_AoiEEARkEeWExplhUxQO_g" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_hxclswRkEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_hxcltARkEeWExplhUxQO_g" x="107" y="-19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_hxclsQRkEeWExplhUxQO_g" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.2/@references.0/@synchronisations.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hxclsgRkEeWExplhUxQO_g" points="[0, -1, 23, 170]$[-31, -39, -8, 132]$[-31, -170, -8, 1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hxcltQRkEeWExplhUxQO_g" id="(0.8229166666666666,0.10655737704918032)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IRQUgAk8EeWjn-hTfNUjUA" id="(0.1958762886597938,0.96)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_wqOX0ARkEeWExplhUxQO_g" type="4002" source="_NDUSYQO3EeWmfqRx-0sMGw" target="_DYYVgARkEeWExplhUxQO_g" lineColor="151">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wqYI0ARkEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wqYI0QRkEeWExplhUxQO_g" x="48" y="17"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_wqOX0QRkEeWExplhUxQO_g" fontColor="151" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.2/@references.0/@synchronisations.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wqOX0gRkEeWExplhUxQO_g" points="[0, 0, -60, 150]$[51, -45, -9, 105]$[51, -137, -9, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wqYI0gRkEeWExplhUxQO_g" id="(0.8333333333333334,0.4016393442622951)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_X7ASwARpEeWExplhUxQO_g" type="4002" source="_NDXVsAO3EeWmfqRx-0sMGw" target="_K5gAwARoEeWExplhUxQO_g" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_X7ASwwRpEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_X7ASxARpEeWExplhUxQO_g" x="25" y="-23"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_X7ASwQRpEeWExplhUxQO_g" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.4/@references.0/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X7ASwgRpEeWExplhUxQO_g" points="[-102, -1, 219, -42]$[-161, 41, 160, 0]$[-288, 41, 33, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X7ASxQRpEeWExplhUxQO_g" id="(1.0,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_lSCI0ARqEeWExplhUxQO_g" type="4002" source="_NDbnJAO3EeWmfqRx-0sMGw" target="_NPbEYARqEeWExplhUxQO_g" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lSCI0wRqEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_lSCI1ARqEeWExplhUxQO_g" x="106" y="-14"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_lSCI0QRqEeWExplhUxQO_g" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.6/@references.1/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSCI0gRqEeWExplhUxQO_g" points="[0, 0, 188, -94]$[-92, 94, 96, 0]$[-170, 94, 18, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lSCI1QRqEeWExplhUxQO_g" id="(0.8155339805825242,0.19767441860465115)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lSCI1gRqEeWExplhUxQO_g" id="(0.8166666666666667,0.64)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_XvnQMARrEeWExplhUxQO_g" type="4001" source="_NDG3AAO3EeWmfqRx-0sMGw" target="_NDFo5wO3EeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_XvnQMwRrEeWExplhUxQO_g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XvnQNARrEeWExplhUxQO_g" x="29" y="24"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_XvnQNQRrEeWExplhUxQO_g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_XvnQNgRrEeWExplhUxQO_g" x="48" y="-12"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XvnQMQRrEeWExplhUxQO_g" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="bankingsystem.ecno#//@elementTypes.9/@references.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XvnQMgRrEeWExplhUxQO_g" points="[-9, -1, 288, 201]$[-9, -193, 288, 9]$[-260, -193, 37, 9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XvnQNwRrEeWExplhUxQO_g" id="(0.37327188940092165,0.004366812227074236)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ilZQsAScEeWim55aLEVgUA" id="(0.7643312101910829,0.34806629834254144)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZhMtIARsEeWExplhUxQO_g" type="4002" source="_XvnQMARrEeWExplhUxQO_g" target="_JrFlgARrEeWExplhUxQO_g" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZhMtIwRsEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ZhMtJARsEeWExplhUxQO_g" x="98" y="-19"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZhMtIQRsEeWExplhUxQO_g" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.9/@references.1/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZhMtIgRsEeWExplhUxQO_g" points="[13, 6, -68, -173]$[68, 34, -13, -145]$[80, 176, -1, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZhMtJQRsEeWExplhUxQO_g" id="(0.9450171821305842,0.45410628019323673)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bLkkQARsEeWExplhUxQO_g" id="(0.5737704918032787,0.20833333333333334)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_fj2zIARsEeWExplhUxQO_g" type="4002" source="_XvnQMARrEeWExplhUxQO_g" target="_N6ch4ARrEeWExplhUxQO_g" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fj2zIwRsEeWExplhUxQO_g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_fj2zJARsEeWExplhUxQO_g" x="92" y="-48"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_fj2zIQRsEeWExplhUxQO_g" fontColor="16711680" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.9/@references.1/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fj2zIgRsEeWExplhUxQO_g" points="[10, 5, -111, -258]$[121, 73, 0, -190]$[121, 246, 0, -17]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fj2zJQRsEeWExplhUxQO_g" id="(0.9587628865979382,0.28019323671497587)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_o0BKMAk-EeWjn-hTfNUjUA" id="(0.7731958762886598,0.68)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_DIe_4ASGEeWjSIaRVHjD3A" type="4002" source="_JQOIEARjEeWExplhUxQO_g" target="_DYYVgARkEeWExplhUxQO_g" lineColor="151">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DIe_4wSGEeWjSIaRVHjD3A" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DIe_5ASGEeWjSIaRVHjD3A" x="147" y="91"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DIe_4QSGEeWjSIaRVHjD3A" fontColor="151" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.2/@references.1/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DIe_4gSGEeWjSIaRVHjD3A" points="[0, 0, 246, -153]$[-39, 153, 207, 0]$[-241, 153, 5, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DIoJ0ASGEeWjSIaRVHjD3A" id="(0.4484536082474227,0.7575757575757576)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DIoJ0QSGEeWjSIaRVHjD3A" id="(0.9180327868852459,0.36)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_sJy0kASbEeWim55aLEVgUA" type="4002" source="_NDWHkAO3EeWmfqRx-0sMGw" target="_mUbjsASbEeWim55aLEVgUA" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sJy0kwSbEeWim55aLEVgUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sJy0lASbEeWim55aLEVgUA" x="19" y="20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sJy0kQSbEeWim55aLEVgUA" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.3/@references.0/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sJy0kgSbEeWim55aLEVgUA" points="[-2, 0, 231, 21]$[-75, -27, 158, -6]$[-202, -27, 31, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sJ47MASbEeWim55aLEVgUA" id="(0.3558282208588957,0.8076923076923077)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_BQKDkAksEeWjn-hTfNUjUA" type="4004" source="_7PAGwAO3EeWmfqRx-0sMGw" target="_-ncU4QkrEeWjn-hTfNUjUA" lineColor="217">
+    <styles xmi:type="notation:FontStyle" xmi:id="_BQKDkQksEeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BQKDkgksEeWjn-hTfNUjUA" points="[20, -20, -52, 52]$[64, -64, -8, 8]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7iFy4Ak-EeWjn-hTfNUjUA" id="(0.45544554455445546,0.8)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_B21pEAksEeWjn-hTfNUjUA" type="4004" source="_Czcy0AO8EeWmfqRx-0sMGw" target="_-ncU4QkrEeWjn-hTfNUjUA" lineColor="217">
+    <styles xmi:type="notation:FontStyle" xmi:id="_B21pEQksEeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B21pEgksEeWjn-hTfNUjUA" points="[-4, -4, 55, 61]$[-54, -70, 5, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_UIfbgAksEeWjn-hTfNUjUA" type="4004" source="_kAdfIARdEeWExplhUxQO_g" target="_J3gT4AksEeWjn-hTfNUjUA" lineColor="255">
+    <styles xmi:type="notation:FontStyle" xmi:id="_UIfbgQksEeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UIfbggksEeWjn-hTfNUjUA" points="[5, -5, -88, 64]$[85, -89, -8, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UIfbgwksEeWjn-hTfNUjUA" id="(0.6206896551724138,0.10204081632653061)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_UoxeEAksEeWjn-hTfNUjUA" type="4004" source="_YydB4QSaEeWim55aLEVgUA" target="_J3gT4AksEeWjn-hTfNUjUA" lineColor="255">
+    <styles xmi:type="notation:FontStyle" xmi:id="_UoxeEQksEeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UoxeEgksEeWjn-hTfNUjUA" points="[-5, -4, 76, 52]$[-29, -62, 52, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Uo7PEAksEeWjn-hTfNUjUA" id="(0.496551724137931,0.06557377049180328)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_g5dEMAk6EeWjn-hTfNUjUA" type="4004" source="_b1LHsAO4EeWmfqRx-0sMGw" target="_XW1m0AksEeWjn-hTfNUjUA" lineColor="4014846">
+    <styles xmi:type="notation:FontStyle" xmi:id="_g5dEMQk6EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_g5dEMgk6EeWjn-hTfNUjUA" points="[3, -7, -37, 64]$[18, -51, -22, 20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_g5dEMwk6EeWjn-hTfNUjUA" id="(0.6115702479338843,0.04081632653061224)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2VIl0Ak-EeWjn-hTfNUjUA" id="(0.5104166666666666,0.8)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_hutRMAk6EeWjn-hTfNUjUA" type="4004" source="_hs78kAPJEeWmfqRx-0sMGw" target="_XW1m0AksEeWjn-hTfNUjUA" lineColor="4014846">
+    <styles xmi:type="notation:FontStyle" xmi:id="_hutRMQk6EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hutRMgk6EeWjn-hTfNUjUA" points="[-2, -3, 48, 83]$[-50, -87, 0, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hutRMwk6EeWjn-hTfNUjUA" id="(0.4782608695652174,0.075)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZSuRcAk8EeWjn-hTfNUjUA" type="4004" source="_p7qLIAPBEeWmfqRx-0sMGw" target="_Qw4MMAk8EeWjn-hTfNUjUA" lineColor="8404992">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZSuRcQk8EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZSuRcgk8EeWjn-hTfNUjUA" points="[1, -7, -30, 97]$[28, -84, -3, 20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZuZg0Ak8EeWjn-hTfNUjUA" type="4004" source="_fzKNsARcEeWExplhUxQO_g" target="_Qw4MMAk8EeWjn-hTfNUjUA" lineColor="8404992">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZuZg0Qk8EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZuZg0gk8EeWjn-hTfNUjUA" points="[-9, -20, 51, 116]$[-60, -137, 0, -1]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_aT4zgAk8EeWjn-hTfNUjUA" type="4004" source="_xTuhcARcEeWExplhUxQO_g" target="_Qw4MMAk8EeWjn-hTfNUjUA" lineColor="8404992">
+    <styles xmi:type="notation:FontStyle" xmi:id="_aT4zgQk8EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aT4zggk8EeWjn-hTfNUjUA" points="[-7, -7, 54, 64]$[-44, -51, 17, 20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_aT4zgwk8EeWjn-hTfNUjUA" id="(0.2,0.175)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ciagkAk8EeWjn-hTfNUjUA" type="4004" source="_EcXXwAPEEeWmfqRx-0sMGw" target="_Qw4MMAk8EeWjn-hTfNUjUA" lineColor="8404992">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ciagkQk8EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ciagkgk8EeWjn-hTfNUjUA" points="[-42, -15, 152, 50]$[-190, -64, 4, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ciagkwk8EeWjn-hTfNUjUA" id="(0.95,0.975)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_-x_vUAk8EeWjn-hTfNUjUA" type="4004" source="_IUlRYAPCEeWmfqRx-0sMGw" target="_6o4k4Ak8EeWjn-hTfNUjUA" lineColor="16711680">
+    <styles xmi:type="notation:FontStyle" xmi:id="_-x_vUQk8EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-x_vUgk8EeWjn-hTfNUjUA" points="[18, -15, -61, 45]$[78, -80, -1, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-x_vUwk8EeWjn-hTfNUjUA" id="(0.7793103448275862,0.1134020618556701)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="__PdHYAk8EeWjn-hTfNUjUA" type="4004" source="_Z7RMgAPIEeWmfqRx-0sMGw" target="_6o4k4Ak8EeWjn-hTfNUjUA" lineColor="16711680">
+    <styles xmi:type="notation:FontStyle" xmi:id="__PdHYQk8EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__PdHYgk8EeWjn-hTfNUjUA" points="[-1, -24, 0, 64]$[-1, -68, 0, 20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_APH0oAk9EeWjn-hTfNUjUA" type="4004" source="_r1VvsARoEeWExplhUxQO_g" target="_6o4k4Ak8EeWjn-hTfNUjUA" lineColor="16711680">
+    <styles xmi:type="notation:FontStyle" xmi:id="_APH0oQk9EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_APH0ogk9EeWjn-hTfNUjUA" points="[-41, -24, 156, 94]$[-190, -125, 7, -7]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_APH0owk9EeWjn-hTfNUjUA" id="(0.8901098901098901,0.875)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_PQzEEAk9EeWjn-hTfNUjUA" type="4002" source="_HQ1KAAPxEeWExplhUxQO_g" target="_6rHNMAPQEeWmfqRx-0sMGw" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_PQzEEwk9EeWjn-hTfNUjUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_PQzEFAk9EeWjn-hTfNUjUA" x="80" y="52"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_PQzEEQk9EeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.3/@references.1/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PQzEEgk9EeWjn-hTfNUjUA" points="[-12, 46, 217, -85]$[-33, 131, 196, 0]$[-204, 131, 25, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PQzEFQk9EeWjn-hTfNUjUA" id="(1.0,0.7216494845360825)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_BpTW0AlBEeWjn-hTfNUjUA" type="4002" source="_H-DKQAPOEeWmfqRx-0sMGw" target="_zeh6MAlAEeWjn-hTfNUjUA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BpTW0wlBEeWjn-hTfNUjUA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_BpTW1AlBEeWjn-hTfNUjUA" x="176"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BpTW0QlBEeWjn-hTfNUjUA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="bankingsystem.ecno#//@elementTypes.0/@references.0/@synchronisations.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BpTW0glBEeWjn-hTfNUjUA" points="[0, 0, 299, -145]$[-148, 145, 151, 0]$[-286, 145, 13, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BpdH0AlBEeWjn-hTfNUjUA" id="(0.8344370860927153,0.7974683544303798)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BpdH0QlBEeWjn-hTfNUjUA" id="(0.7719298245614035,0.47619047619047616)"/>
+  </edges>
+</notation:Diagram>

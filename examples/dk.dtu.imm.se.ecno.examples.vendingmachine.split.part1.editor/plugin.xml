@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="example.emf.vendingmachine.presentation.VendingmachineModelWizardID"
+            name="%_UI_VendingmachineModelWizard_label"
+            class="example.emf.vendingmachine.presentation.VendingmachineModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VendingmachineModelFile.gif">
+         <description>%_UI_VendingmachineModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="example.emf.vendingmachine.presentation.VendingmachineEditorID"
+            name="%_UI_VendingmachineEditor_label"
+            icon="icons/full/obj16/VendingmachineModelFile.gif"
+            extensions="vendingmachine"
+            class="example.emf.vendingmachine.presentation.VendingmachineEditor"
+            contributorClass="example.emf.vendingmachine.presentation.VendingmachineActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="example.ecno.vendingmachine.brewer.events" basePathECNOAutomata="example.ecno.vendingmachine.brewer.automata" AutomataFactoryClassName="VendingMachineBrewerBehaviour" basePathModelClass="example.ecno.vendingmachine.brewer.coordination" ModelClassName="VendingMachineModel" PackageAdapterFactoryClassName="VendingMachineFactory">
+  <emfGenModel href="VendingMachineBrewers.genmodel#/"/>
+  <ecnoModel href="vendingmachinebrewers.ecno#/"/>
+  <BehaviourModel href="VendingMachineBrewersBehaviourModels.pnml#/"/>
+  <required href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecnogen#/"/>
+  <required href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part2/model/VendingMachineCoordination.ecnogen#/"/>
+</ecnogen:ECNOGenModel>

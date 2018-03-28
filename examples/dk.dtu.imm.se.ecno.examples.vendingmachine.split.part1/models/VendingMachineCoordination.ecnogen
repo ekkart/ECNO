@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="example.ecno.vendingmachine.events" basePathECNOAutomata="example.ecno.vendingmachine.automata" AutomataFactoryClassName="VendingMachineBehaviour" basePathModelClass="example.ecno.vendingmachine.coordination" ModelClassName="VendingMachineModel" PackageAdapterFactoryClassName="VendingMachineFactory">
+  <emfGenModel href="VendingMachine.genmodel#/"/>
+  <ecnoModel href="VendingMachineCoordination.ecno#/"/>
+  <BehaviourModel href="VendingMachineBehaviourModels.pnml#/"/>
+</ecnogen:ECNOGenModel>

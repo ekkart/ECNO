@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Runtime
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.examples.vendingmachine.split.part3.runtime
+Bundle-Version: 1.0.0.qualifier
+Export-Package: example.ecno.vendingmachine.instances
+Require-Bundle: dk.dtu.imm.se.ecno.core;bundle-version="0.3.1",
+ dk.dtu.imm.se.ecno.model.generator;bundle-version="0.3.1",
+ dk.dtu.imm.se.ecno.examples.vendingmachine.split.part3;bundle-version="1.0.0"

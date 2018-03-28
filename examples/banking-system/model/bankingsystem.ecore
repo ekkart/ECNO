@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bankingsystem"
+    nsURI="http://bankingsystem/1.0" nsPrefix="bankingsystem">
+  <eClassifiers xsi:type="ecore:EClass" name="NaturalPerson" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="availableCards" upperBound="-1"
+        eType="#//PhysicalBankCard" containment="true" eOpposite="#//PhysicalBankCard/owner"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" upperBound="-1" eType="#//HW"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owns" upperBound="-1" eType="#//BankNote"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalBankCard" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pin" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issuer" eType="#//AccountMngr"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//NaturalPerson"
+        eOpposite="#//NaturalPerson/availableCards"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BankNote" eSuperTypes="#//Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HW" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inserted" eType="#//PhysicalBankCard"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="held" upperBound="-1" eType="#//PhysicalBankCard"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="notes" upperBound="-1"
+        eType="#//BankNote" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ready" upperBound="-1"
+        eType="#//BankNote" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="controller" lowerBound="1"
+        eType="#//ATMController" eOpposite="#//ATMController/hw"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="show" eType="#//PhysicalBankCard"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ATMController" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hw" lowerBound="1" eType="#//HW"
+        eOpposite="#//HW/controller"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gateway" lowerBound="1"
+        eType="#//BankGateway" eOpposite="#//BankGateway/ATMs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="session" eType="#//Session"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BankGateway" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ATMs" upperBound="-1" eType="#//ATMController"
+        eOpposite="#//ATMController/gateway"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accountMngrs" upperBound="-1"
+        eType="#//AccountMngr" eOpposite="#//AccountMngr/gateway"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="swift" eType="#//SwiftNetwork"
+        eOpposite="#//SwiftNetwork/gateways"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SwiftNetwork" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gateways" upperBound="-1"
+        eType="#//BankGateway" eOpposite="#//BankGateway/swift"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AccountMngr" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customers" upperBound="-1"
+        eType="#//Customer" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accounts" upperBound="-1"
+        eType="#//Account" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gateway" lowerBound="1"
+        eType="#//BankGateway" eOpposite="#//BankGateway/accountMngrs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sessions" upperBound="-1"
+        eType="#//Session" containment="true" eOpposite="#//Session/owner"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idleSessions" upperBound="-1"
+        eType="#//Session" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Account" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cards" upperBound="-1"
+        eType="#//BankCard" containment="true" eOpposite="#//BankCard/account"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="holder" upperBound="-1"
+        eType="#//Customer" eOpposite="#//Customer/accounts"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="balance" lowerBound="1"
+        eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BankCard" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="account" eType="#//Account"
+        eOpposite="#//Account/cards"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Customer"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="numer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="physical" eType="#//PhysicalBankCard"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Customer" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="accounts" upperBound="-1"
+        eType="#//Account" eOpposite="#//Account/holder"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="natural" eType="#//NaturalPerson"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Session" eSuperTypes="#//Component">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="card" eType="#//BankCard"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ATM" lowerBound="1" eType="#//ATMController"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//AccountMngr"
+        eOpposite="#//AccountMngr/sessions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="account" eType="#//Account"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Setting">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objects" upperBound="-1"
+        eType="#//Component" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="platform:/plugin/dk.dtu.compute.se.ecno.statespace/model/statespace.ecore#//Element"/>
+</ecore:EPackage>

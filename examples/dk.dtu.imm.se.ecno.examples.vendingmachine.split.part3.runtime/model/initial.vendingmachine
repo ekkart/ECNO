@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vendingmachine:VendingMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:vendingmachine="http://se.imm.dtu.dk/vendingmachine/1.0" xmlns:vendingmachinebrewers="http://se.imm.dtu.dk/vendingmachine/brewers/1.0" xmlns:vendingmachineoutput="http://se.imm.dtu.dk/vendingmachine/output/1.0">
+  <components xsi:type="vendingmachine:Panel" control="//@components.7"/>
+  <components xsi:type="vendingmachineoutput:Output" brewer="//@components.8 //@components.9 //@components.10"/>
+  <components xsi:type="vendingmachine:Coin" slot="//@components.5"/>
+  <components xsi:type="vendingmachine:Coin" slot="//@components.5"/>
+  <components xsi:type="vendingmachine:Coin" slot="//@components.5"/>
+  <components xsi:type="vendingmachine:Slot" safe="//@components.6"/>
+  <components xsi:type="vendingmachine:Safe"/>
+  <components xsi:type="vendingmachine:Control" slot="//@components.5" brewer="//@components.8 //@components.9 //@components.10"/>
+  <components xsi:type="vendingmachinebrewers:CoffeeBrewer" control="//@components.7"/>
+  <components xsi:type="vendingmachinebrewers:CoffeeBrewer" control="//@components.7"/>
+  <components xsi:type="vendingmachinebrewers:TeaBrewer" control="//@components.7"/>
+</vendingmachine:VendingMachine>

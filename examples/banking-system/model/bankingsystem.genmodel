@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/banking-system/src"
+    modelPluginID="banking-system" modelName="Bankingsystem" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../dk.dtu.compute.se.ecno.statespace/model/statespace.genmodel#//statespace">
+  <foreignModel>bankingsystem.ecore</foreignModel>
+  <genPackages prefix="Bankingsystem" basePackage="emf" disposableProviderFactory="true"
+      ecorePackage="bankingsystem.ecore#/">
+    <genClasses ecoreClass="bankingsystem.ecore#//NaturalPerson">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//NaturalPerson/availableCards"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//NaturalPerson/uses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//NaturalPerson/owns"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//NaturalPerson/name"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//PhysicalBankCard">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//PhysicalBankCard/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//PhysicalBankCard/pin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//PhysicalBankCard/issuer"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference bankingsystem.ecore#//PhysicalBankCard/owner"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//BankNote"/>
+    <genClasses ecoreClass="bankingsystem.ecore#//HW">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//HW/inserted"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//HW/held"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//HW/notes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//HW/ready"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//HW/controller"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//HW/show"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//ATMController">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//ATMController/hw"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//ATMController/gateway"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//ATMController/session"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//BankGateway">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//BankGateway/ATMs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//BankGateway/accountMngrs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//BankGateway/swift"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//SwiftNetwork">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//SwiftNetwork/gateways"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//AccountMngr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//AccountMngr/customers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//AccountMngr/accounts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//AccountMngr/gateway"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//AccountMngr/sessions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//AccountMngr/idleSessions"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//Account">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Account/cards"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Account/holder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//Account/balance"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//BankCard">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference bankingsystem.ecore#//BankCard/account"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//BankCard/owner"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//BankCard/numer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//BankCard/physical"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//Customer">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Customer/accounts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Customer/natural"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//Customer/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bankingsystem.ecore#//Customer/name"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//Session">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Session/card"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Session/ATM"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference bankingsystem.ecore#//Session/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Session/account"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//Setting">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bankingsystem.ecore#//Setting/objects"/>
+    </genClasses>
+    <genClasses ecoreClass="bankingsystem.ecore#//Component"/>
+  </genPackages>
+</genmodel:GenModel>

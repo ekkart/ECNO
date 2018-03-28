@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" uri="example.ecno.vendingmachine">
+  <elementTypes gui="true">
+    <eClass href="VendingMachine.ecore#//Coin"/>
+    <coordinationSets triggerEvent="//@eventTypes.2"/>
+    <coordinationSets triggerEvent="//@eventTypes.1"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <references target="//@elementTypes.1">
+      <eReference href="VendingMachine.ecore#//Coin/slot"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.0/@coordinationSets.2"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="VendingMachine.ecore#//Slot"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.2"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.0/@synchronisations.0 //@elementTypes.1/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.1"/>
+    <coordinationSets triggerEvent="//@eventTypes.0"/>
+    <coordinationSets triggerEvent="//@eventTypes.3"/>
+    <references target="//@elementTypes.0">
+      <eReference href="VendingMachine.ecore#//Slot/coin"/>
+      <synchronisations eventType="//@eventTypes.1" coordinationSet="//@elementTypes.1/@coordinationSets.1"/>
+      <synchronisations eventType="//@eventTypes.2" type="ALL" coordinationSet="//@elementTypes.1/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.4">
+      <eReference href="VendingMachine.ecore#//Slot/safe"/>
+      <synchronisations eventType="//@eventTypes.1" coordinationSet="//@elementTypes.1/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="VendingMachine.ecore#//Control"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.0 //@elementTypes.2/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.3"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.1"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.1/@synchronisations.1" triggerEvent="//@eventTypes.6"/>
+    <coordinationSets triggerEvent="//@eventTypes.4"/>
+    <references target="//@elementTypes.1">
+      <eReference href="VendingMachine.ecore#//Control/slot"/>
+      <synchronisations eventType="//@eventTypes.3" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.1" coordinationSet="//@elementTypes.2/@coordinationSets.1"/>
+    </references>
+    <references target="//@elementTypes.5">
+      <eReference href="VendingMachine.ecore#//Control/brewer"/>
+      <synchronisations eventType="//@eventTypes.3" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.6" coordinationSet="//@elementTypes.2/@coordinationSets.2"/>
+    </references>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="VendingMachine.ecore#//Panel"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.4"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.6"/>
+    <references target="//@elementTypes.2">
+      <eReference href="VendingMachine.ecore#//Panel/control"/>
+      <synchronisations eventType="//@eventTypes.6" coordinationSet="//@elementTypes.3/@coordinationSets.1"/>
+      <synchronisations eventType="//@eventTypes.4" type="ALL" coordinationSet="//@elementTypes.3/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="VendingMachine.ecore#//Safe"/>
+    <coordinationSets triggerEvent="//@eventTypes.1"/>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="VendingMachine.ecore#//Brewer"/>
+    <coordinationSets synchronisations="//@elementTypes.5/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <coordinationSets triggerEvent="//@eventTypes.3"/>
+    <coordinationSets triggerEvent="//@eventTypes.6"/>
+    <coordinationSets triggerEvent="//@eventTypes.5"/>
+    <references target="//@elementTypes.2">
+      <eReference href="VendingMachine.ecore#//Brewer/control"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.5/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <ePackage href="VendingMachine.ecore#/"/>
+  <eventTypes name="insert" gui="true">
+    <parameters name="coin">
+      <eType xsi:type="ecore:EClass" href="VendingMachine.ecore#//Coin"/>
+    </parameters>
+    <parameters name="slot">
+      <eType xsi:type="ecore:EClass" href="VendingMachine.ecore#//Slot"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="pass">
+    <parameters name="coin">
+      <eType xsi:type="ecore:EClass" href="VendingMachine.ecore#//Coin"/>
+    </parameters>
+    <parameters name="slot">
+      <eType xsi:type="ecore:EClass" href="VendingMachine.ecore#//Slot"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="return_">
+    <parameters name="slot">
+      <eType xsi:type="ecore:EClass" href="VendingMachine.ecore#//Slot"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="reset"/>
+  <eventTypes name="cancel" gui="true"/>
+  <eventTypes name="cup_in" gui="true"/>
+  <eventTypes name="drink" gui="true">
+    <parameters name="brewer">
+      <eType xsi:type="ecore:EClass" href="VendingMachine.ecore#//Brewer"/>
+    </parameters>
+  </eventTypes>
+  <eventTypeExtensions base="//@eventTypes.6" name="bla">
+    <super key="n" value="//@eventTypeExtensions.1"/>
+  </eventTypeExtensions>
+  <eventTypeExtensions base="//@eventTypes.6" name="blubs"/>
+  <eventTypeExtensions typeName="yyy" base="//@eventTypes.4" name="yyy">
+    <parameters name="test">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+  </eventTypeExtensions>
+</ecno:Package>

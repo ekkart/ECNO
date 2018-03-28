@@ -1,0 +1,71 @@
+This Java project contains a simple example that introduces
+the basic concepts of the Event Coordination Notation, which
+is used in introduction chapter of the technical report on
+ECNO (to be publish in 2013).
+
+The example models workers in some company that share cars
+for coming in for work. The workers that share a care can
+arrive at work and depart from work together. While at work,
+they do some jobs; specific jobs require that certain workers
+do it together -- a job can only be done, if all the
+required workers are available. In the example, there
+is no real work done; a job just creates another job --
+requiring the same workers at the original job.
+
+The folder models contains all the models (and configuration
+files) from which the code can be automatically generated.
+Here is an overview of the files of the models folder:
+
+  workers.ecore: Is the ecore model (class diagram) that defines
+      concepts of Workers, Cars and Jobs, and their relation.
+      
+  workers.ecorediag: Is is the diagram (EcoreTools) associated
+      with the ecore model.      
+      
+  workers.genmodel: Is the EMF gemodel, which contains some
+      configuration information for the EMF code generator.
+      From this genmodel, the Java code for the structural
+      part of the system is generated.
+      
+  workers.ecno: Contains the coordination model, which defines
+      how different elements coordinate their behaviour --
+      the global behaviour.
+      
+  workers.ecno_diagram: Contains the diagram information of the
+      coordination model from workers.ecno.
+      
+  workers.pnml: Contains the ECNO nets which define the local
+      behaviour of each element from workers.ecore. There
+      is a ECNO net for each element, which defines when
+      an element can participate in some events, and what
+      happens when this happens.
+      
+  workers.ecnogen: Contains the configuration information for
+      the ECNO code generator (package names for the different
+      generated packages, names for some classes, etc).
+      
+  setting.xmi: Contains an initial settings with four workers
+      and two cars, and four jobs. This is a dynamic instance
+      of workers.ecore. From this initial situation the
+      behaviour will be started.
+      
+  setting.pdf: A PDF document showing the initial configuration
+      from setting.xmi as an object diagram -- just so you can take
+      it in on a single glance. 
+      
+  setting.ecnoinstancgen: Is a configuration file, that generates
+      the code for setting up the initial setting, and for
+      starting the ECNO execution engine on this behaviour.
+      
+
+All Java code was generated from these models. This Java code
+is contained in the folder src, in different packages as
+defined in the different configuration files. The class
+Setting in package dk.dtu.imm.se.ecno.example.workers.instances
+contains the file for starting the ECNO execution engine on
+the initial setting. This code can be executed as usual:
+Click on the Java file with the right mouse button, then
+select "Run As" -> "Java Application".
+
+More information on this will be available in the Technical
+Report on ECNO.

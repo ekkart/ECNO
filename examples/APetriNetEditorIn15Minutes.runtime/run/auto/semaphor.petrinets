@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APetriNetEditorIn15Minutes:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:APetriNetEditorIn15Minutes="APetriNetEditorIn15Minutes">
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="req1" in="//@object.7" out="//@object.8"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="pend1" in="//@object.8" out="//@object.9"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="idle1" in="//@object.6" out="//@object.7">
+    <token/>
+  </object>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="enter1" in="//@object.9 //@object.25" out="//@object.10"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="crit1" in="//@object.10" out="//@object.11"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="exit1" in="//@object.11" out="//@object.6 //@object.26"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.5" target="//@object.2"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.2" target="//@object.0"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.0" target="//@object.1"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.1" target="//@object.3"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.3" target="//@object.4"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.4" target="//@object.5"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="req2" in="//@object.17" out="//@object.24"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="enter2" in="//@object.19 //@object.27" out="//@object.21"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="exit2" in="//@object.22" out="//@object.16 //@object.28"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="idle2" in="//@object.16" out="//@object.17">
+    <token/>
+  </object>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.14" target="//@object.15"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.15" target="//@object.12"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="pend2" in="//@object.24" out="//@object.19"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.18" target="//@object.13"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="crit2" in="//@object.21" out="//@object.22"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.13" target="//@object.20"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.20" target="//@object.14"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="sem" in="//@object.26 //@object.28" out="//@object.25 //@object.27">
+    <token/>
+  </object>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.12" target="//@object.18"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.23" target="//@object.3"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.5" target="//@object.23"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.23" target="//@object.13"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.14" target="//@object.23"/>
+</APetriNetEditorIn15Minutes:PetriNet>

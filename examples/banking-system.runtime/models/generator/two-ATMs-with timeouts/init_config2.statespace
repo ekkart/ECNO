@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="ASCII"?>
+<statespace:StateSpace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:statespace="http://se.compute.dtu.dk/ecno/statespace/1.0" name="Config 2: Two ATMs, one for the two users (with timeouts)" description="Config 2, automatically generated state space: Two users (Lom and Ekkart) connected to two different ATMs (with two banknotes each) and two available sessions. Generation takes also timeout events into account (timeouts are the only difference to Config 1)" config=""/>

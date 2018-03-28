@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" uri="example.ecno.vendingmachine.brewers">
+  <elementTypes super="//@elementTypes.2">
+    <eClass href="VendingMachineBrewers.ecore#//CoffeeBrewer"/>
+  </elementTypes>
+  <elementTypes super="//@elementTypes.2">
+    <eClass href="VendingMachineBrewers.ecore#//TeaBrewer"/>
+  </elementTypes>
+  <elementTypes packageURI="example.ecno.vendingmachine" typeName="Brewer">
+    <import xsi:type="ecno:ElementType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@elementTypes.5"/>
+  </elementTypes>
+  <ePackage href="VendingMachineBrewers.ecore#/"/>
+  <eventTypes packageURI="example.ecno.vendingmachine" typeName="drink" name="drink">
+    <import xsi:type="ecno:EventType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@eventTypes.6"/>
+  </eventTypes>
+  <eventTypes name="coffee" super="//@eventTypes.0">
+    <parameters name="strength">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="tea" super="//@eventTypes.0">
+    <parameters name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes packageURI="example.ecno.vendingmachine" typeName="cup_in" name="cup_in">
+    <import xsi:type="ecno:EventType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@eventTypes.5"/>
+  </eventTypes>
+  <eventTypes packageURI="example.ecno.vendingmachine" typeName="reset" name="reset">
+    <import xsi:type="ecno:EventType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@eventTypes.3"/>
+  </eventTypes>
+  <eventTypes packageURI="example.ecno.vendingmachine" typeName="cancel" name="cancel">
+    <import xsi:type="ecno:EventType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@eventTypes.4"/>
+  </eventTypes>
+  <eventTypes name="kick" super="//@eventTypes.5"/>
+</ecno:Package>

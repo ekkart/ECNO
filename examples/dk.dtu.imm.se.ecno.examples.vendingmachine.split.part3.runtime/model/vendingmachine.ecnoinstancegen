@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnoinstancegen:ECNOInstanceGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnoinstancegen="http://ecno.se.imm.dtu.dk/ecno/instancegen" basePathECNOInstance="example.ecno.vendingmachine.instances" instanceClassName="VendingMachineCompleteInstance">
+  <instance href="initial.vendingmachine#/"/>
+  <ecnoGenModel href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecnogen#/"/>
+  <ecnoGenModel href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part3/model/vendingmachinebrewers.ecnogen#/"/>
+  <ecnoGenModel href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part2/model/VendingMachineCoordination.ecnogen#/"/>
+</ecnoinstancegen:ECNOInstanceGenModel>

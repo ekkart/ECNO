@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="workers"
+    nsURI="http://workers.example.ecno.se.imm.dtu.dk/1.0" nsPrefix="workers">
+  <eClassifiers xsi:type="ecore:EClass" name="Setting">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="car" upperBound="-1" eType="#//Car"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="worker" upperBound="-1"
+        eType="#//Worker" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="job" upperBound="-1" eType="#//Job"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Worker">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="car" eType="#//Car" resolveProxies="false"
+        eOpposite="#//Car/passenger"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assigned" upperBound="-1"
+        eType="#//Job" transient="true" resolveProxies="false" eOpposite="#//Job/needed"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Job">
+    <eOperations name="createJobs" upperBound="-1" eType="#//Job">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="Job job = WorkersFactoryImpl.eINSTANCE.createJob();&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;// ekki: create a clone of this job&#xD;&#xA;job.setName(this.getName());&#xD;&#xA;java.util.List&lt;Worker> list = job.getNeeded();&#xD;&#xA;for (Worker worker : this.getNeeded()) {&#xD;&#xA;&#x9;list.add(worker);&#xD;&#xA;}&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;// ekki: return the cloned job as a singleton list&#xD;&#xA;EList&lt;Job> jobs = new org.eclipse.emf.common.util.BasicEList&lt;Job>();&#xD;&#xA;jobs.add(job);&#xD;&#xA;return jobs;"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="needed" upperBound="-1"
+        eType="#//Worker" resolveProxies="false" eOpposite="#//Worker/assigned"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Car">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="passenger" upperBound="-1"
+        eType="#//Worker" transient="true" resolveProxies="false" eOpposite="#//Worker/car"/>
+  </eClassifiers>
+</ecore:EPackage>

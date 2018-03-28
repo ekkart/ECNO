@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.imm.se.ecno.examples.vendingmachine.split.part2/src"
+    modelPluginID="dk.dtu.imm.se.ecno.examples.vendingmachine.split.part2" modelName="Vendingmachineoutput"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachine.genmodel#//vendingmachine">
+  <foreignModel>vendingmachineoutput.ecore</foreignModel>
+  <genPackages prefix="Vendingmachineoutput" basePackage="example.emf" disposableProviderFactory="true"
+      childCreationExtenders="true" ecorePackage="vendingmachineoutput.ecore#/">
+    <genClasses ecoreClass="vendingmachineoutput.ecore#//Output">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vendingmachineoutput.ecore#//Output/brewer"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

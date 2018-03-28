@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="vendingmachine"
+    nsURI="http://se.imm.dtu.dk/vendingmachine/1.0" nsPrefix="vendingmachine">
+  <eClassifiers xsi:type="ecore:EClass" name="Coin" eSuperTypes="#//VendingMachineComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="slot" upperBound="-1" eType="#//Slot"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Slot" eSuperTypes="#//VendingMachineComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coin" upperBound="-1" eType="#//Coin"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="safe" lowerBound="1" eType="#//Safe"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Safe" eSuperTypes="#//VendingMachineComponent"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Panel" eSuperTypes="#//VendingMachineComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="control" upperBound="-1"
+        eType="#//Control"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Control" eSuperTypes="#//VendingMachineComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="slot" upperBound="-1" eType="#//Slot"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="brewer" upperBound="-1"
+        eType="#//Brewer" eOpposite="#//Brewer/control"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Brewer" eSuperTypes="#//VendingMachineComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="control" eType="#//Control"
+        eOpposite="#//Control/brewer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VendingMachine">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
+        eType="#//VendingMachineComponent" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VendingMachineComponent" abstract="true"/>
+</ecore:EPackage>

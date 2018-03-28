@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" uri="dk.dtu.imm.se.ecno.example.workers.collective">
+  <elementTypes gui="true">
+    <eClass href="workers.ecore#//Worker"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.1"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.2"/>
+    <references target="//@elementTypes.2">
+      <eReference href="workers.ecore#//Worker/car"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.0/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.1" coordinationSet="//@elementTypes.0/@coordinationSets.1"/>
+    </references>
+    <references target="//@elementTypes.1">
+      <eReference href="workers.ecore#//Worker/assigned"/>
+      <synchronisations eventType="//@eventTypes.2" coordinationSet="//@elementTypes.0/@coordinationSets.2"/>
+    </references>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="workers.ecore#//Job"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.2"/>
+    <coordinationSets triggerEvent="//@eventTypes.3"/>
+    <references target="//@elementTypes.0">
+      <eReference href="workers.ecore#//Job/needed"/>
+      <synchronisations eventType="//@eventTypes.2" type="ALL" coordinationSet="//@elementTypes.1/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="workers.ecore#//Car"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.1"/>
+    <references target="//@elementTypes.0">
+      <eReference href="workers.ecore#//Car/passenger"/>
+      <synchronisations eventType="//@eventTypes.0" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.1" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <ePackage href="workers.ecore#/"/>
+  <eventTypes name="arrive" gui="true"/>
+  <eventTypes name="depart" gui="true"/>
+  <eventTypes name="doJob">
+    <parameters name="job">
+      <eType xsi:type="ecore:EClass" href="workers.ecore#//Job"/>
+    </parameters>
+    <parameters name="workers" collective="true">
+      <eType xsi:type="ecore:EClass" href="workers.ecore#//Worker"/>
+    </parameters>
+    <parameters name="newName">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="cancelJob" gui="true"/>
+</ecno:Package>

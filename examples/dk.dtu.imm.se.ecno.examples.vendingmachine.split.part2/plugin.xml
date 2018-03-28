@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://se.imm.dtu.dk/vendingmachine/output/1.0"
+            class="example.emf.vendingmachineoutput.VendingmachineoutputPackage"
+            genModel="model/vendingmachineoutput.genmodel"/>
+   </extension>
+
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.package_adapter_factory">
+      <adapter_factory
+            class="example.ecno.vendingmachine.output.coordination.VendingMachineOutputFactory"
+            uri="example.ecno.vendingmachine.output">
+      </adapter_factory>
+   </extension>
+
+</plugin>

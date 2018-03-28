@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/APetriNetEditorIn15Minutes/src"
+    modelPluginID="APetriNetEditorIn15Minutes" modelName="PetriNet" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>PetriNet.ecore</foreignModel>
+  <genPackages prefix="PetriNets" disposableProviderFactory="true" ecorePackage="PetriNet.ecore#/">
+    <genClasses ecoreClass="PetriNet.ecore#//PetriNet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PetriNet.ecore#//PetriNet/object"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PetriNet.ecore#//Object"/>
+    <genClasses image="false" ecoreClass="PetriNet.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PetriNet.ecore#//Node/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PetriNet.ecore#//Node/in"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PetriNet.ecore#//Node/out"/>
+    </genClasses>
+    <genClasses ecoreClass="PetriNet.ecore#//Arc">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PetriNet.ecore#//Arc/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PetriNet.ecore#//Arc/target"/>
+    </genClasses>
+    <genClasses ecoreClass="PetriNet.ecore#//Transition"/>
+    <genClasses ecoreClass="PetriNet.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PetriNet.ecore#//Place/token"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PetriNet.ecore#//Place/capacity"/>
+    </genClasses>
+    <genClasses ecoreClass="PetriNet.ecore#//Token"/>
+  </genPackages>
+</genmodel:GenModel>

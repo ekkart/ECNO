@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="dk.dtu.imm.se.ecno.example.petrinets.events" basePathECNOAutomata="dk.dtu.imm.se.ecno.example.petrinets.automata" AutomataFactoryClassName="PetrinetsBehaviour" basePathModelClass="dk.dtu.imm.se.ecno.example.petrinets.coordination" ModelClassName="PetrinetsModel" PackageAdapterFactoryClassName="PetrinetsModelFactory">
+  <emfGenModel href="PetriNet.genmodel#/"/>
+  <ecnoModel href="petrinets.ecno#/"/>
+  <BehaviourModel href="petrinets.pnml#/"/>
+</ecnogen:ECNOGenModel>

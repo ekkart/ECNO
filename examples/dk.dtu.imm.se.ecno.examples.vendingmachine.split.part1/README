@@ -1,0 +1,96 @@
+This Java project contains an extended version of the 
+Vending Machine example that was used in different articles 
+for explaining the idea and concepts of the Event
+Coordination Notation (ECNO):
+
+  Ekkart Kindler: Integrating behaviour in software models:
+  An event coordination notation – concepts and prototype.
+  In M. Aksit, E. Kindler, E. Roubtsova, and A. McNeile, (eds.),
+  Proceedings of the Third Workshop on Behavioural Modelling –
+  Foundations and Application (BM-FA '11), pages 41-48, June 2011.
+   
+  Ekkart Kindler: Modelling Local and Global Behaviour:
+  Petri Nets and Event Coordination.
+  To appear in K. Jensen, W.M.P. van der Aals, J. Klejn (eds.):
+  Transactions on Petri Nets and Other Models of Concurrency VI,
+  Springer LNCS 7400, 2012.
+
+The extensions, which are included here concern event inheritance
+and behaviour inheritance. The events coffee and tea, both inherit
+from the event drink, which allows for simpler models of the
+local behaviour of the controller (the controller actually only
+needs to know the drink even, and not which kind of drinks there
+are). Moreover, the cancel event is extended to a kick event;
+this is used for modelling the special behaviour, that the
+tea brewer has a flaw -- the machine needs to be kicked, in
+order to dispense the tea. Moreover, the behaviour of the
+brewers is now exploiting inheritance too:  there is a general
+behaviour for all brewers, which then is made more specific
+for the CoffeeBrewer and the TeaBrewer. Note that the specific
+behaviours of the TeaBrewers could just specialising the
+drink into a coffee or tea event -- for exihibiting some of
+the extra features of ECNO, however, the behaviour is modelled
+a bit differently. The CoffeeBrewer shows dropping the behaviour
+of the super class (for the coffee event), and overriding and
+ignoring the  behaviour of the super class completely (cup_in).
+The TeaBrewer makes also use of overriding the behaviour of
+the super class (kick event).
+
+
+The folder models contains all the models (and configuration
+files) from which the code can be automatically generated.
+Here is an overview of the files of the models folder:
+
+  VendingMachine.ecore: Is the ecore model (class diagram) that defines
+      structural concepts of the vending machine and how they can
+      be related.
+      
+  VendingMachine.ecorediag: Is is the diagram (EcoreTools) associated
+      with the ecore model.      
+      
+  VenidngMachine.genmodel: Is a the EMF gemodel, which contains some
+      configuration information for the EMF code generator.
+      From this genmodel, the Java code for the structural
+      part of the system is generated.
+      
+  VendingMachineCoordination.ecno: Contains the coordination model, 
+      which defines how different elements coordinate their behaviour --
+      the global behaviour.
+      
+  VendingMachineCoordination.ecno_diagram: Contains the diagram
+      information of the coordination model from 
+      VendingMachineCoordination.ecno.
+      
+  VendingMachineBehaviourModels.pnml: Contains the ECNO nets that
+      define the local behaviour of each element from
+      VendingMachine.ecore. There is a ECNO net for each element,
+      which defines when an element can participate in some events,
+      and what happens when this happens.
+      
+  VendingMachineCoordination.ecnogen: Contains the configuration
+      information for the ECNO code generator (package names for the
+      different generated packages, names for some classes, etc).
+      
+  VendingMachineInstance.xmi: Contains an initial configuration
+      of the vending machine with its panel, controller and
+      brewers -- and three coins ready for insertion. This is a 
+      dynamic instance of  VendingMachine.ecore. From this initial
+      configuration, the behaviour will be started.
+      
+  VendingMachineInstance.pdf: A PDF document showing the initial
+      configuration from VendingMachineInstance.xmi as an object
+      diagram -- just so you can take it in on a single glance. 
+      
+  VendingMachineInstance.ecnoinstancegen: Is a configuration file,
+      that generates the code for setting up the initial configuration,
+      and for starting the ECNO execution engine on this behaviour.
+      
+
+All Java code was generated from these models. This Java code
+is contained in the folder src, in different packages as
+defined in the different configuration files. The class
+VendingMachineInstance in package example.ecno.vendingmachine.instances
+contains the file for starting the ECNO execution engine on
+the initial setting. This code can be executed as usual:
+Click on the Java file with the right mouse button, then
+select "Run As" -> "Java Application".

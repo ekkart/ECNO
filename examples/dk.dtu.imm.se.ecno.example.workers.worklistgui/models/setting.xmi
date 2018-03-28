@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<workers:Setting
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:workers="http://workers.example.ecno.se.imm.dtu.dk/1.0"
+    xsi:schemaLocation="http://workers.example.ecno.se.imm.dtu.dk/1.0 workers.ecore">
+  <car name="VW_ali_bert"
+      passenger="ali bert"/>
+  <car name="BMW_cleo_dan"
+      passenger="cleo dan"/>
+  <worker name="ali"
+      car="VW_ali_bert"
+      assigned="//@job.0 //@job.1 //@job.3"/>
+  <worker name="bert"
+      car="VW_ali_bert"
+      assigned="//@job.0 //@job.3"/>
+  <worker name="cleo"
+      car="BMW_cleo_dan"
+      assigned="//@job.1 //@job.3"/>
+  <worker name="dan"
+      car="BMW_cleo_dan"
+      assigned="//@job.1 //@job.2 //@job.3"/>
+  <job name="(ali, bert)"
+      needed="ali bert"/>
+  <job name="(ali, cleo, dan)"
+      needed="ali cleo dan"/>
+  <job name="(dan)"
+      needed="dan"/>
+  <job name="(ali, bert, cleo, dan)"
+      needed="ali bert cleo dan"/>
+</workers:Setting>

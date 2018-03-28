@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" uri="PetriNets.ECNO">
+  <elementTypes gui="true">
+    <eClass href="PetriNet.ecore#//Transition"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.2"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.1"/>
+    <coordinationSets triggerEvent="//@eventTypes.0"/>
+    <references target="//@elementTypes.1">
+      <eReference href="PetriNet.ecore#//Node/out"/>
+      <synchronisations eventType="//@eventTypes.2" type="ALL" coordinationSet="//@elementTypes.0/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.1">
+      <eReference href="PetriNet.ecore#//Node/in"/>
+      <synchronisations eventType="//@eventTypes.1" type="ALL" coordinationSet="//@elementTypes.0/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="PetriNet.ecore#//Arc"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.2"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.1"/>
+    <references target="//@elementTypes.2">
+      <eReference href="PetriNet.ecore#//Arc/target"/>
+      <synchronisations eventType="//@eventTypes.2" type="ALL" coordinationSet="//@elementTypes.1/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.2">
+      <eReference href="PetriNet.ecore#//Arc/source"/>
+      <synchronisations eventType="//@eventTypes.1" type="ALL" coordinationSet="//@elementTypes.1/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes parallelTriggerEvents="//@eventTypes.2 //@eventTypes.1 //@eventTypes.3">
+    <eClass href="PetriNet.ecore#//Place"/>
+    <coordinationSets triggerEvent="//@eventTypes.2"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.3"/>
+    <coordinationSets triggerEvent="//@eventTypes.1"/>
+    <references target="//@elementTypes.3">
+      <eReference href="PetriNet.ecore#//Place/token"/>
+      <synchronisations eventType="//@eventTypes.3" coordinationSet="//@elementTypes.2/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes parallelTriggerEvents="//@eventTypes.3">
+    <eClass href="PetriNet.ecore#//Token"/>
+    <coordinationSets triggerEvent="//@eventTypes.3"/>
+  </elementTypes>
+  <ePackage href="PetriNet.ecore#/"/>
+  <eventTypes name="fire" gui="true"/>
+  <eventTypes name="remove">
+    <parameters name="places" collective="true">
+      <eType xsi:type="ecore:EClass" href="PetriNet.ecore#//Place"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="add">
+    <parameters name="places" collective="true">
+      <eType xsi:type="ecore:EClass" href="PetriNet.ecore#//Place"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="removeToken">
+    <parameters name="token">
+      <eType xsi:type="ecore:EClass" href="PetriNet.ecore#//Token"/>
+    </parameters>
+  </eventTypes>
+</ecno:Package>

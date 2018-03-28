@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vendingmachine:VendingMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:vendingmachine="http://se.imm.dtu.dk/vendingmachine/1.0" xsi:schemaLocation="http://se.imm.dtu.dk/vendingmachine/1.0 VendingMachine.ecore">
+  <components xsi:type="vendingmachine:Slot" safe="//@components.1"/>
+  <components xsi:type="vendingmachine:Safe"/>
+  <components xsi:type="vendingmachine:Panel" control="//@components.3"/>
+  <components xsi:type="vendingmachine:Control" slot="//@components.0" brewer="//@components.4 //@components.5 //@components.6"/>
+  <components xsi:type="vendingmachine:Brewer"/>
+  <components xsi:type="vendingmachine:Brewer"/>
+  <components xsi:type="vendingmachine:Brewer"/>
+  <components xsi:type="vendingmachine:Coin" slot="//@components.0"/>
+  <components xsi:type="vendingmachine:Coin" slot="//@components.0"/>
+  <components xsi:type="vendingmachine:Coin" slot="//@components.0"/>
+</vendingmachine:VendingMachine>

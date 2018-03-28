@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ECNO GUI Configuration
+Bundle-SymbolicName: APetriNetEditorIn15Minutes.ecno.gui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.ui;bundle-version="3.7.0",
+ dk.dtu.imm.se.ecno.model;bundle-version="0.3.1",
+ dk.dtu.imm.se.ecno.eclipse;bundle-version="0.3.2",
+ APetriNetEditorIn15Minutes;bundle-version="1.0.0",
+ APetriNetEditorIn15Minutes.diagram;bundle-version="1.0.0",
+ org.eclipse.gmf.runtime.emf.core;bundle-version="1.4.1",
+ org.eclipse.gmf.runtime.notation;bundle-version="1.5.0",
+ org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0"
+Bundle-ActivationPolicy: lazy

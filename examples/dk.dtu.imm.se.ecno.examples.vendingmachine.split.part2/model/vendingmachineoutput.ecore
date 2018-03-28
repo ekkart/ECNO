@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="vendingmachineoutput"
+    nsURI="http://se.imm.dtu.dk/vendingmachine/output/1.0" nsPrefix="vendingmachineoutput">
+  <eClassifiers xsi:type="ecore:EClass" name="Output" eSuperTypes="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachine.ecore#//VendingMachineComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="brewer" upperBound="-1"
+        eType="ecore:EClass ../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachine.ecore#//Brewer"/>
+  </eClassifiers>
+</ecore:EPackage>

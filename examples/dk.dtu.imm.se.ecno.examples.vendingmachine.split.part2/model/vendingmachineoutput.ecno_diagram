@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_TNOvEKnxEeKXqYpsFXKdWA" type="Ecno" name="vendingmachineoutput.ecno_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_WBsawKnxEeKXqYpsFXKdWA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WBsawqnxEeKXqYpsFXKdWA" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_mErWMKnxEeKXqYpsFXKdWA" type="3001" fontColor="16711808" fontName="Segoe UI" lineColor="16711808">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mErWMqnxEeKXqYpsFXKdWA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="vendingmachineoutput.ecno#//@elementTypes.0/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mErWManxEeKXqYpsFXKdWA" x="24" y="24" width="49" height="18"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_BXJo4KnyEeKXqYpsFXKdWA" type="3001" fontColor="8388736" fontName="Segoe UI" lineColor="8388736">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BXJo4qnyEeKXqYpsFXKdWA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="vendingmachineoutput.ecno#//@elementTypes.0/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BXJo4anyEeKXqYpsFXKdWA" x="45" y="58" width="52" height="19"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="vendingmachineoutput.ecno#//@elementTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WBsawanxEeKXqYpsFXKdWA" x="288" y="24" width="118" height="99"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Z7yRwKnxEeKXqYpsFXKdWA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Z7yRwqnxEeKXqYpsFXKdWA" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="vendingmachineoutput.ecno#//@elementTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z7yRwanxEeKXqYpsFXKdWA" x="81" y="50" width="80" height="59"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_vq_JIKnxEeKXqYpsFXKdWA" type="2001" fontColor="16711808" fontName="Segoe UI" lineColor="16711808">
+    <children xmi:type="notation:DecorationNode" xmi:id="_vq_JIqnxEeKXqYpsFXKdWA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_vq_JI6nxEeKXqYpsFXKdWA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vq_JJKnxEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vq_JJanxEeKXqYpsFXKdWA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachineoutput.ecno#//@eventTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vq_JIanxEeKXqYpsFXKdWA" x="60" y="132" width="78"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_3XkaUKnxEeKXqYpsFXKdWA" type="2001" fontColor="8388736" fontName="Segoe UI" lineColor="8388736">
+    <children xmi:type="notation:DecorationNode" xmi:id="_3XkaUqnxEeKXqYpsFXKdWA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_3XkaU6nxEeKXqYpsFXKdWA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_3XkaVKnxEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_3XkaVanxEeKXqYpsFXKdWA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachineoutput.ecno#//@eventTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3XkaUanxEeKXqYpsFXKdWA" x="168" y="132" width="85"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_TNOvEanxEeKXqYpsFXKdWA"/>
+  <element xmi:type="ecno:Package" href="vendingmachineoutput.ecno#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_eVjuYKnxEeKXqYpsFXKdWA" type="4001" source="_WBsawKnxEeKXqYpsFXKdWA" target="_Z7yRwKnxEeKXqYpsFXKdWA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eVjuY6nxEeKXqYpsFXKdWA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eVjuZKnxEeKXqYpsFXKdWA" x="-7" y="13"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_eVjuZanxEeKXqYpsFXKdWA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_eVjuZqnxEeKXqYpsFXKdWA" x="9" y="-12"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_eVjuYanxEeKXqYpsFXKdWA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="vendingmachineoutput.ecno#//@elementTypes.0/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eVjuYqnxEeKXqYpsFXKdWA" points="[-29, 5, 131, 3]$[-188, 5, -28, 3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vG-F8arJEeKod8oLAn4wwg" id="(0.05084745762711865,0.5757575757575758)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vn1-YKrJEeKod8oLAn4wwg" id="(0.7625,0.5423728813559322)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_nkyeEKnxEeKXqYpsFXKdWA" type="4002" source="_eVjuYKnxEeKXqYpsFXKdWA" target="_mErWMKnxEeKXqYpsFXKdWA" lineColor="16711808">
+    <children xmi:type="notation:DecorationNode" xmi:id="_nkyeE6nxEeKXqYpsFXKdWA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_nkyeFKnxEeKXqYpsFXKdWA" x="27" y="-7"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_nkyeEanxEeKXqYpsFXKdWA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="vendingmachineoutput.ecno#//@elementTypes.0/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nkyeEqnxEeKXqYpsFXKdWA" points="[0, 0, -107, 24]$[25, -24, -82, 0]$[97, -24, -10, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nkyeFanxEeKXqYpsFXKdWA" id="(0.425531914893617,0.5238095238095238)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nkyeFqnxEeKXqYpsFXKdWA" id="(0.21739130434782608,0.5555555555555556)"/>
+  </edges>
+</notation:Diagram>

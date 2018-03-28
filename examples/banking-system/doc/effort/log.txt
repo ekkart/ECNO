@@ -1,0 +1,79 @@
+Banking System: Log of activities and efforts
+=============================================
+
+This is a log of all activities done for developing the Banking System example,
+concerning the models themselves, but also the needed extensions for the
+ECNO tool for generating tests etc.
+
+26. May 2015:
+
+  * Creating the structural models (class diagrams) -- first on paper,
+    then as Ecore models (using the Ecore diagram editor):
+      134min: 14:13 -- 16:27 (with minor breaks)
+      
+    Note: the Ecore model was slightly changed when making the the ECNO
+          models later
+          
+  * Creating the behaviour models (ECNO nets and coordination diagrams,
+    along side -- directly in the ECNO tool):
+      244min: 17:00 -- 21:04 (with minor breaks)
+      
+  * Generating the code: Creating genmodels and using code generators
+      - EMF model:
+          2min: 21:04 -- 21:06
+      
+      - ECNO model:
+         11min: 21:06 -- 21:17
+      
+      - Fixing syntax errors in ECNO Nets (due to missing IDE integration)
+        and iterative regeneration of code from ECNO models:
+         13min: 21:13 -- 21:30
+
+      - Setting up an instance (most time was consumed by adjusting the
+        Ecore model so that the Setting could actually contain the objects
+        from the setting); then setting up the configuration and generated code:
+         60min: ca. 21:30 -- 22:30
+
+      - Fixing the model (the modelled functionality works properly -- standard
+        GUI only) and regeneration; the typical errors where forgotten parameters
+        and forgotten coordination annotations:
+         22min: ca. 22:30 -- 22:52
+         40min: ca. 23:20 -- 24:00
+   ------------------------------------------
+    526min (8h 46min): First working version (SVN revision 2437)
+    
+
+26. May 2015:
+
+  * Extend the models by additional functionality (withdraw money):
+      141min: 12:26 -- 14:47
+      
+  * Regenerating code and fixing syntax errors in the model:
+      - EMF part:
+           2min: 15:22 -- 15:24
+      - ECNO part (ECNO Nets):
+          74min: 15:24 -- 16:38 (looking for a supid mistake for almost an hour: accidentally using
+                            non-name parameter assignment in event binding; I should switch
+                            off this compatibility mode eventually to avoid this problem).
+
+  * Extending the setting (adding bank notes to the ATM and increase the balance of the account) and
+    checking behavioural correctness of model (working now). Also here the most time consuming issues
+    were minor (but hard to spot) syntax errors in ECNO nets. Also here I should not be gracious
+    with incorrect event bindings (which will generate empty code).
+       57min: 16:41 -- 17:38
+   ------------------------------------------
+    274min (4h 34min): Added working withdraw function (SVN revision 2439)       
+       
+  * Extending version with balance feature:
+      - ECNO model
+           40min: 19:59 -- 20:39 
+            1min: 20:39 -- 20:40 (regeneration and syntactical bug fixing)
+            
+      - Testing (only one minor change required: forgot to make balance event a GUI event)
+            4min: 20:40 -- 20:44
+   ------------------------------------------
+     45min (0h 45min): Added working balance function (SVN revision 2440)
+     
+   ======================================================================================     
+    845min (14h 5min): First version with full functionality for authentication, balance, and withdraw
+   

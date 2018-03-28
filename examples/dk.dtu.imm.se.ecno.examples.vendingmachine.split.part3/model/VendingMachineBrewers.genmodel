@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.imm.se.ecno.examples.vendingmachine.split.part3/src"
+    modelPluginID="dk.dtu.imm.se.ecno.examples.vendingmachine.split.part3" modelName="VendingMachineBrewers"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachine.genmodel#//vendingmachine">
+  <foreignModel>VendingMachineBrewers.ecore</foreignModel>
+  <genPackages prefix="Vendingmachinebrewers" basePackage="example.emf" disposableProviderFactory="true"
+      childCreationExtenders="true" ecorePackage="VendingMachineBrewers.ecore#/">
+    <genClasses ecoreClass="VendingMachineBrewers.ecore#//CoffeeBrewer"/>
+    <genClasses ecoreClass="VendingMachineBrewers.ecore#//TeaBrewer"/>
+  </genPackages>
+</genmodel:GenModel>

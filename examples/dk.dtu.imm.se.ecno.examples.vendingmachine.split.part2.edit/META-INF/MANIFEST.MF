@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: dk.dtu.imm.se.ecno.examples.vendingmachine.split.part2.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: example.emf.vendingmachineoutput.provider.VendingmachineoutputEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: example.emf.vendingmachineoutput.provider
+Require-Bundle: org.eclipse.core.runtime,
+ dk.dtu.imm.se.ecno.examples.vendingmachine.split.part2;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1;visibility:=reexport,
+ dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

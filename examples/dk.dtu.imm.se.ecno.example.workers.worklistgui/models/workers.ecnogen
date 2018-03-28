@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="dk.dtu.imm.se.ecno.examples.workers.events" basePathECNOAutomata="dk.dtu.imm.se.ecno.examples.workers.automata" AutomataFactoryClassName="WorkersAutomata" basePathModelClass="dk.dtu.imm.se.ecno.examples.workers.coordination" ModelClassName="WorkersModel" PackageAdapterFactoryClassName="WorkersModelFactory">
+  <emfGenModel href="workers.genmodel#/"/>
+  <ecnoModel href="workers.ecno#/"/>
+  <BehaviourModel href="workers.pnml#/"/>
+</ecnogen:ECNOGenModel>

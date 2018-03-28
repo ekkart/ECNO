@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ECNO Example: Banking System Runtime
+Bundle-SymbolicName: banking-system.runtime
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Ekkart Kindler, Software Engineering Section, DTU Compute

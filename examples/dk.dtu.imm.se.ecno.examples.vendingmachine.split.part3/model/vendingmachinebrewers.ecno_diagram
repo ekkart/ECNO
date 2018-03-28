@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_UkezgKm9EeK816tU1tDOfw" type="Ecno" name="vendingmachinebrewers.ecno_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_m3B90Km9EeK816tU1tDOfw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_m3B90qm9EeK816tU1tDOfw" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="vendingmachinebrewers.ecno#//@elementTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m3B90am9EeK816tU1tDOfw" x="276" y="180" width="97"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_m3B906m9EeK816tU1tDOfw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_m3B91am9EeK816tU1tDOfw" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="vendingmachinebrewers.ecno#//@elementTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m3B91Km9EeK816tU1tDOfw" x="396" y="180" width="97"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_oU6REKm9EeK816tU1tDOfw" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_oU6REqm9EeK816tU1tDOfw" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="vendingmachinebrewers.ecno#//@elementTypes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oU6REam9EeK816tU1tDOfw" x="336" y="72" width="97"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_s4DsIKm9EeK816tU1tDOfw" type="2001" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_s4DsIqm9EeK816tU1tDOfw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_s4DsI6m9EeK816tU1tDOfw" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_s4DsJKm9EeK816tU1tDOfw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_s4DsJam9EeK816tU1tDOfw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s4DsIam9EeK816tU1tDOfw" x="108" y="72" width="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_y_oHUKm9EeK816tU1tDOfw" type="2001" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_y_oHUqm9EeK816tU1tDOfw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_y_oHU6m9EeK816tU1tDOfw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_-opVELslEeKLtpa2Hvr0Vw" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="vendingmachinebrewers.ecno#//@eventTypes.1/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-opVEbslEeKLtpa2Hvr0Vw"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_y_oHVKm9EeK816tU1tDOfw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_y_oHVam9EeK816tU1tDOfw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y_oHUam9EeK816tU1tDOfw" x="48" y="180" width="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_z_AgsKm9EeK816tU1tDOfw" type="2001" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_z_Agsqm9EeK816tU1tDOfw" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_z_Ags6m9EeK816tU1tDOfw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_IzN3YbtBEeK2R4aY6EAjIA" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="vendingmachinebrewers.ecno#//@eventTypes.2/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IzN3YrtBEeK2R4aY6EAjIA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z_AgtKm9EeK816tU1tDOfw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z_KRsKm9EeK816tU1tDOfw"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z_Agsam9EeK816tU1tDOfw" x="156" y="180" width="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_u3dsMKnKEeKXqYpsFXKdWA" type="2001" fontColor="16711808" fontName="Segoe UI" lineColor="16711808">
+    <children xmi:type="notation:DecorationNode" xmi:id="_u3dsMqnKEeKXqYpsFXKdWA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_u3dsM6nKEeKXqYpsFXKdWA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_u3dsNKnKEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_u3dsNanKEeKXqYpsFXKdWA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u3dsManKEeKXqYpsFXKdWA" x="288" y="276" width="85"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_B8mKAKnLEeKXqYpsFXKdWA" type="2001" fontColor="16744448" fontName="Segoe UI" lineColor="16744448">
+    <children xmi:type="notation:DecorationNode" xmi:id="_B8mKAqnLEeKXqYpsFXKdWA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_B8mKA6nLEeKXqYpsFXKdWA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_B8mKBKnLEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_B8mKBanLEeKXqYpsFXKdWA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8mKAanLEeKXqYpsFXKdWA" x="396" y="276" width="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_eyHboKn-EeKXqYpsFXKdWA" type="2001" fontColor="16711680" fontName="Segoe UI" lineColor="16711680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eyHboqn-EeKXqYpsFXKdWA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eyHbo6n-EeKXqYpsFXKdWA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eyHbpKn-EeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eyHbpan-EeKXqYpsFXKdWA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eyHboan-EeKXqYpsFXKdWA" x="528" y="72" width="73"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_j8ZIIKn-EeKXqYpsFXKdWA" type="2001" fontColor="12615680" fontName="Segoe UI" lineColor="12615680">
+    <children xmi:type="notation:DecorationNode" xmi:id="_j8ZIIqn-EeKXqYpsFXKdWA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_j8ZII6n-EeKXqYpsFXKdWA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_j8ZIJKn-EeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_j8ZIJan-EeKXqYpsFXKdWA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="vendingmachinebrewers.ecno#//@eventTypes.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j8ZIIan-EeKXqYpsFXKdWA" x="528" y="180" width="73"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Ukezgam9EeK816tU1tDOfw"/>
+  <element xmi:type="ecno:Package" href="vendingmachinebrewers.ecno#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_r79QQKm9EeK816tU1tDOfw" type="4003" source="_m3B90Km9EeK816tU1tDOfw" target="_oU6REKm9EeK816tU1tDOfw" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_r79QQam9EeK816tU1tDOfw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r79QQqm9EeK816tU1tDOfw" points="[3, -7, -45, 112]$[49, -99, 1, 20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_sXeuoKm9EeK816tU1tDOfw" type="4003" source="_m3B906m9EeK816tU1tDOfw" target="_oU6REKm9EeK816tU1tDOfw" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_sXeuoam9EeK816tU1tDOfw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sXeuoqm9EeK816tU1tDOfw" points="[-11, -20, 49, 88]$[-49, -88, 11, 20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_0-0-8Km9EeK816tU1tDOfw" type="4004" source="_y_oHUKm9EeK816tU1tDOfw" target="_s4DsIKm9EeK816tU1tDOfw" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_0-0-8am9EeK816tU1tDOfw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0-0-8qm9EeK816tU1tDOfw" points="[1, -7, -17, 106]$[23, -133, 5, -20]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_1Woa8Km9EeK816tU1tDOfw" type="4004" source="_z_AgsKm9EeK816tU1tDOfw" target="_s4DsIKm9EeK816tU1tDOfw" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_1Woa8am9EeK816tU1tDOfw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1Woa8qm9EeK816tU1tDOfw" points="[-4, -6, 59, 100]$[-40, -106, 23, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_lW2T8Kn-EeKXqYpsFXKdWA" type="4004" source="_j8ZIIKn-EeKXqYpsFXKdWA" target="_eyHboKn-EeKXqYpsFXKdWA" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_lW2T8an-EeKXqYpsFXKdWA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lW2T8qn-EeKXqYpsFXKdWA" points="[-8, -6, 5, 74]$[-8, -100, 5, -20]"/>
+  </edges>
+</notation:Diagram>

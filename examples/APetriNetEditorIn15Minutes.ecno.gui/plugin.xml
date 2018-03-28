@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+      <configurator
+            class="dk.dtu.imm.se.ecno.example.petrinets.gui.PetrinetGUIConfigurator"
+            uri="APetriNetEditorIn15Minutes.Simulator.GUI">
+      </configurator>
+  </extension>
+
+  <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+         <configurator
+            class="dk.dtu.imm.se.ecno.example.petrinets.gui.PetrinetGUIConfiguratorWithAutoFire"
+            uri="APetriNetEditorIn15Minutes.Simulator.GUIwithAutoFire">
+      </configurator>
+  </extension>
+
+</plugin>

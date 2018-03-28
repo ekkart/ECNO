@@ -1,0 +1,7 @@
+# Tracing options for the APetriNetEditorIn15Minutes.diagram plug-in
+
+# Common issues
+APetriNetEditorIn15Minutes.diagram/debug=false
+
+# Visual IDs
+APetriNetEditorIn15Minutes.diagram/debug/visualID=false

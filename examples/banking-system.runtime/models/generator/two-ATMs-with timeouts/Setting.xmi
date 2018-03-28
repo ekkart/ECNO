@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<bankingsystem:Setting xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bankingsystem="http://bankingsystem/1.0">
+  <objects xsi:type="bankingsystem:NaturalPerson" uid="1" uses="//@objects.2" name="Ekkart">
+    <availableCards uid="2" number="1"/>
+  </objects>
+  <objects xsi:type="bankingsystem:NaturalPerson" uid="3" uses="//@objects.6" name="Lom">
+    <availableCards uid="4" number="2"/>
+  </objects>
+  <objects xsi:type="bankingsystem:HW" uid="6" controller="//@objects.3">
+    <notes uid="7"/>
+  </objects>
+  <objects xsi:type="bankingsystem:ATMController" uid="11" hw="//@objects.2" gateway="//@objects.4"/>
+  <objects xsi:type="bankingsystem:BankGateway" uid="12" ATMs="//@objects.3 //@objects.7" accountMngrs="//@objects.5"/>
+  <objects xsi:type="bankingsystem:AccountMngr" uid="14" gateway="//@objects.4">
+    <customers uid="15" accounts="//@objects.5/@accounts.0" natural="//@objects.0" id="2" name="Ekkart Kindler"/>
+    <customers uid="16" accounts="//@objects.5/@accounts.1" natural="//@objects.1" name="Lom Hillah"/>
+    <accounts uid="17" holder="//@objects.5/@customers.0" balance="2">
+      <cards uid="18" owner="//@objects.5/@customers.0" numer="1" physical="//@objects.0/@availableCards.0"/>
+    </accounts>
+    <accounts uid="19" holder="//@objects.5/@customers.1" balance="2">
+      <cards uid="20" owner="//@objects.5/@customers.1" numer="2" physical="//@objects.1/@availableCards.0"/>
+    </accounts>
+    <idleSessions uid="22"/>
+    <idleSessions uid="29"/>
+  </objects>
+  <objects xsi:type="bankingsystem:HW" uid="23" controller="//@objects.7">
+    <notes uid="24"/>
+  </objects>
+  <objects xsi:type="bankingsystem:ATMController" uid="28" hw="//@objects.6" gateway="//@objects.4"/>
+</bankingsystem:Setting>

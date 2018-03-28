@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APetriNetEditorIn15Minutes:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:APetriNetEditorIn15Minutes="APetriNetEditorIn15Minutes" xsi:schemaLocation="APetriNetEditorIn15Minutes ../model/PetriNet.ecore">
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="p1" in="//@object.7" out="//@object.4"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="t1" in="//@object.4" out="//@object.5"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Place" name="p2" in="//@object.5" out="//@object.6">
+    <token/>
+  </object>
+  <object xsi:type="APetriNetEditorIn15Minutes:Transition" name="t2" in="//@object.6" out="//@object.7"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.0" target="//@object.1"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.1" target="//@object.2"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.2" target="//@object.3"/>
+  <object xsi:type="APetriNetEditorIn15Minutes:Arc" source="//@object.3" target="//@object.0"/>
+</APetriNetEditorIn15Minutes:PetriNet>

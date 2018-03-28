@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="ecno.bankingsystem.events" basePathECNOAutomata="ecno.bankingsystem.localbehaviour" AutomataFactoryClassName="BankingAutomataFactory" basePathModelClass="ecno.bankingsystem.model" ModelClassName="BankingSystemECNOModel" PackageAdapterFactoryClassName="BankingSystemPackageAdapterFactory">
+  <emfGenModel href="bankingsystem.genmodel#/"/>
+  <emfGenModel href="../../../plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#/"/>
+  <ecnoModel href="bankingsystem.ecno#/"/>
+  <BehaviourModel href="bankingsystem.pnml#/"/>
+</ecnogen:ECNOGenModel>

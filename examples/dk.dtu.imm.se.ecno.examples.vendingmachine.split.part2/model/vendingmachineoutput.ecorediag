@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_IMZ7YKnwEeKXqYpsFXKdWA" type="EcoreTools" name="vendingmachineoutput" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_Mh3fwKnwEeKXqYpsFXKdWA" type="1001">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MidVpKnwEeKXqYpsFXKdWA" source="Shortcut">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MidVpanwEeKXqYpsFXKdWA" key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children xmi:type="notation:Node" xmi:id="_MiBQwKnwEeKXqYpsFXKdWA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_MiULsKnwEeKXqYpsFXKdWA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_MiULsanwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MiULsqnwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MiULs6nwEeKXqYpsFXKdWA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_MidVoKnwEeKXqYpsFXKdWA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_MidVoanwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MidVoqnwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MidVo6nwEeKXqYpsFXKdWA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Mh3fwanwEeKXqYpsFXKdWA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="12632256" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="platform:/resource/dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachine.ecore#//VendingMachineComponent"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mh3fwqnwEeKXqYpsFXKdWA" x="264" y="84"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_RvRYwKnwEeKXqYpsFXKdWA" type="1001">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RvRYzKnwEeKXqYpsFXKdWA" source="Shortcut">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RvRYzanwEeKXqYpsFXKdWA" key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children xmi:type="notation:Node" xmi:id="_RvRYw6nwEeKXqYpsFXKdWA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_RvRYxKnwEeKXqYpsFXKdWA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_RvRYxanwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RvRYxqnwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RvRYx6nwEeKXqYpsFXKdWA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_RvRYyKnwEeKXqYpsFXKdWA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_RvRYyanwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RvRYyqnwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RvRYy6nwEeKXqYpsFXKdWA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_RvRYwanwEeKXqYpsFXKdWA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="12632256" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="platform:/resource/dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachine.ecore#//Brewer"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RvRYwqnwEeKXqYpsFXKdWA" x="48" y="192"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_VYPqkKnwEeKXqYpsFXKdWA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_VYPqk6nwEeKXqYpsFXKdWA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_VYPqlKnwEeKXqYpsFXKdWA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_VYPqlanwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_VYPqlqnwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_VYPql6nwEeKXqYpsFXKdWA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_VYPqmKnwEeKXqYpsFXKdWA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_VYPqmanwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_VYPqmqnwEeKXqYpsFXKdWA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_VYPqm6nwEeKXqYpsFXKdWA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_VYPqkanwEeKXqYpsFXKdWA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="15053796" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="vendingmachineoutput.ecore#//Output"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYPqkqnwEeKXqYpsFXKdWA" x="300" y="204"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_IMZ7YanwEeKXqYpsFXKdWA"/>
+  <element xmi:type="ecore:EPackage" href="vendingmachineoutput.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_bsUQsKnwEeKXqYpsFXKdWA" type="3003" source="_VYPqkKnwEeKXqYpsFXKdWA" target="_Mh3fwKnwEeKXqYpsFXKdWA">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_bsUQsanwEeKXqYpsFXKdWA" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bsUQsqnwEeKXqYpsFXKdWA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bsUQs6nwEeKXqYpsFXKdWA" points="[0, -2, -3, 91]$[93, -86, 90, 7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bseBsKnwEeKXqYpsFXKdWA" id="(0.5,0.06976744186046512)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_cdHbgKnwEeKXqYpsFXKdWA" type="3002" source="_VYPqkKnwEeKXqYpsFXKdWA" target="_RvRYwKnwEeKXqYpsFXKdWA">
+    <children xmi:type="notation:Node" xmi:id="_cdkHcKnwEeKXqYpsFXKdWA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cdkHcanwEeKXqYpsFXKdWA" x="-12" y="-15"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_cdkHcqnwEeKXqYpsFXKdWA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cdkHc6nwEeKXqYpsFXKdWA" x="-1" y="21"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_cdHbganwEeKXqYpsFXKdWA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cdHbgqnwEeKXqYpsFXKdWA" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="vendingmachineoutput.ecore#//Output/brewer"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cdHbg6nwEeKXqYpsFXKdWA" points="[-15, 7, 185, -8]$[-133, 7, 67, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cdkHdKnwEeKXqYpsFXKdWA" id="(0.0392156862745098,0.4883720930232558)"/>
+  </edges>
+</notation:Diagram>

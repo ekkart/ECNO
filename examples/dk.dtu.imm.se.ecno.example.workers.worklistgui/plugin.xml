@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+   
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://workers.example.ecno.se.imm.dtu.dk/1.0"
+            class="dk.dtu.imm.se.ecno.examples.workers.WorkersPackage"
+            genModel="models/workers.genmodel"/>
+   </extension>
+   
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.package_adapter_factory">
+      <adapter_factory
+            class="dk.dtu.imm.se.ecno.examples.workers.coordination.WorkersModelFactory"
+            uri="dk.dtu.imm.se.ecno.example.workers.collective">
+      </adapter_factory>
+   </extension>
+   
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+         <configurator
+            class="dk.dtu.imm.se.ecno.example.workers.controller.WorkersConfigurator"
+            uri="http://se.imm.dtu.dk/ecno/examples/workers/worklistguiconfig">
+         </configurator>
+   </extension>
+   
+</plugin>

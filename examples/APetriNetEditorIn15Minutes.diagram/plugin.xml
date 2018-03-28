@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="petrinets_diagram"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="petrinets_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="PetriNets.diagram.part.PetriNetDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/PetriNetsDiagramFile.gif"
+         extensions="petrinets_diagram"
+         default="true"
+         class="PetriNets.diagram.part.PetriNetDiagramEditor"
+         matchingStrategy="PetriNets.diagram.part.PetriNetMatchingStrategy"
+         contributorClass="PetriNets.diagram.part.PetriNetDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="PetriNets.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/PetriNetsDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="PetriNets.diagram.part.PetriNetCreationWizard"
+  	     id="PetriNets.diagram.part.PetriNetCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="APetriNetEditorIn15Minutes.diagram.InitDiagram"
+            nameFilter="*.petrinets"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="PetriNets.diagram.part.PetriNetInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="APetriNetEditorIn15Minutes.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="PetriNetPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="PetriNets.diagram.part.PetriNetDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.printing.render.providers.DiagramWithPrintGlobalActionHandlerProvider"
+         id="PetriNetPresentationPrint">
+         <Priority name="Lowest"/>
+         <ViewId id="PetriNets.diagram.part.PetriNetDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="print"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="PetriNetPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="PetriNets.diagram.part.PetriNetDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="PetriNetRender">
+         <Priority name="Lowest"/>
+         <ViewId id="PetriNets.diagram.part.PetriNetDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="PetriNets.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="APetriNetEditorIn15Minutes.diagram.general"
+            name="%prefpage.APetriNetEditorIn15Minutes.diagram.general"
+            class="PetriNets.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="APetriNetEditorIn15Minutes.diagram.appearance"
+            name="%prefpage.APetriNetEditorIn15Minutes.diagram.appearance"
+            category="APetriNetEditorIn15Minutes.diagram.general"
+            class="PetriNets.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="APetriNetEditorIn15Minutes.diagram.connections"
+            name="%prefpage.APetriNetEditorIn15Minutes.diagram.connections"
+            category="APetriNetEditorIn15Minutes.diagram.general"
+            class="PetriNets.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="APetriNetEditorIn15Minutes.diagram.printing"
+            name="%prefpage.APetriNetEditorIn15Minutes.diagram.printing"
+            category="APetriNetEditorIn15Minutes.diagram.general"
+            class="PetriNets.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="APetriNetEditorIn15Minutes.diagram.rulersAndGrid"
+            name="%prefpage.APetriNetEditorIn15Minutes.diagram.rulersAndGrid"
+            category="APetriNetEditorIn15Minutes.diagram.general"
+            class="PetriNets.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+      <page
+            id="APetriNetEditorIn15Minutes.diagram.pathmaps"
+            name="%prefpage.APetriNetEditorIn15Minutes.diagram.pathmaps"
+            category="APetriNetEditorIn15Minutes.diagram.general"
+            class="org.eclipse.gmf.runtime.emf.ui.preferences.PathmapsPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="APetriNetEditorIn15Minutes.diagram"
+            labelProvider="PetriNets.diagram.sheet.PetriNetSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="APetriNetEditorIn15Minutes.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="APetriNetEditorIn15Minutes.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="PetriNets.diagram.sheet.PetriNetPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="PetriNets.diagram.navigator.PetriNetAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="PetriNets.diagram.providers.PetriNetViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="PetriNet"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,3001"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="PetriNets.diagram.providers.PetriNetEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="PetriNet"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2001,2002,3001"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4001"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5001,5002"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value=""/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="PetriNets.diagram.providers.PetriNetModelingAssistantProvider">
+         <Priority name="Lowest"/>
+         <object class="PetriNets.diagram.edit.parts.PetriNetEditPart" id="PetriNet_1000"/>
+         <object class="PetriNets.diagram.edit.parts.TransitionEditPart" id="Transition_2001"/>
+         <object class="PetriNets.diagram.edit.parts.PlaceEditPart" id="Place_2002"/>
+         <context elements="PetriNet_1000,Transition_2001,Place_2002"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="PetriNets.diagram.providers.PetriNetIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="PetriNets.diagram.providers.PetriNetParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="APetriNetEditorIn15Minutes">
+         <metamodelType
+               id="APetriNetEditorIn15Minutes.diagram.PetriNet_1000"
+               name="%metatype.name.PetriNet_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="PetriNet"
+               edithelper="PetriNets.diagram.edit.helpers.PetriNetEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="APetriNetEditorIn15Minutes">
+         <metamodelType
+               id="APetriNetEditorIn15Minutes.diagram.Transition_2001"
+               name="%metatype.name.Transition_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transition"
+               edithelper="PetriNets.diagram.edit.helpers.TransitionEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="APetriNetEditorIn15Minutes">
+         <metamodelType
+               id="APetriNetEditorIn15Minutes.diagram.Place_2002"
+               name="%metatype.name.Place_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Place"
+               edithelper="PetriNets.diagram.edit.helpers.PlaceEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="APetriNetEditorIn15Minutes">
+         <metamodelType
+               id="APetriNetEditorIn15Minutes.diagram.Token_3001"
+               name="%metatype.name.Token_3001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Token"
+               edithelper="PetriNets.diagram.edit.helpers.TokenEditHelper">
+            <param name="semanticHint" value="3001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="APetriNetEditorIn15Minutes">
+         <metamodelType
+               id="APetriNetEditorIn15Minutes.diagram.Arc_4001"
+               name="%metatype.name.Arc_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Arc"
+               edithelper="PetriNets.diagram.edit.helpers.ArcEditHelper">
+            <param name="semanticHint" value="4001"/>
+         </metamodelType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="APetriNetEditorIn15Minutes.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="APetriNetEditorIn15Minutes.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="APetriNetEditorIn15Minutes.diagram.TypeContext">
+         <elementType ref="APetriNetEditorIn15Minutes.diagram.PetriNet_1000"/>
+         <elementType ref="APetriNetEditorIn15Minutes.diagram.Transition_2001"/>
+         <elementType ref="APetriNetEditorIn15Minutes.diagram.Place_2002"/>
+         <elementType ref="APetriNetEditorIn15Minutes.diagram.Token_3001"/>
+         <elementType ref="APetriNetEditorIn15Minutes.diagram.Arc_4001"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="APetriNetEditorIn15Minutes.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="APetriNetEditorIn15Minutes.diagram"
+           properties="isURIEditorInput"
+           class="PetriNets.diagram.part.PetriNetUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="APetriNetEditorIn15Minutes.diagram.resourceContent"/>
+			<contentExtension pattern="APetriNetEditorIn15Minutes.diagram.domainResourceContent"/>
+            <contentExtension pattern="APetriNetEditorIn15Minutes.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="APetriNetEditorIn15Minutes.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="APetriNetEditorIn15Minutes.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="PetriNets.diagram.navigator.PetriNetNavigatorContentProvider" 
+            labelProvider="PetriNets.diagram.navigator.PetriNetNavigatorLabelProvider"
+            icon="icons/obj16/PetriNetsDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="petrinets_diagram"/>
+               </and>
+               <instanceof value="PetriNets.diagram.navigator.PetriNetAbstractNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="PetriNets.diagram.navigator.PetriNetAbstractNavigatorItem"/>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="APetriNetEditorIn15Minutes.diagram.navigatorSorter" 
+               class="PetriNets.diagram.navigator.PetriNetNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="petrinets_diagram"/>
+                  </and>
+                  <instanceof value="PetriNets.diagram.navigator.PetriNetAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="APetriNetEditorIn15Minutes.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="PetriNets.diagram.navigator.PetriNetDomainNavigatorContentProvider" 
+            labelProvider="PetriNets.diagram.navigator.PetriNetDomainNavigatorLabelProvider"
+            icon="icons/obj16/PetriNetsDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="petrinets"/>
+               </and>
+               <instanceof value="PetriNets.diagram.navigator.PetriNetDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="PetriNets.diagram.navigator.PetriNetDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="APetriNetEditorIn15Minutes.diagram.navigatorActionProvider"
+            class="PetriNets.diagram.navigator.PetriNetNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="PetriNets.diagram.navigator.PetriNetAbstractNavigatorItem"/>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="APetriNetEditorIn15Minutes.diagram.navigatorLinkHelper"
+            class="PetriNets.diagram.navigator.PetriNetNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="APetriNetEditorIn15Minutes.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="PetriNets.diagram.navigator.PetriNetAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="PetriNets.diagram.part.PetriNetDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="PetriNets.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="PetriNets.diagram.updateDiagram"
+         contextId="PetriNets.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="APetriNetEditorIn15Minutes.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="PetriNets.diagram.part.PetriNetDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="PetriNets.diagram.edit.parts.PetriNetEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="PetriNets.diagram.part.PetriNetDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="APetriNetEditorIn15Minutes.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="PetriNets.diagram.part.PetriNetDiagramEditorID"
+         defaultHandler="PetriNets.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+<extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
+      <?gmfgen generated="true"?>
+      <MarkerNavigationProvider class="PetriNets.diagram.providers.PetriNetMarkerNavigationProvider">
+         <MarkerType name="APetriNetEditorIn15Minutes.diagram.diagnostic"/>
+         <Priority name="Lowest"/>
+      </MarkerNavigationProvider>
+   </extension>
+
+<extension id="diagnostic" name="PetriNet Plugin problems" point="org.eclipse.core.resources.markers">
+      <?gmfgen generated="true"?>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
+      <persistent value="true"/>
+   </extension><extension point="org.eclipse.emf.validation.constraintProviders">
+      <?gmfgen generated="true"?>
+            <category id="100" mandatory="false" name="Live constraints">
+         <![CDATA[Live constraints]]>
+      </category>
+      <constraintProvider cache="true">
+         <package namespaceUri="APetriNetEditorIn15Minutes"/>
+               <constraints categories="100">
+                  <constraint id="101"
+            lang="OCL"
+            name="Place capacity"
+            mode="Live"
+            severity="ERROR" statusCode="200">
+            <![CDATA[self.capacity <= 0 or ( self.token->size()  <= self.capacity )]]>
+            <description><![CDATA[Tokens on place must respect capacity of place]]></description>
+            <message><![CDATA[A place should not contain more tokens than its capacity allows.]]></message>
+            <target class="PetriNets.Place"/>
+         </constraint>
+                  </constraints>
+      </constraintProvider>
+   </extension>
+
+<extension point="org.eclipse.emf.validation.constraintBindings">
+      <?gmfgen generated="true"?>
+      <clientContext default="false" id="APetriNetEditorIn15Minutes.diagramDefaultCtx">
+         <selector class="PetriNets.diagram.providers.PetriNetValidationProvider$DefaultCtx"/>
+      </clientContext>
+      <binding context="APetriNetEditorIn15Minutes.diagramDefaultCtx">
+                  <constraint ref="APetriNetEditorIn15Minutes.diagram.101"/>
+               </binding>
+
+   </extension>
+
+
+
+
+
+   <!-- optionally, specify keybindings -->
+</plugin>

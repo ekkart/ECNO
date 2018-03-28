@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://bankingsystem/1.0"
+            class="emf.bankingsystem.BankingsystemPackage"
+            genModel="model/bankingsystem.genmodel"/>
+   </extension>
+
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.package_adapter_factory">
+      <adapter_factory
+            class="ecno.bankingsystem.model.BankingSystemPackageAdapterFactory"
+            uri="http://bankingsystem">
+      </adapter_factory>
+   </extension>
+
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.engine_controller_configurator">
+         <configurator
+            class="ecno.bankingsystem.code.controllerconfig.BankingSystemConfigurator"
+            uri="http://bankingsystem/configurator">
+         </configurator>
+  	</extension>
+ 
+</plugin>

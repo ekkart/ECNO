@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statespace:StateSpace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:statespace="http://se.compute.dtu.dk/ecno/statespace/1.0" name="test" maxUid="20">
+  <states out="//@transitions.0">
+    <objects uid="1">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/availableCards"/>
+        <values stateValues="//@states.0/@objects.1"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/uses"/>
+        <values stateValues="//@states.0/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//NaturalPerson/name"/>
+        <values>
+          <stringValues>Ekkart</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//NaturalPerson"/>
+    </objects>
+    <objects uid="2">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>1</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.0/@objects.0"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="3">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/availableCards"/>
+        <values stateValues="//@states.0/@objects.3"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/uses"/>
+        <values stateValues="//@states.0/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//NaturalPerson/name"/>
+        <values>
+          <stringValues>Lom</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//NaturalPerson"/>
+    </objects>
+    <objects uid="5">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>3</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.0/@objects.2"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="6">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/inserted"/>
+        <values stateValues="//@states.0/@objects.5"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/notes"/>
+        <values stateValues="//@states.0/@objects.6 //@states.0/@objects.7 //@states.0/@objects.8 //@states.0/@objects.9"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/controller"/>
+        <values stateValues="//@states.0/@objects.10"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//HW"/>
+    </objects>
+    <objects uid="4">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="7">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="8">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="9">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="10">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="11">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//ATMController/hw"/>
+        <values stateValues="//@states.0/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//ATMController/gateway"/>
+        <values stateValues="//@states.0/@objects.11"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//ATMController"/>
+    </objects>
+    <objects uid="12">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankGateway/ATMs"/>
+        <values stateValues="//@states.0/@objects.10"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankGateway/accountMngrs"/>
+        <values stateValues="//@states.0/@objects.12"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankGateway"/>
+    </objects>
+    <objects uid="13">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/customers"/>
+        <values stateValues="//@states.0/@objects.13 //@states.0/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/accounts"/>
+        <values stateValues="//@states.0/@objects.15 //@states.0/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/gateway"/>
+        <values stateValues="//@states.0/@objects.11"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/idleSessions"/>
+        <values stateValues="//@states.0/@objects.20"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//AccountMngr"/>
+    </objects>
+    <objects uid="14">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/accounts"/>
+        <values stateValues="//@states.0/@objects.15"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/natural"/>
+        <values stateValues="//@states.0/@objects.0"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/id"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/name"/>
+        <values>
+          <stringValues>Ekkart Kindler</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Customer"/>
+    </objects>
+    <objects uid="15">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/accounts"/>
+        <values stateValues="//@states.0/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/natural"/>
+        <values stateValues="//@states.0/@objects.2"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/id"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/name"/>
+        <values>
+          <stringValues>Lom Hillah</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Customer"/>
+    </objects>
+    <objects uid="16">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/cards"/>
+        <values stateValues="//@states.0/@objects.16"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/holder"/>
+        <values stateValues="//@states.0/@objects.13"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Account/balance"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Account"/>
+    </objects>
+    <objects uid="17">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.0/@objects.15"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.0/@objects.13"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>1</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.0/@objects.1"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="18">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/cards"/>
+        <values stateValues="//@states.0/@objects.18 //@states.0/@objects.19"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/holder"/>
+        <values stateValues="//@states.0/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Account/balance"/>
+        <values>
+          <intValues>4</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Account"/>
+    </objects>
+    <objects uid="19">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.0/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.0/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.0/@objects.5"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="20">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.0/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.0/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>3</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.0/@objects.3"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="21">
+      <type href="http://bankingsystem/1.0#//Session"/>
+    </objects>
+  </states>
+  <states out="//@transitions.1" in="//@transitions.0">
+    <objects uid="1">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/availableCards"/>
+        <values stateValues="//@states.1/@objects.1"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/uses"/>
+        <values stateValues="//@states.1/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//NaturalPerson/name"/>
+        <values>
+          <stringValues>Ekkart</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//NaturalPerson"/>
+    </objects>
+    <objects uid="2">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>1</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.1/@objects.0"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="3">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/availableCards"/>
+        <values stateValues="//@states.1/@objects.3"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/uses"/>
+        <values stateValues="//@states.1/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//NaturalPerson/name"/>
+        <values>
+          <stringValues>Lom</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//NaturalPerson"/>
+    </objects>
+    <objects uid="5">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>3</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.1/@objects.2"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="6">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/notes"/>
+        <values stateValues="//@states.1/@objects.5 //@states.1/@objects.6 //@states.1/@objects.7 //@states.1/@objects.8"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/controller"/>
+        <values stateValues="//@states.1/@objects.10"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/show"/>
+        <values stateValues="//@states.1/@objects.9"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//HW"/>
+    </objects>
+    <objects uid="7">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="8">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="9">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="10">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="4">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="11">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//ATMController/hw"/>
+        <values stateValues="//@states.1/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//ATMController/gateway"/>
+        <values stateValues="//@states.1/@objects.11"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//ATMController"/>
+    </objects>
+    <objects uid="12">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankGateway/ATMs"/>
+        <values stateValues="//@states.1/@objects.10"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankGateway/accountMngrs"/>
+        <values stateValues="//@states.1/@objects.12"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankGateway"/>
+    </objects>
+    <objects uid="13">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/customers"/>
+        <values stateValues="//@states.1/@objects.13 //@states.1/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/accounts"/>
+        <values stateValues="//@states.1/@objects.15 //@states.1/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/gateway"/>
+        <values stateValues="//@states.1/@objects.11"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/idleSessions"/>
+        <values stateValues="//@states.1/@objects.20"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//AccountMngr"/>
+    </objects>
+    <objects uid="14">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/accounts"/>
+        <values stateValues="//@states.1/@objects.15"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/natural"/>
+        <values stateValues="//@states.1/@objects.0"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/id"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/name"/>
+        <values>
+          <stringValues>Ekkart Kindler</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Customer"/>
+    </objects>
+    <objects uid="15">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/accounts"/>
+        <values stateValues="//@states.1/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/natural"/>
+        <values stateValues="//@states.1/@objects.2"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/id"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/name"/>
+        <values>
+          <stringValues>Lom Hillah</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Customer"/>
+    </objects>
+    <objects uid="16">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/cards"/>
+        <values stateValues="//@states.1/@objects.16"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/holder"/>
+        <values stateValues="//@states.1/@objects.13"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Account/balance"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Account"/>
+    </objects>
+    <objects uid="17">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.1/@objects.15"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.1/@objects.13"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>1</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.1/@objects.1"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="18">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/cards"/>
+        <values stateValues="//@states.1/@objects.18 //@states.1/@objects.19"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/holder"/>
+        <values stateValues="//@states.1/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Account/balance"/>
+        <values>
+          <intValues>4</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Account"/>
+    </objects>
+    <objects uid="19">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.1/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.1/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.1/@objects.9"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="20">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.1/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.1/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>3</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.1/@objects.3"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="21">
+      <type href="http://bankingsystem/1.0#//Session"/>
+    </objects>
+  </states>
+  <states in="//@transitions.1">
+    <objects uid="1">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/availableCards"/>
+        <values stateValues="//@states.2/@objects.1 //@states.2/@objects.2"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/uses"/>
+        <values stateValues="//@states.2/@objects.5"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//NaturalPerson/name"/>
+        <values>
+          <stringValues>Ekkart</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//NaturalPerson"/>
+    </objects>
+    <objects uid="2">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>1</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.2/@objects.0"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="4">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.2/@objects.0"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="3">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/availableCards"/>
+        <values stateValues="//@states.2/@objects.4"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//NaturalPerson/uses"/>
+        <values stateValues="//@states.2/@objects.5"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//NaturalPerson/name"/>
+        <values>
+          <stringValues>Lom</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//NaturalPerson"/>
+    </objects>
+    <objects uid="5">
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/number"/>
+        <values>
+          <intValues>3</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//PhysicalBankCard/pin"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//PhysicalBankCard/owner"/>
+        <values stateValues="//@states.2/@objects.3"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//PhysicalBankCard"/>
+    </objects>
+    <objects uid="6">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/notes"/>
+        <values stateValues="//@states.2/@objects.6 //@states.2/@objects.7 //@states.2/@objects.8 //@states.2/@objects.9"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//HW/controller"/>
+        <values stateValues="//@states.2/@objects.10"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//HW"/>
+    </objects>
+    <objects uid="7">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="8">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="9">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="10">
+      <type href="http://bankingsystem/1.0#//BankNote"/>
+    </objects>
+    <objects uid="11">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//ATMController/hw"/>
+        <values stateValues="//@states.2/@objects.5"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//ATMController/gateway"/>
+        <values stateValues="//@states.2/@objects.11"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//ATMController"/>
+    </objects>
+    <objects uid="12">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankGateway/ATMs"/>
+        <values stateValues="//@states.2/@objects.10"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankGateway/accountMngrs"/>
+        <values stateValues="//@states.2/@objects.12"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankGateway"/>
+    </objects>
+    <objects uid="13">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/customers"/>
+        <values stateValues="//@states.2/@objects.13 //@states.2/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/accounts"/>
+        <values stateValues="//@states.2/@objects.15 //@states.2/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/gateway"/>
+        <values stateValues="//@states.2/@objects.11"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//AccountMngr/idleSessions"/>
+        <values stateValues="//@states.2/@objects.20"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//AccountMngr"/>
+    </objects>
+    <objects uid="14">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/accounts"/>
+        <values stateValues="//@states.2/@objects.15"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/natural"/>
+        <values stateValues="//@states.2/@objects.0"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/id"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/name"/>
+        <values>
+          <stringValues>Ekkart Kindler</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Customer"/>
+    </objects>
+    <objects uid="15">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/accounts"/>
+        <values stateValues="//@states.2/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Customer/natural"/>
+        <values stateValues="//@states.2/@objects.3"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/id"/>
+        <values>
+          <intValues>0</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Customer/name"/>
+        <values>
+          <stringValues>Lom Hillah</stringValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Customer"/>
+    </objects>
+    <objects uid="16">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/cards"/>
+        <values stateValues="//@states.2/@objects.16"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/holder"/>
+        <values stateValues="//@states.2/@objects.13"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Account/balance"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Account"/>
+    </objects>
+    <objects uid="17">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.2/@objects.15"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.2/@objects.13"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>1</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.2/@objects.1"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="18">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/cards"/>
+        <values stateValues="//@states.2/@objects.18 //@states.2/@objects.19"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//Account/holder"/>
+        <values stateValues="//@states.2/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//Account/balance"/>
+        <values>
+          <intValues>4</intValues>
+        </values>
+      </features>
+      <type href="http://bankingsystem/1.0#//Account"/>
+    </objects>
+    <objects uid="19">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.2/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.2/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>2</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.2/@objects.2"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="20">
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/account"/>
+        <values stateValues="//@states.2/@objects.17"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/owner"/>
+        <values stateValues="//@states.2/@objects.14"/>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EAttribute" href="http://bankingsystem/1.0#//BankCard/numer"/>
+        <values>
+          <intValues>3</intValues>
+        </values>
+      </features>
+      <features>
+        <feature xsi:type="ecore:EReference" href="http://bankingsystem/1.0#//BankCard/physical"/>
+        <values stateValues="//@states.2/@objects.4"/>
+      </features>
+      <type href="http://bankingsystem/1.0#//BankCard"/>
+    </objects>
+    <objects uid="21">
+      <type href="http://bankingsystem/1.0#//Session"/>
+    </objects>
+  </states>
+  <transitions source="//@states.0" target="//@states.1">
+    <events name="enterPIN"/>
+  </transitions>
+  <transitions source="//@states.1" target="//@states.2">
+    <events name="takeCard"/>
+  </transitions>
+</statespace:StateSpace>

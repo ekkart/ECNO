@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Runtime
+Bundle-SymbolicName: APetriNetEditorIn15Minutes.runtime
+Bundle-Version: 1.0.0.qualifier
+Export-Package: dk.dtu.imm.se.ecno.petrinets.instances
+Require-Bundle: dk.dtu.imm.se.ecno.core;bundle-version="0.3.1",
+ dk.dtu.imm.se.ecno.model;bundle-version="0.3.1",
+ APetriNetEditorIn15Minutes;bundle-version="1.0.0",
+ dk.dtu.imm.se.ecno.model.generator;bundle-version="0.3.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<behaviourstates:BehaviourStates xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:behaviourstates="http://ecno.se.imm.dtu.dk/ecno/save/bahaviourstates">
+  <states>
+    <state xsi:type="behaviourstates:DefaultContainer"/>
+    <element href="initial.vendingmachine#/"/>
+  </states>
+  <packages>example.ecno.vendingmachine</packages>
+  <packages>example.ecno.vendingmachine.output</packages>
+  <packages>example.ecno.vendingmachine.brewers</packages>
+</behaviourstates:BehaviourStates>

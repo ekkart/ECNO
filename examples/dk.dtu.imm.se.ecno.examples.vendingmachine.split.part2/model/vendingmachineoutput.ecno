@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" uri="example.ecno.vendingmachine.output">
+  <elementTypes gui="true">
+    <eClass href="vendingmachineoutput.ecore#//Output"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <coordinationSets triggerEvent="//@eventTypes.1"/>
+    <references target="//@elementTypes.1">
+      <eReference href="vendingmachineoutput.ecore#//Output/brewer"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.0/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes packageURI="example.ecno.vendingmachine" typeName="Brewer">
+    <import xsi:type="ecno:ElementType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@elementTypes.5"/>
+  </elementTypes>
+  <ePackage href="vendingmachineoutput.ecore#/"/>
+  <eventTypes packageURI="example.ecno.vendingmachine" typeName="cup_in" name="cup_in">
+    <import xsi:type="ecno:EventType" href="../../dk.dtu.imm.se.ecno.examples.vendingmachine.split.part1/models/VendingMachineCoordination.ecno#//@eventTypes.5"/>
+  </eventTypes>
+  <eventTypes name="cup_out" gui="true"/>
+</ecno:Package>

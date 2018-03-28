@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" uri="http://bankingsystem">
+  <elementTypes gui="true">
+    <eClass href="bankingsystem.ecore#//NaturalPerson"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.18"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.16"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.2" triggerEvent="//@eventTypes.17"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.3" triggerEvent="//@eventTypes.9"/>
+    <coordinationSets triggerEvent="//@eventTypes.15"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.4" triggerEvent="//@eventTypes.8"/>
+    <references target="//@elementTypes.2">
+      <eReference href="bankingsystem.ecore#//NaturalPerson/uses"/>
+      <synchronisations eventType="//@eventTypes.18" coordinationSet="//@elementTypes.0/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.16" coordinationSet="//@elementTypes.0/@coordinationSets.1"/>
+      <synchronisations eventType="//@eventTypes.17" coordinationSet="//@elementTypes.0/@coordinationSets.2"/>
+      <synchronisations eventType="//@eventTypes.9" coordinationSet="//@elementTypes.0/@coordinationSets.3"/>
+      <synchronisations eventType="//@eventTypes.8" coordinationSet="//@elementTypes.0/@coordinationSets.5"/>
+    </references>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="bankingsystem.ecore#//PhysicalBankCard"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <references target="//@elementTypes.0">
+      <eReference href="bankingsystem.ecore#//PhysicalBankCard/owner"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.1/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//HW"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.16"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.18"/>
+    <coordinationSets triggerEvent="//@eventTypes.19"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.2" triggerEvent="//@eventTypes.8"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.3" triggerEvent="//@eventTypes.17"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.4 //@elementTypes.2/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.9"/>
+    <references target="//@elementTypes.3">
+      <eReference href="bankingsystem.ecore#//HW/controller"/>
+      <synchronisations eventType="//@eventTypes.16" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.18" coordinationSet="//@elementTypes.2/@coordinationSets.1"/>
+      <synchronisations eventType="//@eventTypes.8" coordinationSet="//@elementTypes.2/@coordinationSets.3"/>
+      <synchronisations eventType="//@eventTypes.17" coordinationSet="//@elementTypes.2/@coordinationSets.4"/>
+      <synchronisations eventType="//@eventTypes.9" coordinationSet="//@elementTypes.2/@coordinationSets.5"/>
+    </references>
+    <references target="//@elementTypes.10">
+      <eReference href="bankingsystem.ecore#//HW/ready"/>
+      <synchronisations eventType="//@eventTypes.9" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.5"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//ATMController"/>
+    <coordinationSets triggerEvent="//@eventTypes.16"/>
+    <coordinationSets triggerEvent="//@eventTypes.18"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.1/@synchronisations.1" triggerEvent="//@eventTypes.8"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.20"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.19"/>
+    <coordinationSets triggerEvent="//@eventTypes.9"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.17"/>
+    <references target="//@elementTypes.4">
+      <eReference href="bankingsystem.ecore#//ATMController/gateway"/>
+      <synchronisations eventType="//@eventTypes.20" coordinationSet="//@elementTypes.3/@coordinationSets.3"/>
+      <synchronisations eventType="//@eventTypes.17" coordinationSet="//@elementTypes.3/@coordinationSets.6"/>
+    </references>
+    <references target="//@elementTypes.2">
+      <eReference href="bankingsystem.ecore#//ATMController/hw"/>
+      <synchronisations eventType="//@eventTypes.19" coordinationSet="//@elementTypes.3/@coordinationSets.4"/>
+      <synchronisations eventType="//@eventTypes.8" coordinationSet="//@elementTypes.3/@coordinationSets.2"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//BankGateway"/>
+    <coordinationSets synchronisations="//@elementTypes.4/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.20"/>
+    <coordinationSets synchronisations="//@elementTypes.4/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.17"/>
+    <references target="//@elementTypes.6">
+      <eReference href="bankingsystem.ecore#//BankGateway/accountMngrs"/>
+      <synchronisations eventType="//@eventTypes.20" coordinationSet="//@elementTypes.4/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.17" coordinationSet="//@elementTypes.4/@coordinationSets.1"/>
+    </references>
+    <references target="//@elementTypes.5">
+      <eReference href="bankingsystem.ecore#//BankGateway/swift"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//SwiftNetwork"/>
+    <references target="//@elementTypes.4">
+      <eReference href="bankingsystem.ecore#//SwiftNetwork/gateways"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//AccountMngr"/>
+    <coordinationSets synchronisations="//@elementTypes.6/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <coordinationSets synchronisations="//@elementTypes.6/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.20"/>
+    <coordinationSets synchronisations="//@elementTypes.6/@references.1/@synchronisations.1" triggerEvent="//@eventTypes.17"/>
+    <references target="//@elementTypes.7">
+      <eReference href="bankingsystem.ecore#//AccountMngr/accounts"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.6/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.9">
+      <eReference href="bankingsystem.ecore#//AccountMngr/sessions"/>
+      <synchronisations eventType="//@eventTypes.20" coordinationSet="//@elementTypes.6/@coordinationSets.1"/>
+      <synchronisations eventType="//@eventTypes.17" coordinationSet="//@elementTypes.6/@coordinationSets.2"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//Account"/>
+    <coordinationSets synchronisations="//@elementTypes.7/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.4"/>
+    <coordinationSets triggerEvent="//@eventTypes.17"/>
+    <coordinationSets triggerEvent="//@eventTypes.13"/>
+    <references target="//@elementTypes.8">
+      <eReference href="bankingsystem.ecore#//Account/cards"/>
+      <synchronisations eventType="//@eventTypes.4" coordinationSet="//@elementTypes.7/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes references="">
+    <eClass href="bankingsystem.ecore#//BankCard"/>
+    <coordinationSets triggerEvent="//@eventTypes.4"/>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="bankingsystem.ecore#//Session"/>
+    <coordinationSets synchronisations="//@elementTypes.9/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.6"/>
+    <coordinationSets triggerEvent="//@eventTypes.8"/>
+    <coordinationSets synchronisations="//@elementTypes.9/@references.1/@synchronisations.0" triggerEvent="//@eventTypes.17"/>
+    <coordinationSets synchronisations="//@elementTypes.9/@references.1/@synchronisations.1" triggerEvent="//@eventTypes.13"/>
+    <references target="//@elementTypes.6">
+      <eReference href="bankingsystem.ecore#//Session/owner"/>
+      <synchronisations eventType="//@eventTypes.6" coordinationSet="//@elementTypes.9/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.7">
+      <eReference href="bankingsystem.ecore#//Session/account"/>
+      <synchronisations eventType="//@eventTypes.17" coordinationSet="//@elementTypes.9/@coordinationSets.2"/>
+      <synchronisations eventType="//@eventTypes.13" coordinationSet="//@elementTypes.9/@coordinationSets.3"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="bankingsystem.ecore#//BankNote"/>
+    <coordinationSets triggerEvent="//@eventTypes.9"/>
+  </elementTypes>
+  <ePackage href="bankingsystem.ecore#/"/>
+  <eventTypes name="insertCard" gui="true" super="//@eventTypes.16"/>
+  <eventTypes typeName="" name="enterPIN" super="//@eventTypes.18">
+    <parameters name="pin">
+      <eType xsi:type="ecore:EDataType" href="../../../plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="takeCard" super="//@eventTypes.16"/>
+  <eventTypes name="presentCard" super="//@eventTypes.19"/>
+  <eventTypes name="createSession" super="//@eventTypes.20">
+    <parameters name="card">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//PhysicalBankCard"/>
+    </parameters>
+    <parameters name="issuer">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//AccountMngr"/>
+    </parameters>
+    <parameters name="account">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//Account"/>
+    </parameters>
+    <parameters name="bcard">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//BankCard"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="keepCard" super="//@eventTypes.19"/>
+  <eventTypes name="exitSession" super="//@eventTypes.20">
+    <parameters name="atm">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//ATMController"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="exit" super="//@eventTypes.18"/>
+  <eventTypes name="timeout" gui="true"/>
+  <eventTypes typeName="" name="takeMoney" gui="true">
+    <parameters name="money" collective="true">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//BankNote"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="presentMoney" super="//@eventTypes.19">
+    <parameters name="amount">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="retractMoney" super="//@eventTypes.19">
+    <parameters name="amount">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="withdraw" super="//@eventTypes.17">
+    <parameters name="amount">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="cancelWithdraw" super="//@eventTypes.20">
+    <parameters name="amount">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes typeName="" name="balance" super="//@eventTypes.17">
+    <parameters name="balance">
+      <eType xsi:type="ecore:EDataType" href="../../../plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EIntegerObject"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="selectATM">
+    <parameters name="atm">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//HW"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="userCardAction" gui="true">
+    <parameters name="card">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//PhysicalBankCard"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="userMainAction" gui="true">
+    <parameters name="session">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//Session"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="userAuxAction" gui="true"/>
+  <eventTypes name="ATMAction"/>
+  <eventTypes name="systemAction">
+    <parameters name="session">
+      <eType xsi:type="ecore:EClass" href="bankingsystem.ecore#//Session"/>
+    </parameters>
+  </eventTypes>
+</ecno:Package>
