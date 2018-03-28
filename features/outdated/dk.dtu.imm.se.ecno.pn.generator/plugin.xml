@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="dk.dtu.imm.se.ecno.pn.generator.action.codegenerator"
+            objectClass="org.pnml.tools.epnk.pnmlcoremodel.PetriNet">
+         <menu
+               id="dk.dtu.imm.se.ecno.actions.standardmenu"
+               label="ECNO"
+               path="additions">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="dk.dtu.imm.se.ecno.pn.generator.actions.GenerateCode"
+               enablesFor="1"
+               id="dk.dtu.imm.se.ecno.pn.actions.GenerateCode"
+               label="Generate Code"
+               menubarPath="dk.dtu.imm.se.ecno.actions.standardmenu/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
