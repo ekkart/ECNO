@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecnogen:ECNOGenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecnogen="http://ecno.se.imm.dtu.dk/ecno/gen" basePathECNOEvents="dk.dtu.compute.se.ecno.processalgebras.events" basePathECNOAutomata="dk.dtu.compute.se.ecno.processalgebras.localbehaviour" AutomataFactoryClassName="ProcessAlgebraBehaviourFactory" basePathModelClass="dk.dtu.compute.se.ecno.processalgebras.globalbehaviour" ModelClassName="ProcessAlgebraCoordinationModel" PackageAdapterFactoryClassName="ProcessAlgebraPackageAdapterFactory">
+  <emfGenModel href="ProcessAlgebra.genmodel#/"/>
+  <ecnoModel href="ProcessAlgebra.ecno#/"/>
+  <BehaviourModel href="ProcessAlgebra.pnml#/"/>
+</ecnogen:ECNOGenModel>

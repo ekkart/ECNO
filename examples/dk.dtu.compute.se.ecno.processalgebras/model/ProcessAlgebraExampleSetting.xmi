@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<processalgebra:Setting xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:processalgebra="http://se.compute.dtu.dk/processalgebra/1.0" xsi:schemaLocation="http://se.compute.dtu.dk/processalgebra/1.0 ProcessAlgebra.ecore">
+  <definitions>
+    <definitions name="init">
+      <process xsi:type="processalgebra:ProcessName" definition="//@definitions/@definitions.2"/>
+    </definitions>
+    <definitions name="X">
+      <process xsi:type="processalgebra:Sequence">
+        <subprocess xsi:type="processalgebra:Action" action="//@definitions/@actions.0"/>
+        <subprocess xsi:type="processalgebra:Action" action="//@definitions/@actions.1"/>
+        <subprocess xsi:type="processalgebra:ProcessName" definition="//@definitions/@definitions.1"/>
+      </process>
+    </definitions>
+    <definitions name="Y">
+      <process xsi:type="processalgebra:Parallel">
+        <subprocess xsi:type="processalgebra:Sequence">
+          <subprocess xsi:type="processalgebra:Choice">
+            <subprocess xsi:type="processalgebra:Hide" actions="//@definitions/@actions.0">
+              <process xsi:type="processalgebra:Parallel">
+                <subprocess xsi:type="processalgebra:Sequence">
+                  <subprocess xsi:type="processalgebra:Action" action="//@definitions/@actions.0"/>
+                  <subprocess xsi:type="processalgebra:Action" action="//@definitions/@actions.1"/>
+                </subprocess>
+                <subprocess xsi:type="processalgebra:Action" bar="true" action="//@definitions/@actions.0"/>
+              </process>
+            </subprocess>
+            <subprocess xsi:type="processalgebra:Sequence">
+              <subprocess xsi:type="processalgebra:Action" action="//@definitions/@actions.2"/>
+              <subprocess xsi:type="processalgebra:Action" action="//@definitions/@actions.3"/>
+            </subprocess>
+          </subprocess>
+          <subprocess xsi:type="processalgebra:ProcessName" definition="//@definitions/@definitions.2"/>
+        </subprocess>
+        <subprocess xsi:type="processalgebra:Action" bar="true" action="//@definitions/@actions.0"/>
+        <subprocess xsi:type="processalgebra:Action" bar="true" action="//@definitions/@actions.1"/>
+      </process>
+    </definitions>
+    <actions name="a" uses="//@definitions/@definitions.1/@process/@subprocess.0 //@definitions/@definitions.2/@process/@subprocess.0/@subprocess.0/@subprocess.0/@process/@subprocess.0/@subprocess.0 //@definitions/@definitions.2/@process/@subprocess.1 //@definitions/@definitions.2/@process/@subprocess.0/@subprocess.0/@subprocess.0/@process/@subprocess.1"/>
+    <actions name="b" uses="//@definitions/@definitions.1/@process/@subprocess.1 //@definitions/@definitions.2/@process/@subprocess.0/@subprocess.0/@subprocess.0/@process/@subprocess.0/@subprocess.1 //@definitions/@definitions.2/@process/@subprocess.2"/>
+    <actions name="c" uses="//@definitions/@definitions.2/@process/@subprocess.0/@subprocess.0/@subprocess.1/@subprocess.0"/>
+    <actions name="d" uses="//@definitions/@definitions.2/@process/@subprocess.0/@subprocess.0/@subprocess.1/@subprocess.1"/>
+  </definitions>
+</processalgebra:Setting>

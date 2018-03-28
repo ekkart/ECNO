@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="processalgebra"
+    nsURI="http://se.compute.dtu.dk/processalgebra/1.0" nsPrefix="processalgebra">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessDefinitions">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definitions" upperBound="-1"
+        eType="#//ProcessDefinition" containment="true" eOpposite="#//ProcessDefinition/owner"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="#//ActionDef" containment="true" eOpposite="#//ActionDef/procdefs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="setting" eType="#//Setting"
+        eOpposite="#//Setting/definitions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessDefinition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" lowerBound="1"
+        eType="#//Process" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//ProcessDefinitions"
+        eOpposite="#//ProcessDefinitions/definitions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Process" abstract="true">
+    <eOperations name="createInstance" eType="#//ProcessInstance"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//Process">
+    <eOperations name="createInstance" eType="#//ProcessInstance">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ActionInst instance = dk.dtu.compute.se.emf.processalgebra.ProcessalgebraFactory.eINSTANCE.createActionInst();&#xD;&#xA;instance.setAction(this);&#xD;&#xA;return instance;"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bar" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1"
+        eType="#//ActionDef" eOpposite="#//ActionDef/uses"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instances" upperBound="-1"
+        eType="#//ActionInst" eOpposite="#//ActionInst/action"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessName" eSuperTypes="#//Process">
+    <eOperations name="createInstance" eType="#//ProcessInstance">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return this.getDefinition().getProcess().createInstance();"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition" lowerBound="1"
+        eType="#//ProcessDefinition"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionDef">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" upperBound="-1" eType="#//Action"
+        eOpposite="#//Action/action"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="procdefs" eType="#//ProcessDefinitions"
+        eOpposite="#//ProcessDefinitions/actions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hide" eSuperTypes="#//Process">
+    <eOperations name="createInstance" eType="#//ProcessInstance">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="dk.dtu.compute.se.emf.processalgebra.HideInst instance = dk.dtu.compute.se.emf.processalgebra.ProcessalgebraFactory.eINSTANCE.createHideInst();&#xD;&#xA;instance.getActions().addAll(this.getActions());&#xD;&#xA;instance.getChild().add(this.getProcess().createInstance());&#x9;&#x9;&#x9;&#xD;&#xA;return instance;"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="#//ActionDef"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="process" lowerBound="1"
+        eType="#//Process" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Composite" abstract="true" eSuperTypes="#//Process">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subprocess" upperBound="-1"
+        eType="#//Process" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sequence" eSuperTypes="#//Composite">
+    <eOperations name="createInstance" eType="#//ProcessInstance">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="dk.dtu.compute.se.emf.processalgebra.SequenceInst instance = dk.dtu.compute.se.emf.processalgebra.ProcessalgebraFactory.eINSTANCE.createSequenceInst();&#xD;&#xA;if (!this.getSubprocess().isEmpty()) {&#xD;&#xA;&#x9;instance.getChild().add(this.getSubprocess().get(0).createInstance());&#xD;&#xA;}&#xD;&#xA;for (int i = 1; i &lt; this.getSubprocess().size(); i++) {&#xD;&#xA;&#x9;instance.getRemainder().add( this.getSubprocess().get(i));&#xD;&#xA;}&#xD;&#xA;return instance;"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Choice" eSuperTypes="#//Composite">
+    <eOperations name="createInstance" eType="#//ProcessInstance">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="dk.dtu.compute.se.emf.processalgebra.ChoiceInst instance = dk.dtu.compute.se.emf.processalgebra.ProcessalgebraFactory.eINSTANCE.createChoiceInst();&#xD;&#xA;java.util.List&lt;ProcessInstance> children = instance.getChild();&#xD;&#xA;for (dk.dtu.compute.se.emf.processalgebra.Process subprocess: this.getSubprocess()) {&#xD;&#xA;&#x9;children.add(subprocess.createInstance());&#xD;&#xA;}&#xD;&#xA;return instance;"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parallel" eSuperTypes="#//Composite">
+    <eOperations name="createInstance" eType="#//ProcessInstance">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="dk.dtu.compute.se.emf.processalgebra.ParallelInst instance = dk.dtu.compute.se.emf.processalgebra.ProcessalgebraFactory.eINSTANCE.createParallelInst();&#xD;&#xA;java.util.List&lt;ProcessInstance> children = instance.getChild();&#xD;&#xA;for (dk.dtu.compute.se.emf.processalgebra.Process subprocess: this.getSubprocess()) {&#xD;&#xA;&#x9;children.add(subprocess.createInstance());&#xD;&#xA;}&#xD;&#xA;return instance;"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessInstance">
+    <eOperations name="dispose">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="for (ProcessInstance subInstance: this.getChild()) {&#xD;&#xA;&#x9;subInstance.dispose();&#xD;&#xA;}"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="child" upperBound="-1"
+        eType="#//ProcessInstance" containment="true" eOpposite="#//ProcessInstance/parent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//ProcessInstance"
+        eOpposite="#//ProcessInstance/child"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Setting">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definitions" lowerBound="1"
+        eType="#//ProcessDefinitions" containment="true" eOpposite="#//ProcessDefinitions/setting"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instances" upperBound="-1"
+        eType="#//ProcessInstance" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SequenceInst" eSuperTypes="#//ProcessInstance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="remainder" upperBound="-1"
+        eType="#//Process"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChoiceInst" eSuperTypes="#//ProcessInstance"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ParallelInst" eSuperTypes="#//ProcessInstance"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HideInst" eSuperTypes="#//ProcessInstance">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="#//ActionDef"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionInst" eSuperTypes="#//ProcessInstance">
+    <eOperations name="dispose">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="this.setAction(null);&#xD;&#xA;super.dispose();"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="action" lowerBound="1"
+        eType="#//Action" eOpposite="#//Action/instances"/>
+  </eClassifiers>
+</ecore:EPackage>

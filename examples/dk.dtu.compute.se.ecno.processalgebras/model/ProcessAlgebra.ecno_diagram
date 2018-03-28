@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_HgenAP74EeSn0OzWvFdnoA" type="Ecno" name="ProcessAlgebra.ecno_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_NMrU0P74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrU0v74EeSn0OzWvFdnoA" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_jaGj0P75EeSn0OzWvFdnoA" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jaGj0v75EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.0/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jaGj0f75EeSn0OzWvFdnoA" x="84" y="60" width="48" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_v3Oy4P75EeSn0OzWvFdnoA" type="3001" fontColor="16744448" fontName="Segoe UI" lineColor="16744448">
+      <children xmi:type="notation:DecorationNode" xmi:id="_v3Oy4v75EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.0/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v3Oy4f75EeSn0OzWvFdnoA" x="84" y="24" width="49" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_1FBocP8wEeSn0OzWvFdnoA" type="3001" fontName="Segoe UI">
+      <children xmi:type="notation:DecorationNode" xmi:id="_1FCPgP8wEeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.0/@coordinationSets.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1FBocf8wEeSn0OzWvFdnoA" x="12" y="60" width="49" height="27"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrU0f74EeSn0OzWvFdnoA" x="444" y="72" width="145" height="109"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrU2f74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrU2_74EeSn0OzWvFdnoA" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_mHBAkP76EeSn0OzWvFdnoA" type="3001" fontColor="16744448" fontName="Segoe UI" lineColor="16744448">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mHBAkv76EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.1/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mHBAkf76EeSn0OzWvFdnoA" x="84" y="48" width="49" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_otMYoP76EeSn0OzWvFdnoA" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_otMYov76EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.1/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_otMYof76EeSn0OzWvFdnoA" x="12" y="48" width="49" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrU2v74EeSn0OzWvFdnoA" x="792" y="288" width="145" height="109"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrU3_74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrU4f74EeSn0OzWvFdnoA" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_AZwxEP76EeSn0OzWvFdnoA" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_AZwxEv76EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.2/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AZwxEf76EeSn0OzWvFdnoA" x="15" y="72" width="49" height="25"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_JbAIEP76EeSn0OzWvFdnoA" type="3001" fontColor="16744448" fontName="Segoe UI" lineColor="16744448">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JbAIEv76EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.2/@coordinationSets.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JbAIEf76EeSn0OzWvFdnoA" x="84" y="72" width="52" height="25"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrU4P74EeSn0OzWvFdnoA" x="792" y="72" width="145" height="109"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrU8f74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrU8_74EeSn0OzWvFdnoA" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_8kKjEP76EeSn0OzWvFdnoA" type="3001" fontColor="255" fontName="Segoe UI" lineColor="255">
+      <children xmi:type="notation:DecorationNode" xmi:id="_8kKjEv76EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.3/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8kKjEf76EeSn0OzWvFdnoA" x="48" y="60" width="46" height="27"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrU8v74EeSn0OzWvFdnoA" x="444" y="288" width="145" height="109"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrU-v74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrU_P74EeSn0OzWvFdnoA" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrU-_74EeSn0OzWvFdnoA" x="312" y="504" width="97" height="37"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrU_f74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrU__74EeSn0OzWvFdnoA" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrU_v74EeSn0OzWvFdnoA" x="420" y="504" width="85" height="37"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrVAP74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrVAv74EeSn0OzWvFdnoA" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrVAf74EeSn0OzWvFdnoA" x="516" y="504" width="85" height="37"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrVA_74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrVBf74EeSn0OzWvFdnoA" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrVBP74EeSn0OzWvFdnoA" x="612" y="504" width="73" height="37"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_NMrVBv74EeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NMrVCP74EeSn0OzWvFdnoA" type="5002"/>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NMrVB_74EeSn0OzWvFdnoA" x="792" y="504" width="145" height="37"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_AaTZEP75EeSn0OzWvFdnoA" type="2001" fontColor="255" fontName="Segoe UI" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AaTZEv75EeSn0OzWvFdnoA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_AaTZE_75EeSn0OzWvFdnoA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_CL0aAP75EeSn0OzWvFdnoA" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="ProcessAlgebra.ecno#//@eventTypes.0/@parameters.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_CL0aAf75EeSn0OzWvFdnoA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_E-y38P75EeSn0OzWvFdnoA" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="ProcessAlgebra.ecno#//@eventTypes.0/@parameters.1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_E-y38f75EeSn0OzWvFdnoA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_MN8mQP75EeSn0OzWvFdnoA" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="ProcessAlgebra.ecno#//@eventTypes.0/@parameters.2"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MN8mQf75EeSn0OzWvFdnoA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_PWC_oP75EeSn0OzWvFdnoA" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="ProcessAlgebra.ecno#//@eventTypes.0/@parameters.3"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PWC_of75EeSn0OzWvFdnoA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_VQUu0QHwEeWGX_utjSNxoQ" type="3002">
+        <element xmi:type="ecno:FormalParameter" href="ProcessAlgebra.ecno#//@eventTypes.0/@parameters.4"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VQUu0gHwEeWGX_utjSNxoQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AaTZFP75EeSn0OzWvFdnoA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AaTZFf75EeSn0OzWvFdnoA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="ProcessAlgebra.ecno#//@eventTypes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AaTZEf75EeSn0OzWvFdnoA" x="9" y="256" width="172" height="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_aa83gP75EeSn0OzWvFdnoA" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aa83gv75EeSn0OzWvFdnoA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_aa83g_75EeSn0OzWvFdnoA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_aa83hP75EeSn0OzWvFdnoA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_aa83hf75EeSn0OzWvFdnoA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="ProcessAlgebra.ecno#//@eventTypes.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aa83gf75EeSn0OzWvFdnoA" x="12" y="396" width="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_diwV8P75EeSn0OzWvFdnoA" type="2001" fontColor="16744448" fontName="Segoe UI" lineColor="16744448">
+    <children xmi:type="notation:DecorationNode" xmi:id="_diwV8v75EeSn0OzWvFdnoA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_diwV8_75EeSn0OzWvFdnoA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_diwV9P75EeSn0OzWvFdnoA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_diwV9f75EeSn0OzWvFdnoA"/>
+    </children>
+    <element xmi:type="ecno:EventType" href="ProcessAlgebra.ecno#//@eventTypes.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_diwV8f75EeSn0OzWvFdnoA" x="108" y="396" width="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_uuL0cP8rEeSn0OzWvFdnoA" type="2002" fontName="Segoe UI" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uuMbgP8rEeSn0OzWvFdnoA" type="5002"/>
+    <children xmi:type="notation:Shape" xmi:id="_4wmAQP75EeSn0OzWvFdnoA" type="3001" fontName="Segoe UI">
+      <children xmi:type="notation:DecorationNode" xmi:id="_4wmAQv75EeSn0OzWvFdnoA" type="5003"/>
+      <element xmi:type="ecno:CoordinationSet" href="ProcessAlgebra.ecno#//@elementTypes.9/@coordinationSets.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4wmAQf75EeSn0OzWvFdnoA" x="84" y="60" width="47" height="27"/>
+    </children>
+    <element xmi:type="ecno:ElementType" href="ProcessAlgebra.ecno#//@elementTypes.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uuL0cf8rEeSn0OzWvFdnoA" x="96" y="72" width="145" height="109"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_HgenAf74EeSn0OzWvFdnoA"/>
+  <element xmi:type="ecno:Package" href="ProcessAlgebra.ecno#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_NM-Px_74EeSn0OzWvFdnoA" type="4001" source="_NMrU0P74EeSn0OzWvFdnoA" target="_NMrU3_74EeSn0OzWvFdnoA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NM-Pyv74EeSn0OzWvFdnoA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NM-Py_74EeSn0OzWvFdnoA" x="1" y="-11"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NM-PzP74EeSn0OzWvFdnoA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NM-Pzf74EeSn0OzWvFdnoA" x="21" y="-23"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NM-PyP74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="ProcessAlgebra.ecno#//@elementTypes.0/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NM-Pyf74EeSn0OzWvFdnoA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_s5FdYP8SEeSn0OzWvFdnoA" id="(0.9793103448275862,0.42201834862385323)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tSrCEP8SEeSn0OzWvFdnoA" id="(0.013793103448275862,0.3302752293577982)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNIAxf74EeSn0OzWvFdnoA" type="4001" source="_NMrU3_74EeSn0OzWvFdnoA" target="_NMrU2f74EeSn0OzWvFdnoA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NNIAyP74EeSn0OzWvFdnoA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NNIAyf74EeSn0OzWvFdnoA" x="-1" y="-24"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NNIAyv74EeSn0OzWvFdnoA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NNIAy_74EeSn0OzWvFdnoA" x="-13" y="-15"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNIAxv74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="ProcessAlgebra.ecno#//@elementTypes.2/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNIAx_74EeSn0OzWvFdnoA" points="[0, 55, 0, -149]$[0, 102, 0, -102]$[0, 150, 0, -54]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNIAzP74EeSn0OzWvFdnoA" type="4001" source="_NMrU3_74EeSn0OzWvFdnoA" target="_NMrU0P74EeSn0OzWvFdnoA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NNIAz_74EeSn0OzWvFdnoA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NNIA0P74EeSn0OzWvFdnoA" x="-4" y="-17"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NNIA0f74EeSn0OzWvFdnoA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NNIA0v74EeSn0OzWvFdnoA" x="16" y="-41"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNIAzf74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="ProcessAlgebra.ecno#//@elementTypes.2/@references.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNIAzv74EeSn0OzWvFdnoA" points="[-36, 1, 304, -17]$[-335, 17, 5, -1]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t3l2YP75EeSn0OzWvFdnoA" id="(0.013888888888888888,0.775)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tL2KsP75EeSn0OzWvFdnoA" id="(0.9724137931034482,0.8440366972477065)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNRKvf74EeSn0OzWvFdnoA" type="4001" source="_NMrU8f74EeSn0OzWvFdnoA" target="_NMrU8f74EeSn0OzWvFdnoA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NNRKwP74EeSn0OzWvFdnoA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NNRKwf74EeSn0OzWvFdnoA" x="10" y="-15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NNRKwv74EeSn0OzWvFdnoA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NNRKw_74EeSn0OzWvFdnoA" x="20" y="-27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNRKvv74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="ProcessAlgebra.ecno#//@elementTypes.3/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNRKv_74EeSn0OzWvFdnoA" points="[-72, -6, -3, 26]$[-155, -6, -86, 26]$[-155, -32, -86, 0]$[-72, -32, -3, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HrAUoP77EeSn0OzWvFdnoA" id="(0.020689655172413793,0.2018348623853211)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNRK1f74EeSn0OzWvFdnoA" type="4003" source="_NMrU-v74EeSn0OzWvFdnoA" target="_NMrU8f74EeSn0OzWvFdnoA" routing="Rectilinear" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNRK1v74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNRK1_74EeSn0OzWvFdnoA" points="[0, -18, -156, 162]$[0, -78, -156, 102]$[156, -78, 0, 102]$[156, -125, 0, 55]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNRK2P74EeSn0OzWvFdnoA" type="4003" source="_NMrU_f74EeSn0OzWvFdnoA" target="_NMrU8f74EeSn0OzWvFdnoA" routing="Rectilinear" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNRK2f74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNRK2v74EeSn0OzWvFdnoA" points="[6, -18, -58, 128]$[6, -78, -58, 68]$[54, -78, -10, 68]$[54, -125, -10, 21]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_h_kNkP77EeSn0OzWvFdnoA" id="(0.5655172413793104,0.8073394495412844)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNRK2_74EeSn0OzWvFdnoA" type="4003" source="_NMrVAP74EeSn0OzWvFdnoA" target="_NMrU8f74EeSn0OzWvFdnoA" routing="Rectilinear" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNRK3P74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNRK3f74EeSn0OzWvFdnoA" points="[0, -4, 48, 162]$[0, -64, 48, 102]$[-48, -64, 0, 102]$[-48, -111, 0, 55]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jj_NsP77EeSn0OzWvFdnoA" id="(0.5647058823529412,0.125)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNa7sP74EeSn0OzWvFdnoA" type="4003" source="_NMrVA_74EeSn0OzWvFdnoA" target="_NMrU8f74EeSn0OzWvFdnoA" routing="Rectilinear" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNa7sf74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNa7sv74EeSn0OzWvFdnoA" points="[-7, -7, 132, 162]$[-7, -67, 132, 102]$[-139, -67, 0, 102]$[-139, -114, 0, 55]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k0xgIP77EeSn0OzWvFdnoA" id="(0.589041095890411,0.2)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NNa7uv74EeSn0OzWvFdnoA" type="4003" source="_NMrVBv74EeSn0OzWvFdnoA" target="_NMrU8f74EeSn0OzWvFdnoA" routing="Rectilinear" lineColor="0">
+    <styles xmi:type="notation:FontStyle" xmi:id="_NNa7u_74EeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NNa7vP74EeSn0OzWvFdnoA" points="[-48, -18, 300, 162]$[-48, -78, 300, 102]$[-348, -78, 0, 102]$[-348, -125, 0, 55]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_p5GVoP77EeSn0OzWvFdnoA" type="4002" source="_NM-Px_74EeSn0OzWvFdnoA" target="_v3Oy4P75EeSn0OzWvFdnoA" lineColor="16744448">
+    <children xmi:type="notation:DecorationNode" xmi:id="_p5GVo_77EeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_p5GVpP77EeSn0OzWvFdnoA" x="18" y="17"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_p5GVof77EeSn0OzWvFdnoA" fontColor="16744448" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.0/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_p5GVov77EeSn0OzWvFdnoA" points="[0, -1, 87, 25]$[-13, -17, 74, 9]$[-67, -17, 20, 9]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_p5GVpf77EeSn0OzWvFdnoA" id="(0.27391304347826084,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_p5GVpv77EeSn0OzWvFdnoA" id="(0.5918367346938775,0.2)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_v3m7cP77EeSn0OzWvFdnoA" type="4002" source="_NNIAzP74EeSn0OzWvFdnoA" target="_AZwxEP76EeSn0OzWvFdnoA" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_v3m7c_77EeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_v3m7dP77EeSn0OzWvFdnoA" x="-26" y="-21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_v3m7cf77EeSn0OzWvFdnoA" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.2/@references.1/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v3m7cv77EeSn0OzWvFdnoA" points="[0, 0, -80, 11]$[35, -17, -45, -6]$[79, -17, -1, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v3m7df77EeSn0OzWvFdnoA" id="(0.6826086956521739,0.19230769230769232)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v3m7dv77EeSn0OzWvFdnoA" id="(0.02040816326530612,0.36)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_8yCxkP77EeSn0OzWvFdnoA" type="4002" source="_NNIAxf74EeSn0OzWvFdnoA" target="_AZwxEP76EeSn0OzWvFdnoA" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8yCxk_77EeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8yCxlP77EeSn0OzWvFdnoA" x="78" y="-2"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_8yCxkf77EeSn0OzWvFdnoA" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.2/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8yCxkv77EeSn0OzWvFdnoA" points="[0, 0, 33, 75]$[-27, -11, 6, 64]$[-27, -62, 6, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8yCxlf77EeSn0OzWvFdnoA" id="(0.23076923076923078,0.4701492537313433)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_MvN_8P78EeSn0OzWvFdnoA" type="4002" source="_NNIAxf74EeSn0OzWvFdnoA" target="_JbAIEP76EeSn0OzWvFdnoA" lineColor="16744448">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MvN_8_78EeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_MvN_9P78EeSn0OzWvFdnoA" x="70" y="13"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_MvN_8f78EeSn0OzWvFdnoA" fontColor="16744448" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.2/@references.0/@synchronisations.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MvN_8v78EeSn0OzWvFdnoA" points="[0, 0, -38, 101]$[38, -33, 0, 68]$[38, -88, 0, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MvN_9f78EeSn0OzWvFdnoA" id="(0.23076923076923078,0.7089552238805971)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_c-QaYP78EeSn0OzWvFdnoA" type="4002" source="_NNRKvf74EeSn0OzWvFdnoA" target="_8kKjEP76EeSn0OzWvFdnoA" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_c-QaY_78EeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_c-QaZP78EeSn0OzWvFdnoA" x="22" y="18"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_c-QaYf78EeSn0OzWvFdnoA" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.3/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c-QaYv78EeSn0OzWvFdnoA" points="[-1, -1, -118, -22]$[17, 21, -100, 0]$[89, 21, -28, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c-ZkUP78EeSn0OzWvFdnoA" id="(0.5363636363636364,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c-ZkUf78EeSn0OzWvFdnoA" id="(0.6086956521739131,0.8888888888888888)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ofs4wP8GEeSn0OzWvFdnoA" type="4001" source="_NMrU2f74EeSn0OzWvFdnoA" target="_NMrVBv74EeSn0OzWvFdnoA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ofs4w_8GEeSn0OzWvFdnoA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ofs4xP8GEeSn0OzWvFdnoA" x="-1" y="-37"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ofs4xf8GEeSn0OzWvFdnoA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_ofs4xv8GEeSn0OzWvFdnoA" x="-13" y="-15"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ofs4wf8GEeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="ProcessAlgebra.ecno#//@elementTypes.1/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ofs4wv8GEeSn0OzWvFdnoA" points="[4, 14, 10, -161]$[4, 121, 10, -54]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ofs4x_8GEeSn0OzWvFdnoA" id="(0.5379310344827586,0.8715596330275229)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_sdztEP8GEeSn0OzWvFdnoA" type="4002" source="_ofs4wP8GEeSn0OzWvFdnoA" target="_otMYoP76EeSn0OzWvFdnoA" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_sdztE_8GEeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sdztFP8GEeSn0OzWvFdnoA" x="63" y="-5"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sdztEf8GEeSn0OzWvFdnoA" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.1/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sdztEv8GEeSn0OzWvFdnoA" points="[0, 0, 36, 97]$[-28, -14, 8, 83]$[-28, -84, 8, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sdztFf8GEeSn0OzWvFdnoA" id="(0.16483516483516483,0.44776119402985076)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_4ZkokP8TEeSn0OzWvFdnoA" type="4002" source="_NNIAxf74EeSn0OzWvFdnoA" target="_AZwxEP76EeSn0OzWvFdnoA" lineColor="255">
+    <children xmi:type="notation:DecorationNode" xmi:id="_4Zkok_8TEeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_4ZkolP8TEeSn0OzWvFdnoA" x="74" y="2"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_4Zkokf8TEeSn0OzWvFdnoA" fontColor="255" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.2/@references.0/@synchronisations.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4Zkokv8TEeSn0OzWvFdnoA" points="[0, 0, 53, 102]$[-41, -17, 12, 85]$[-52, -88, 1, 14]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4Zkolf8TEeSn0OzWvFdnoA" id="(0.2153846153846154,0.7089552238805971)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4Zkolv8TEeSn0OzWvFdnoA" id="(0.2857142857142857,0.8)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_5pr4sP8rEeSn0OzWvFdnoA" type="4001" source="_uuL0cP8rEeSn0OzWvFdnoA" target="_NMrU0P74EeSn0OzWvFdnoA" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5pr4s_8rEeSn0OzWvFdnoA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5psfwP8rEeSn0OzWvFdnoA" x="11" y="-15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_5psfwf8rEeSn0OzWvFdnoA" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5psfwv8rEeSn0OzWvFdnoA" x="21" y="-27"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_5pr4sf8rEeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Reference" href="ProcessAlgebra.ecno#//@elementTypes.9/@references.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5pr4sv8rEeSn0OzWvFdnoA" points="[28, 4, -211, 0]$[231, 1, -8, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ptt4P8rEeSn0OzWvFdnoA" id="(0.9793103448275862,0.48623853211009177)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5ptt4f8rEeSn0OzWvFdnoA" id="(0.027586206896551724,0.48623853211009177)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_LrSgIP8wEeSn0OzWvFdnoA" type="4002" source="_5pr4sP8rEeSn0OzWvFdnoA" target="_4wmAQP75EeSn0OzWvFdnoA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_LrSgI_8wEeSn0OzWvFdnoA" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_LrTHMP8wEeSn0OzWvFdnoA" x="32" y="-21"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_LrSgIf8wEeSn0OzWvFdnoA" fontName="Segoe UI"/>
+    <element xmi:type="ecno:Synchronisation" href="ProcessAlgebra.ecno#//@elementTypes.9/@references.0/@synchronisations.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LrSgIv8wEeSn0OzWvFdnoA" points="[1, 0, 140, -20]$[-50, 20, 89, 0]$[-115, 20, 24, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LrU8YP8wEeSn0OzWvFdnoA" id="(0.4956521739130435,0.71875)"/>
+  </edges>
+</notation:Diagram>

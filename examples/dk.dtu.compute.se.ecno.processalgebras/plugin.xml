@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://se.compute.dtu.dk/processalgebra/1.0"
+            class="dk.dtu.compute.se.emf.processalgebra.ProcessalgebraPackage"
+            genModel="model/ProcessAlgebra.genmodel"/>
+   </extension>
+   <extension
+         point="dk.dtu.imm.se.ecno.eclipse.package_adapter_factory">
+      <adapter_factory
+            class="dk.dtu.compute.se.ecno.processalgebras.globalbehaviour.ProcessAlgebraPackageAdapterFactory"
+            uri="http://se.compute.dtu.dk/processalgebras/ecno">
+      </adapter_factory>
+   </extension>
+
+</plugin>

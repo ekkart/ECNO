@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecno:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecno="http://ecno.se.imm.dtu.dk/ecno" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" uri="http://se.compute.dtu.dk/processalgebras/ecno">
+  <elementTypes>
+    <eClass href="ProcessAlgebra.ecore#//ProcessDefinitions"/>
+    <coordinationSets triggerEvent="//@eventTypes.0"/>
+    <coordinationSets synchronisations="//@elementTypes.0/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.2"/>
+    <coordinationSets triggerEvent="//@eventTypes.1"/>
+    <references target="//@elementTypes.2">
+      <eReference href="ProcessAlgebra.ecore#//ProcessDefinitions/actions"/>
+      <synchronisations eventType="//@eventTypes.2" type="ALL" coordinationSet="//@elementTypes.0/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="ProcessAlgebra.ecore#//Action"/>
+    <coordinationSets triggerEvent="//@eventTypes.2"/>
+    <coordinationSets synchronisations="//@elementTypes.1/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <references target="//@elementTypes.8">
+      <eReference href="ProcessAlgebra.ecore#//Action/instances"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.1/@coordinationSets.1"/>
+    </references>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="ProcessAlgebra.ecore#//ActionDef"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.1/@synchronisations.0 //@elementTypes.2/@references.0/@synchronisations.0 //@elementTypes.2/@references.0/@synchronisations.2" triggerEvent="//@eventTypes.0"/>
+    <coordinationSets synchronisations="//@elementTypes.2/@references.0/@synchronisations.1" triggerEvent="//@eventTypes.2"/>
+    <references target="//@elementTypes.1">
+      <eReference href="ProcessAlgebra.ecore#//ActionDef/uses"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+      <synchronisations eventType="//@eventTypes.2" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.1"/>
+      <synchronisations eventType="//@eventTypes.0" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+    </references>
+    <references target="//@elementTypes.0">
+      <eReference href="ProcessAlgebra.ecore#//ActionDef/procdefs"/>
+      <synchronisations eventType="//@eventTypes.0" type="ALL" coordinationSet="//@elementTypes.2/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes>
+    <eClass href="ProcessAlgebra.ecore#//ProcessInstance"/>
+    <coordinationSets synchronisations="//@elementTypes.3/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.0"/>
+    <references target="//@elementTypes.3">
+      <eReference href="ProcessAlgebra.ecore#//ProcessInstance/parent"/>
+      <synchronisations eventType="//@eventTypes.0" type="ALL" coordinationSet="//@elementTypes.3/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <elementTypes references="" super="//@elementTypes.3">
+    <eClass href="ProcessAlgebra.ecore#//SequenceInst"/>
+  </elementTypes>
+  <elementTypes super="//@elementTypes.3">
+    <eClass href="ProcessAlgebra.ecore#//ChoiceInst"/>
+  </elementTypes>
+  <elementTypes super="//@elementTypes.3">
+    <eClass href="ProcessAlgebra.ecore#//ParallelInst"/>
+  </elementTypes>
+  <elementTypes references="" super="//@elementTypes.3">
+    <eClass href="ProcessAlgebra.ecore#//HideInst"/>
+  </elementTypes>
+  <elementTypes references="" super="//@elementTypes.3">
+    <eClass href="ProcessAlgebra.ecore#//ActionInst"/>
+  </elementTypes>
+  <elementTypes gui="true">
+    <eClass href="ProcessAlgebra.ecore#//ProcessDefinition"/>
+    <coordinationSets synchronisations="//@elementTypes.9/@references.0/@synchronisations.0" triggerEvent="//@eventTypes.1"/>
+    <references target="//@elementTypes.0">
+      <eReference href="ProcessAlgebra.ecore#//ProcessDefinition/owner"/>
+      <synchronisations eventType="//@eventTypes.1" coordinationSet="//@elementTypes.9/@coordinationSets.0"/>
+    </references>
+  </elementTypes>
+  <ePackage href="ProcessAlgebra.ecore#/"/>
+  <eventTypes name="action" gui="true">
+    <parameters name="action">
+      <eType xsi:type="ecore:EClass" href="ProcessAlgebra.ecore#//ActionDef"/>
+    </parameters>
+    <parameters name="pos">
+      <eType xsi:type="ecore:EClass" href="ProcessAlgebra.ecore#//ProcessInstance"/>
+    </parameters>
+    <parameters name="neg">
+      <eType xsi:type="ecore:EClass" href="ProcessAlgebra.ecore#//ProcessInstance"/>
+    </parameters>
+    <parameters name="processes" collective="true">
+      <eType xsi:type="ecore:EClass" href="ProcessAlgebra.ecore#//ProcessInstance"/>
+    </parameters>
+    <parameters name="terminating" collective="true">
+      <eType xsi:type="ecore:EClass" href="ProcessAlgebra.ecore#//ProcessInstance"/>
+    </parameters>
+  </eventTypes>
+  <eventTypes name="init" gui="true"/>
+  <eventTypes name="lock"/>
+</ecno:Package>

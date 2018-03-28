@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.compute.se.ecno.processalgebras/src"
+    modelPluginID="dk.dtu.compute.se.ecno.processalgebras" modelName="ProcessAlgebra"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>ProcessAlgebra.ecore</foreignModel>
+  <genPackages prefix="Processalgebra" basePackage="dk.dtu.compute.se.emf" disposableProviderFactory="true"
+      ecorePackage="ProcessAlgebra.ecore#/">
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ProcessDefinitions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessDefinitions/definitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessDefinitions/actions"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessDefinitions/setting"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ProcessDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ProcessAlgebra.ecore#//ProcessDefinition/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessDefinition/process"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessDefinition/owner"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ProcessAlgebra.ecore#//Process">
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//Process/createInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//Action">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ProcessAlgebra.ecore#//Action/bar"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Action/action"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Action/instances"/>
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//Action/createInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ProcessName">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessName/definition"/>
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//ProcessName/createInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ActionDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ProcessAlgebra.ecore#//ActionDef/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ActionDef/uses"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ActionDef/procdefs"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//Hide">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Hide/actions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Hide/process"/>
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//Hide/createInstance"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ProcessAlgebra.ecore#//Composite">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Composite/subprocess"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//Sequence">
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//Sequence/createInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//Choice">
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//Choice/createInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//Parallel">
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//Parallel/createInstance"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ProcessInstance">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessInstance/child"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ProcessInstance/parent"/>
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//ProcessInstance/dispose"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//Setting">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Setting/definitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//Setting/instances"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//SequenceInst">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//SequenceInst/remainder"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ChoiceInst"/>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ParallelInst"/>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//HideInst">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//HideInst/actions"/>
+    </genClasses>
+    <genClasses ecoreClass="ProcessAlgebra.ecore#//ActionInst">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ProcessAlgebra.ecore#//ActionInst/action"/>
+      <genOperations ecoreOperation="ProcessAlgebra.ecore#//ActionInst/dispose"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

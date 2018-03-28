@@ -1,0 +1,10 @@
+Actions: a, b, c, d
+
+Processes:
+  init = Y;
+  
+  X    = a . b . X;
+  
+  Y    = ( ( ( ( ( ( a . b || a' ) \ {a} ) + ( c . d  ) ) . Y ) || a' || b'  
+  
+  
