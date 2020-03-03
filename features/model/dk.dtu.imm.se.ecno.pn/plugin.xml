@@ -14,7 +14,7 @@
       <package
             uri="http://se.imm.dtu.dk/ecno/ecnonets"
             class="dk.dtu.imm.se.ecno.pn.ecnonets.EcnonetsPackage"
-            genModel="model/ECLANets.genmodel"/>
+            genModel="model/ECNONets.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -77,7 +77,37 @@
                <![CDATA[
                  self.structure->forAll(es|es.eventuse->forAll(e| e.expression->isEmpty()))
                ]]>
-            </constraint>      
+            </constraint>
+            <!-- Included this constaint so that there is even a bit more explicit warning that
+                 an event binding could not be parsed (even though this is covered by the
+                 standard warning of the ePNK that a structured label could not be parser).
+                 We need to see wether this makes the ECNO net editor more usable. -->
+            <constraint
+                  id="dk.dtu.imm.se.ecno.pn.no_event_binding"
+                  lang="OCL"
+                  mode="Batch"
+                  name="Transition with no event binding"
+                  severity="WARNING"
+                  statusCode="402">
+               <message>
+                  Transition has no event binding: {0}.
+                  Each transition of an ECNO net should have a valid event binding.
+                  The reason might be a forgotten or a syntactically incorrect event binding.
+               </message>
+               <description>
+                 Transions without event bindings, if used in the usual ECNO context, have
+                 no effect. Therefore, this typically is a problem which needs fixing (adding
+                 a event binding or correcting its syntax).
+               </description>
+               <target
+                     class="Transition">
+               </target>
+               <![CDATA[
+                 not self.eventbinding->isEmpty() and
+                 not self.eventbinding.structure->isEmpty() and
+                 not self.eventbinding.structure.eventuse->isEmpty()
+               ]]>
+            </constraint>   
          </constraints>
       </constraintProvider>
    </extension>   
